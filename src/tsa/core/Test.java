@@ -9,7 +9,10 @@ import weka.core.DenseInstance;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.SparseInstance;
+import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Add;
+import weka.filters.unsupervised.attribute.Reorder;
+import weka.filters.unsupervised.attribute.ReplaceMissingValues;
 
 public class Test {
 	
@@ -64,6 +67,8 @@ public class Test {
 
 		values[4] = dataset.attribute(4).indexOfValue("neutral");
 		
+		System.out.println(dataset.attribute("lalal")==null);
+		
 		// values[2] = dataset.attribute(2).indexOfValue("val3"); It is also possible to use the numeric index
 	
 		
@@ -92,15 +97,27 @@ public class Test {
 		
 		
 		
-		// Adding a new attribute to my dataset 
 		
-		//Add add;
-		dataset.insertAttributeAt(new Attribute("NewNumeric"), dataset.numAttributes());
+		//Adds a new numeric attribute to the dataset in the second last position, to keep the label in the last one
+		dataset.insertAttributeAt(new Attribute("1NewNumeric"), dataset.numAttributes()-1);
 		
 		
 		System.out.println(dataset.toString());
 		
+		ReplaceMissingValues rp=new ReplaceMissingValues();
+	
 		
+		try {
+			rp.setInputFormat(dataset);
+			dataset=Filter.useFilter(dataset, rp);
+		
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println(dataset.toString());
 
 	}
 	
