@@ -1,0 +1,38 @@
+Naive Bayes Classifier
+
+Time taken to build model: 159 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 164.72 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1913               58.0929 %
+Incorrectly Classified Instances      1380               41.9071 %
+Kappa statistic                          0.3468
+Mean absolute error                      0.2191
+Root mean squared error                  0.413 
+Relative absolute error                 71.5012 %
+Root relative squared error            105.2707 %
+Coverage of cases (0.95 level)          78.0747 %
+Mean rel. region size (0.95 level)      41.5047 %
+Total Number of Instances             3293     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    0.000      0.000    0.000      0.000    ?         ?         0
+                 0.563    0.178    0.653      0.563    0.605      0.398    0.746     0.653     positive
+                 0.609    0.256    0.678      0.609    0.641      0.357    0.721     0.679     neutral
+                 0.541    0.204    0.331      0.541    0.411      0.281    0.734     0.314     negative
+Weighted Avg.    0.581    0.219    0.614      0.581    0.591      0.360    0.732     0.612     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+   0   0   0   0 |   a = 0
+   0 692 306 231 |   b = positive
+   0 271 941 334 |   c = neutral
+   0  97 141 280 |   d = negative
+		
