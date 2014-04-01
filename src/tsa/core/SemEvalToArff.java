@@ -35,7 +35,7 @@ public class SemEvalToArff extends TweetCollectionToArff {
 		label.add("neutral");
 		label.add("negative");
 		
-		attributes.add(new Attribute("class",label));	
+		attributes.add(new Attribute("Class",label));	
 		Instances dataset=new Instances("Twitter Sentiment Analysis SemEval Dataset", attributes,0); // The last attribute 		
 					
 		BufferedReader bf = new BufferedReader(new FileReader(collectionPath));
@@ -65,6 +65,9 @@ public class SemEvalToArff extends TweetCollectionToArff {
 					
 			
 		}
+		
+		// set the class index
+		dataset.setClassIndex(dataset.numAttributes() - 1); 
 		
 		bf.close();
 
