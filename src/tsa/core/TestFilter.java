@@ -19,7 +19,10 @@ public class TestFilter {
 		
 		
 		
-		Filter.useFilter(dataset, wordFilter);
+		
+		
+		Instances example=Filter.useFilter(dataset, wordFilter);
+		System.out.println(example);
 		
 		//Filter.
 		
