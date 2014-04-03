@@ -16,7 +16,7 @@ import weka.filters.SimpleBatchFilter;
 
 public class TwitterNLPwordToVector extends SimpleBatchFilter {
 	
-	private Map<String,Integer> vocDocFreq; // the vocabulary and the number of tweets in which the word appears
+	private Map<String,Integer> vocDocFreq; // the vocabulary and the number of tweets where the word appears
 	private List<Map<String,Integer>> wordVecs; // List of word vectors with their corresponding frequencies per tweet
 
 	
@@ -57,8 +57,7 @@ public class TwitterNLPwordToVector extends SimpleBatchFilter {
 				else
 					this.vocDocFreq.put(word,1);
 								
-			}
-			
+			}			
 			
 		}
 		
@@ -71,6 +70,7 @@ public class TwitterNLPwordToVector extends SimpleBatchFilter {
 		//att.add(inputFormat.attribute(0)); // add the content
 		
 		for(String word:wordsArray){
+			System.out.println(word);
 			att.add(new Attribute("WORD-"+word));  // add the word with a prefix			
 		}
 				
@@ -91,7 +91,7 @@ public class TwitterNLPwordToVector extends SimpleBatchFilter {
 		
 		System.out.println(result.numAttributes());
 		
-		/*
+		
 		int i=0;
 		for(Map<String,Integer> wordVec:this.wordVecs){
 			double[] values = new double[result.numAttributes()];	
@@ -107,7 +107,7 @@ public class TwitterNLPwordToVector extends SimpleBatchFilter {
 			
 		}
 		
-		/*
+		
 		
 		
 		
