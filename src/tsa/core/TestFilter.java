@@ -11,18 +11,34 @@ public class TestFilter {
 	static public void main(String args[]) throws Exception{
 		
 		TweetCollectionToArff ta=new SemEvalToArff();
-		Instances dataset=ta.createDataset("datasets/example.txt");
+		Instances train=ta.createDataset("datasets/example.txt");
 	//	System.out.println(dataset.toString());
 		
+	
+		SimpleBatchFilter wordFilter=new TwitterNlpWordToVector();
 		
-		SimpleBatchFilter wordFilter=new TwitterNlpPos();
+		
+		
 		//SimpleBatchFilter wordFilter=new SimpleBatch();
-		wordFilter.setInputFormat(dataset);	
+		wordFilter.setInputFormat(train);	
 		
-			
+					
+		Instances wordDataset=Filter.useFilter(train, wordFilter);
+		System.out.println(wordDataset);
+	
+		Instances test=ta.createDataset("datasets/example2.txt");
+		Instances test2=Filter.useFilter(test, wordFilter);
+		System.out.println(test2);
 		
-		Instances example=Filter.useFilter(dataset, wordFilter);
-		System.out.println(example);
+
+		/*
+
+		SimpleBatchFilter posFilter=new TwitterNlpPos();
+		posFilter.setInputFormat(wordDataset);
+		Instances wordPosDataset=Filter.useFilter(wordDataset, posFilter);
+		System.out.println(wordPosDataset);
+		
+		*/
 		
 		
 		

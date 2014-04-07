@@ -70,7 +70,7 @@ public class Utils {
 		ArrayList<String> tags = new ArrayList<String>();
 
 		for (int t=0; t < sentence.T(); t++) {
-			String tag = "POS-"+tagger.model.labelVocab.name( ms.labels[t] );
+			String tag = tagger.model.labelVocab.name( ms.labels[t] );
 			tags.add(tag);
 		}
 

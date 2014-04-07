@@ -101,7 +101,7 @@ public class TwitterNlpPos extends SimpleBatchFilter {
 
 			// add POS values
 			for (String posTag : posFreqs.keySet()) {
-				int index = result.attribute(posTag).index();
+				int index = result.attribute("POS-"+posTag).index();
 				values[index] = posFreqs.get(posTag);
 			}
 
