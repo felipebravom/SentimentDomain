@@ -15,7 +15,7 @@ public class TestFilter {
 	//	System.out.println(dataset.toString());
 		
 	
-		SimpleBatchFilter wordFilter=new TwitterNlpWordToVector();
+		SimpleBatchFilter wordFilter=new LexiconFilter();
 		
 		
 		
@@ -26,7 +26,7 @@ public class TestFilter {
 		Instances wordDataset=Filter.useFilter(train, wordFilter);
 		System.out.println(wordDataset);
 	
-		Instances test=ta.createDataset("datasets/example2.txt");
+		Instances test=ta.createDataset("datasets/b.txt");
 		Instances test2=Filter.useFilter(test, wordFilter);
 		System.out.println(test2);
 		

@@ -20,8 +20,8 @@ public class TwitterNlpPos extends SimpleBatchFilter {
 
 	@Override
 	public String globalInfo() {
-		// TODO Auto-generated method stub
-		return null;
+		return "A simple batch filter that adds attributes for all the "
+				+ "Twitter-oriented POS tags of the TwitterNLP library.  ";
 	}
 
 	public boolean allowAccessToFullInputFormat() {

@@ -31,6 +31,7 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 				+ "Twitter-oriented POS tags of the TwitterNLP library.  ";
 	}
 
+	// To allow determineOutputFormat to access to entire dataset
 	public boolean allowAccessToFullInputFormat() {
 		return true;
 	}
@@ -38,7 +39,7 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 	@Override
 	protected Instances determineOutputFormat(Instances inputFormat) {
 
-		// The vocabulary is created only at the first time
+		// The vocabulary is created only for the training data
 		if (!this.isFirstBatchDone())
 			this.vocDocFreq = new HashMap<String, Integer>();
 
@@ -117,7 +118,7 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 			// adds the words using the frequency as attribute value
 			for (String word : wordVec.keySet()) {
 				// we only add the value if the word was previously included
-				// into the vocabulary
+				// into the vocabulary, otherwise we discard it
 				if (result.attribute("WORD-" + word) != null)
 					values[result.attribute("WORD-" + word).index()] = wordVec
 							.get(word);

@@ -10,6 +10,8 @@ import cmu.arktweetnlp.Twokenize;
 import cmu.arktweetnlp.impl.ModelSentence;
 import cmu.arktweetnlp.impl.Sentence;
 
+
+
 public class Utils {
 
 	// Tokenize a the tweet using TwitterNLP and cleans repeated letters, URLS,
@@ -77,5 +79,62 @@ public class Utils {
 		return tags;
 		
 	}
+	
+	
+	// counts positive and negative words from a polarity-oriented lexicon
+	static public Map<String,Integer> evaluatePolarityLexicon(List<String> tokens, LexiconEvaluator le) {
+
+		Map<String,Integer> sentCount=new HashMap<String,Integer>();
+		
+		int negCount = 0;
+		int posCount = 0;
+		
+
+		for (String w : tokens) {
+			String pol = le.retrieveValue(w);
+			if (pol.equals("positive")) {
+				posCount++;
+			} else if (pol.equals("negative")) {
+				negCount++;
+			}
+		}
+
+		sentCount.put("posCount", posCount);
+		sentCount.put("negCount", negCount);
+		
+		
+		return sentCount;
+	}
+	
+	
+	
+
+	// computes scores from strength-oriented lexicons
+	public Map<String,Double> evaluateStrengthLexicon(List<String> tokens, LexiconEvaluator le) {
+		
+		Map<String,Double> strengthScores=new HashMap<String,Double>();
+		double posScore = 0;
+		double negScore = 0;
+		for (String w : tokens) {
+			String pol = le.retrieveValue(w);
+			if (!pol.equals("not_found")) {
+				double value = Double.parseDouble(pol);
+				if (value > 0) {
+					posScore += value;
+				} else {
+					negScore += value;
+				}
+			}
+		}
+		strengthScores.put("posScore", posScore);
+		strengthScores.put("negScore", negScore);
+		
+		return strengthScores;
+	}
+	
+	
+	
+	
+	
 
 }
