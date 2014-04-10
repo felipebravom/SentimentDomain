@@ -26,9 +26,9 @@ public class TestFilter {
 		Instances wordDataset=Filter.useFilter(train, wordFilter);
 		System.out.println(wordDataset);
 	
-		Instances test=ta.createDataset("datasets/b.txt");
-		Instances test2=Filter.useFilter(test, wordFilter);
-		System.out.println(test2);
+//		Instances test=ta.createDataset("datasets/b.txt");
+//		Instances test2=Filter.useFilter(test, wordFilter);
+//		System.out.println(test2);
 		
 
 		/*

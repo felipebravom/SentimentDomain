@@ -67,7 +67,7 @@ public class NRCEvaluator {
 	}
 
 	static public void main(String args[]){
-		NRCEvaluator eval=new NRCEvaluator("extra/NRC-emotion-lexicon-wordlevel-v0.92.txt");
+		NRCEvaluator eval=new NRCEvaluator("lexicons/NRC-emotion-lexicon-wordlevel-v0.92.txt");
 		eval.processDict();
 
 		Map<String,Integer> pal=eval.getWord("love");

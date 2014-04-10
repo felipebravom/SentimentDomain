@@ -77,7 +77,7 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 
 		}
 
-		System.out.println("IS FIRST BATCH" + this.isFirstBatchDone());
+		
 
 		// sorts the words alphabetically
 		String[] wordsArray = this.vocDocFreq.keySet().toArray(new String[0]);
