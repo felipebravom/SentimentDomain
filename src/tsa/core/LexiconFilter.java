@@ -52,7 +52,19 @@ public class LexiconFilter extends SimpleBatchFilter {
 		att.add(new Attribute("LEX-NRCHASHNS")); // NRCHastag Negative score
 		att.add(new Attribute("LEX-SWN3PS")); // SentiWordnet Positive score
 		att.add(new Attribute("LEX-SWN3NS")); // SentiWordnet Negative score
-
+		
+		att.add(new Attribute("LEX-NRC-emo-anger")); // NRC-emotion anger words
+		att.add(new Attribute("LEX-NRC-emo-anticipation")); // NRC-emotion anticipation words
+		att.add(new Attribute("LEX-NRC-emo-disgust")); // NRC-disgust disgust words
+		att.add(new Attribute("LEX-NRC-emo-fear")); // NRC-emotion fear words
+		att.add(new Attribute("LEX-NRC-emo-joy")); // NRC-emotion joy words
+		att.add(new Attribute("LEX-NRC-emo-sadness")); // NRC-emotion sadness words
+		att.add(new Attribute("LEX-NRC-emo-surprise")); // NRC-emotion surprise words
+		att.add(new Attribute("LEX-NRC-emo-trust")); // NRC-emotion trust emotion words
+		
+		att.add(new Attribute("LEX-NRC-emo-PW")); // NRC-emotion positive words
+		att.add(new Attribute("LEX-NRC-emo-NW")); // NRC-emotion negative words
+		
 		Instances result = new Instances("Twitter Sentiment Analysis", att, 0);
 
 		// set the class index
@@ -63,11 +75,8 @@ public class LexiconFilter extends SimpleBatchFilter {
 
 	@Override
 	protected Instances process(Instances instances) throws Exception {
-		//Instances result = new Instances(determineOutputFormat(instances), 0);
-		Instances result = getOutputFormat();
-		
-		
-		
+		Instances result = new Instances(determineOutputFormat(instances), 0);
+				
 		// reference to the content of the tweet
 		Attribute attrCont = instances.attribute("content");
 
@@ -93,6 +102,11 @@ public class LexiconFilter extends SimpleBatchFilter {
 		LexiconEvaluator swn3Lex = new SWN3LexiconEvaluator(
 				"lexicons/SentiWordNet_3.0.0.txt");
 		swn3Lex.processDict();
+		
+		EmotionEvaluator nrcEmoLex = new EmotionEvaluator(
+				"lexicons/NRC-emotion-lexicon-wordlevel-v0.92.txt");
+		nrcEmoLex.processDict();
+		
 
 		for (int i = 0; i < instances.numInstances(); i++) {
 			double[] values = new double[result.numAttributes()];
@@ -143,7 +157,35 @@ public class LexiconFilter extends SimpleBatchFilter {
 					.get("posScore");
 			values[result.attribute("LEX-SWN3NS").index()] = swn3Counts
 					.get("negScore");
+			
+			
+			
+			Map<String,Integer> nrcEmoCounts = nrcEmoLex.evaluateEmotion(words);
+			values[result.attribute("LEX-NRC-emo-anger").index()] = nrcEmoCounts
+					.get("anger");
+			values[result.attribute("LEX-NRC-emo-anticipation").index()] = nrcEmoCounts
+					.get("anticipation");
+			values[result.attribute("LEX-NRC-emo-disgust").index()] = nrcEmoCounts
+					.get("disgust");
+			values[result.attribute("LEX-NRC-emo-fear").index()] = nrcEmoCounts
+					.get("fear");
+			values[result.attribute("LEX-NRC-emo-joy").index()] = nrcEmoCounts
+					.get("joy");
+			values[result.attribute("LEX-NRC-emo-sadness").index()] = nrcEmoCounts
+					.get("sadness");
+			values[result.attribute("LEX-NRC-emo-surprise").index()] = nrcEmoCounts
+					.get("surprise");
+			values[result.attribute("LEX-NRC-emo-trust").index()] = nrcEmoCounts
+					.get("trust");
+			
+			values[result.attribute("LEX-NRC-emo-PW").index()] = nrcEmoCounts
+					.get("positive");
+			values[result.attribute("LEX-NRC-emo-NW").index()] = nrcEmoCounts
+					.get("negative");
 
+			
+		
+			
 			Instance inst = new SparseInstance(1, values);
 			result.add(inst);
 
