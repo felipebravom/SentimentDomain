@@ -103,7 +103,7 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 		}
 		
 		
-		// calculated the word frequency vectors and the vocabulary
+		// calculates the word frequency vectors and the vocabulary
 		this.computeWordVecsAndVoc(inputFormat);	
 
 		// sorts the words alphabetically
