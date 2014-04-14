@@ -75,7 +75,9 @@ public class LexiconFilter extends SimpleBatchFilter {
 
 	@Override
 	protected Instances process(Instances instances) throws Exception {
-		Instances result = new Instances(determineOutputFormat(instances), 0);
+//		Instances result = new Instances(determineOutputFormat(instances), 0);
+		
+		Instances result=getOutputFormat();
 				
 		// reference to the content of the tweet
 		Attribute attrCont = instances.attribute("content");
@@ -187,6 +189,12 @@ public class LexiconFilter extends SimpleBatchFilter {
 		
 			
 			Instance inst = new SparseInstance(1, values);
+			
+            inst.setDataset(result);
+
+            // copy possible strings, relational values...
+            copyValues(inst, false, instances, result);
+			
 			result.add(inst);
 
 		}

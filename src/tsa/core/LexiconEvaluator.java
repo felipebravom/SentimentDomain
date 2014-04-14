@@ -99,40 +99,76 @@ public class LexiconEvaluator {
 
 		return strengthScores;
 	}
+	
+	
+	
+	// counts positive, neutral and negative emoticons from an emoticon-oriented lexicon
+	public Map<String, Integer> evaluateEmoticonLexicon(List<String> tokens) {
+
+		Map<String, Integer> sentCount = new HashMap<String, Integer>();
+
+		int negCount = 0;
+		int neuCount = 0;
+		int posCount = 0;
+
+		for (String w : tokens) {
+			String pol = this.retrieveValue(w);
+			if (pol.equals("1")) {
+				posCount++;
+			} else if (pol.equals("0")) {
+				neuCount++;
+			}
+			else
+				negCount++;
+		}
+
+		sentCount.put("posCount", posCount);
+		sentCount.put("neuCount", neuCount);
+		sentCount.put("negCount", negCount);
+
+		return sentCount;
+	}
+	
+	
+	
+	
 
 	static public void main(String args[]) throws IOException {
+		
+		
+	//	LexiconEvaluator emoticon=new LexiconEvaluator
 
-		LexiconEvaluator l = new LexiconEvaluator("lexicons/opinion-finder.txt");
-		l.processDict();
-		System.out.println(l.retrieveValue("wrong"));
-		System.out.println(l.retrieveValue("happy"));
-		System.out.println(l.retrieveValue("good"));
-
-		LexiconEvaluator l2 = new LexiconEvaluator("lexicons/AFINN-111.txt");
-		l2.processDict();
-		System.out.println(l2.retrieveValue("wrong"));
-		System.out.println(l2.retrieveValue("happy"));
-		System.out.println(l2.retrieveValue("good"));
-
-		LexiconEvaluator l5 = new LexiconEvaluator(
-				"lexicons/Sentiment140-Lexicon-v0.1/unigrams-pmilexicon.txt");
-		l5.processDict();
-		System.out.println(l5.retrieveValue("wath"));
-		System.out.println(l5.retrieveValue("hate"));
-		System.out.println(l5.retrieveValue("good"));
-
-		LexiconEvaluator l3 = new LexiconEvaluator(
-				"lexicons/NRC-Hashtag-Sentiment-Lexicon-v0.1/unigrams-pmilexicon.txt");
-		l3.processDict();
-		System.out.println(l3.retrieveValue("love"));
-		System.out.println(l3.retrieveValue("sad"));
-		System.out.println(l3.retrieveValue("sick"));
-
-		LexiconEvaluator l4 = new LexiconEvaluator("lexicons/BingLiu.csv");
-		l4.processDict();
-		System.out.println(l4.retrieveValue("love"));
-		System.out.println(l4.retrieveValue("hate"));
-		System.out.println(l4.retrieveValue("sick"));
+//		LexiconEvaluator l = new LexiconEvaluator("lexicons/opinion-finder.txt");
+//		l.processDict();
+//		System.out.println(l.retrieveValue("wrong"));
+//		System.out.println(l.retrieveValue("happy"));
+//		System.out.println(l.retrieveValue("good"));
+//
+//		LexiconEvaluator l2 = new LexiconEvaluator("lexicons/AFINN-111.txt");
+//		l2.processDict();
+//		System.out.println(l2.retrieveValue("wrong"));
+//		System.out.println(l2.retrieveValue("happy"));
+//		System.out.println(l2.retrieveValue("good"));
+//
+//		LexiconEvaluator l5 = new LexiconEvaluator(
+//				"lexicons/Sentiment140-Lexicon-v0.1/unigrams-pmilexicon.txt");
+//		l5.processDict();
+//		System.out.println(l5.retrieveValue("wath"));
+//		System.out.println(l5.retrieveValue("hate"));
+//		System.out.println(l5.retrieveValue("good"));
+//
+//		LexiconEvaluator l3 = new LexiconEvaluator(
+//				"lexicons/NRC-Hashtag-Sentiment-Lexicon-v0.1/unigrams-pmilexicon.txt");
+//		l3.processDict();
+//		System.out.println(l3.retrieveValue("love"));
+//		System.out.println(l3.retrieveValue("sad"));
+//		System.out.println(l3.retrieveValue("sick"));
+//
+//		LexiconEvaluator l4 = new LexiconEvaluator("lexicons/BingLiu.csv");
+//		l4.processDict();
+//		System.out.println(l4.retrieveValue("love"));
+//		System.out.println(l4.retrieveValue("hate"));
+//		System.out.println(l4.retrieveValue("sick"));
 
 	}
 }
