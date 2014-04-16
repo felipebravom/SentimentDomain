@@ -65,6 +65,11 @@ public class LexiconFilter extends SimpleBatchFilter {
 		att.add(new Attribute("LEX-NRC-emo-PW")); // NRC-emotion positive words
 		att.add(new Attribute("LEX-NRC-emo-NW")); // NRC-emotion negative words
 		
+		att.add(new Attribute("LEX-POSEMO")); // Positive emoticons
+		att.add(new Attribute("LEX-NEUEMO")); // Neutral emoticons
+		att.add(new Attribute("LEX-NEGEMO")); // Negative emoticons
+		
+		
 		Instances result = new Instances("Twitter Sentiment Analysis", att, 0);
 
 		// set the class index
@@ -104,10 +109,20 @@ public class LexiconFilter extends SimpleBatchFilter {
 		LexiconEvaluator swn3Lex = new SWN3LexiconEvaluator(
 				"lexicons/SentiWordNet_3.0.0.txt");
 		swn3Lex.processDict();
+
+		
+		LexiconEvaluator emoticonEval = new LexiconEvaluator(
+				"lexicons/EmoticonListLower.txt");
+		emoticonEval.processDict();
+		
+		
 		
 		EmotionEvaluator nrcEmoLex = new EmotionEvaluator(
 				"lexicons/NRC-emotion-lexicon-wordlevel-v0.92.txt");
 		nrcEmoLex.processDict();
+		
+		
+
 		
 
 		for (int i = 0; i < instances.numInstances(); i++) {
@@ -160,6 +175,15 @@ public class LexiconFilter extends SimpleBatchFilter {
 			values[result.attribute("LEX-SWN3NS").index()] = swn3Counts
 					.get("negScore");
 			
+			
+			Map<String, Integer> emoticonCounts = emoticonEval.
+					evaluateEmoticonLexicon(words);
+			values[result.attribute("LEX-POSEMO").index()] = emoticonCounts
+					.get("posCount");
+			values[result.attribute("LEX-NEUEMO").index()] = emoticonCounts
+					.get("neuCount");
+			values[result.attribute("LEX-NEGEMO").index()] = emoticonCounts
+					.get("negCount");
 			
 			
 			Map<String,Integer> nrcEmoCounts = nrcEmoLex.evaluateEmotion(words);

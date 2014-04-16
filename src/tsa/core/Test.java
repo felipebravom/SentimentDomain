@@ -110,8 +110,9 @@ public class Test {
 	        Matcher matcher = pattern.matcher("asdffffffasdf");
 	        System.out.println(matcher.find());
 		
-		String content="Looooks I wwola ww.g.co loooooove youuuuu arrrrrghhh like Andy the Android may have had a little @user too much https://lal !!!!! www.google.cl fun yesterday. http://t.co/7ZDEfzEC";
+		//String content="Looooks I wwola ww.g.co loooooove youuuuu arrrrrghhh like Andy the Android may have had a little @user too much https://lal !!!!! www.google.cl fun yesterday. http://t.co/7ZDEfzEC";
 		
+	        String content="Ron Paul Snr Advisor Doug Wead Interview with Frost &#8211; Mar 31 2012 http://t.co/tdzhFWYN";
 		
 		List<String> cleanTokens=cleanTokenize(content);
 		for(String word:cleanTokens){
@@ -141,13 +142,13 @@ public class Test {
 			System.out.println(words.get(i)+" "+tags.get(i));
 		}
 		
-		
+		*/
 	
 		
 		ArrayList<Attribute> att=new ArrayList<Attribute>(); 
 	
 		att.add(new Attribute("att1"));
-		att.add(new Attribute("att2"));
+		att.add(new Attribute("att1"));
 		
 	
 		ArrayList<String> att3Values=new ArrayList<String>();
@@ -243,7 +244,7 @@ public class Test {
 		
 		System.out.println(dataset.toString());
 		
-		*/
+		
 
 	}
 	

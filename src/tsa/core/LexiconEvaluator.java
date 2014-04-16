@@ -103,6 +103,7 @@ public class LexiconEvaluator {
 	
 	
 	// counts positive, neutral and negative emoticons from an emoticon-oriented lexicon
+	// positive emoticons are markes as 1, neutral as 0, and negative as -1
 	public Map<String, Integer> evaluateEmoticonLexicon(List<String> tokens) {
 
 		Map<String, Integer> sentCount = new HashMap<String, Integer>();
@@ -118,7 +119,7 @@ public class LexiconEvaluator {
 			} else if (pol.equals("0")) {
 				neuCount++;
 			}
-			else
+			else if (pol.equals("-1"))
 				negCount++;
 		}
 
@@ -136,8 +137,22 @@ public class LexiconEvaluator {
 	static public void main(String args[]) throws IOException {
 		
 		
-	//	LexiconEvaluator emoticon=new LexiconEvaluator
+		LexiconEvaluator emoticon=new LexiconEvaluator("lexicons/EmoticonListLower.txt");
+		emoticon.processDict();
+		System.out.println(emoticon.retrieveValue(":("));
+		String tweet=":( :) :D :x XD  :\\ ;) :P";
+		List<String> tokens=Utils.cleanTokenize(tweet);
+		for(String word:tokens){
+			System.out.println(word+" "+emoticon.retrieveValue(word));
+		}
+		
+		
+		Map<String,Integer> emos= emoticon.evaluateEmoticonLexicon(tokens);
 
+		for(String word:emos.keySet()){
+			System.out.println(word+" "+emos.get(word));
+		}
+		
 //		LexiconEvaluator l = new LexiconEvaluator("lexicons/opinion-finder.txt");
 //		l.processDict();
 //		System.out.println(l.retrieveValue("wrong"));

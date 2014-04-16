@@ -1,11 +1,17 @@
 package tsa.core;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
+import java.util.TreeMap;
 
 import weka.core.Attribute;
 import weka.core.Instance;
@@ -50,7 +56,7 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 		
 		// The vocabulary is created only in the first execution 
 		if (!this.isFirstBatchDone())
-			this.vocDocFreq = new HashMap<String, Integer>();
+			this.vocDocFreq = new TreeMap<String, Integer>();
 
 		this.wordVecs = new ArrayList<Map<String, Integer>>();
 
@@ -77,6 +83,10 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 				// if the word is new we add it to the vocabulary, otherwise we
 				// increment the document count
 				for (String word : wordFreqs.keySet()) {
+					
+					if(word.equals("?"))
+						System.out.println(content);
+					
 					if (this.vocDocFreq.containsKey(word)) {
 						this.vocDocFreq
 								.put(word, this.vocDocFreq.get(word) + 1);
@@ -93,7 +103,7 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 	
 
 	@Override
-	protected Instances determineOutputFormat(Instances inputFormat) {
+	protected Instances determineOutputFormat(Instances inputFormat) throws IOException {
 
 		ArrayList<Attribute> att = new ArrayList<Attribute>();
 
@@ -103,17 +113,35 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 		}
 		
 		
+		PrintWriter pw=new PrintWriter(new FileWriter("output.txt"));
+		
 		// calculates the word frequency vectors and the vocabulary
 		this.computeWordVecsAndVoc(inputFormat);	
 
 		// sorts the words alphabetically
-		String[] wordsArray = this.vocDocFreq.keySet().toArray(new String[0]);
-		Arrays.sort(wordsArray);
-
-		for (String word : wordsArray) {
-			att.add(new Attribute("WORD-" + word)); // adds an attribute for
-													// each word using a prefix
+//		String[] wordsArray = this.vocDocFreq.keySet().toArray(new String[0]);
+//		Arrays.sort(wordsArray);
+//
+//		for (String word : wordsArray) {
+//			
+			for (String word : this.vocDocFreq.keySet()) {
+			
+			Attribute a=new Attribute("WORD-" + word);
+			
+			att.add(a); // adds an attribute for each word using a prefix
+		
+			pw.println("word: "+word+" bytes: "+ 
+					Arrays.toString(word.getBytes())+ " attribute name: "+a.name()+" HashValue:"+this.vocDocFreq.get(word));
+			
+			
+			
+			
+		
 		}
+		
+		pw.close();
+		
+		
 
 		Instances result = new Instances("Twitter Sentiment Analysis", att, 0);
 
