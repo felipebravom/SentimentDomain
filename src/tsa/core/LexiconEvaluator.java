@@ -1,16 +1,12 @@
 package tsa.core;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 /**
  * 
@@ -141,7 +137,7 @@ public class LexiconEvaluator {
 		emoticon.processDict();
 		System.out.println(emoticon.retrieveValue(":("));
 		String tweet=":( :) :D :x XD  :\\ ;) :P";
-		List<String> tokens=Utils.cleanTokenize(tweet);
+		List<String> tokens=MyUtils.cleanTokenize(tweet);
 		for(String word:tokens){
 			System.out.println(word+" "+emoticon.retrieveValue(word));
 		}

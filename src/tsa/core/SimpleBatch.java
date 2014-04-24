@@ -7,6 +7,11 @@ import weka.filters.SimpleBatchFilter;
 
 public class SimpleBatch extends SimpleBatchFilter {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2856512126983552314L;
+
 	@Override
 	public String globalInfo() {
 		return "A simple batch filter that adds an additional attribute 'bla' at the end containing the index of the processed instance.";

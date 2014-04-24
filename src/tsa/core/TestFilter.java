@@ -1,31 +1,68 @@
 package tsa.core;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import weka.core.Instances;
+import weka.core.Utils;
 import weka.core.converters.ArffSaver;
+import weka.core.converters.SemEvalToArff;
+import weka.core.converters.TweetCollectionToArff;
 import weka.filters.Filter;
-import weka.filters.SimpleBatchFilter;
+import weka.filters.MultiFilter;
+import weka.filters.unsupervised.attribute.LexiconFilter;
+import weka.filters.unsupervised.attribute.Remove;
+import weka.filters.unsupervised.attribute.Reorder;
+import weka.filters.unsupervised.attribute.TwitterNlpPos;
+import weka.filters.unsupervised.attribute.TwitterNlpWordToVector;
 
 public class TestFilter {
 
 	static public void main(String args[]) throws Exception{
 		
 		TweetCollectionToArff ta=new SemEvalToArff();
-		Instances train=ta.createDataset("datasets/example.txt");
+		Instances train=ta.createDataset("datasets/twitter-train-B-copy.txt");
 	//	System.out.println(dataset.toString());
 		
+		MultiFilter multFilt=new MultiFilter();
+	//	multFilt.
+		
+		
+		List<Filter> filters=new ArrayList<Filter>();
+		filters.add(new TwitterNlpWordToVector());
+		filters.add(new TwitterNlpPos());
+		filters.add(new LexiconFilter());
+
+		
+		// Discards the content and moves the class value to the end
+		Reorder reorder=new Reorder();
+		reorder.setOptions(Utils.splitOptions("-R 3-last,2"));		
+		filters.add(reorder);
+		
+		multFilt.setFilters(filters.toArray(new Filter[0]));
+		
+		multFilt.setInputFormat(train);
+		
+		
+		train=Filter.useFilter(train, multFilt);
+		
 	
-		SimpleBatchFilter wordFilter=new CopyOfTwitterNlpWordToVector();
 		
 		
+		ArffSaver saver = new ArffSaver();
+		saver.setInstances(train);
+		saver.setFile(new File("sema_eval_full_clean.arff"));
+		saver.writeBatch();
+
 		
-		//SimpleBatchFilter wordFilter=new SimpleBatch();
-		wordFilter.setInputFormat(train);	
 		
-					
-     	train=Filter.useFilter(train, wordFilter);
-//		
+//		SimpleBatchFilter wordFilter=new CopyOfTwitterNlpWordToVector();
+//			
+//		wordFilter.setInputFormat(train);	
+//						
+//     	train=Filter.useFilter(train, wordFilter);
+		
 //		wordFilter=new TwitterNlpPos();
 //		wordFilter.setInputFormat(train);
 //		
@@ -35,15 +72,6 @@ public class TestFilter {
 //		wordFilter.setInputFormat(train);
 //		
 //		train= Filter.useFilter(train, wordFilter);
-//		
-		
-	//	System.out.println(train);
-		
-		
-		ArffSaver saver = new ArffSaver();
-		saver.setInstances(train);
-		saver.setFile(new File("example_sent_data.arff"));
-		saver.writeBatch();
 		
 		
 	

@@ -113,7 +113,7 @@ public class EmotionEvaluator {
 				"lexicons/NRC-emotion-lexicon-wordlevel-v0.92.txt");
 		eval.processDict();
 		
-		List<String> words=Utils.cleanTokenize("love love fear worry hate hurry up i am sad tears in heaven unexpected");
+		List<String> words=MyUtils.cleanTokenize("love love fear worry hate hurry up i am sad tears in heaven unexpected");
 
 		Map<String, Integer> pal = eval.evaluateEmotion(words);
 
