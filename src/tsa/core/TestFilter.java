@@ -12,7 +12,6 @@ import weka.core.converters.TweetCollectionToArff;
 import weka.filters.Filter;
 import weka.filters.MultiFilter;
 import weka.filters.unsupervised.attribute.LexiconFilter;
-import weka.filters.unsupervised.attribute.Remove;
 import weka.filters.unsupervised.attribute.Reorder;
 import weka.filters.unsupervised.attribute.TwitterNlpPos;
 import weka.filters.unsupervised.attribute.TwitterNlpWordToVector;
