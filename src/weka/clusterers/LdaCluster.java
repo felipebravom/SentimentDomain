@@ -37,6 +37,10 @@ public class LdaCluster extends AbstractClusterer {
 	protected int numberOfTopics=10; // Number of topics
 	protected double alphaSum=1.0; 
 	protected double beta=0.01;
+	protected int numThreads=1;
+	protected int numIterations=150;
+
+
 
 
 
@@ -82,6 +86,12 @@ public class LdaCluster extends AbstractClusterer {
 		result.addElement(new Option("\t Beta.\n"
 				+ "\t(default: " + this.beta + ")", "B", 1, "-B"));
 
+		result.addElement(new Option("\t numThreads.\n"
+				+ "\t(default: " + this.numThreads + ")", "P", 1, "-P"));
+
+		result.addElement(new Option("\t numIterations.\n"
+				+ "\t(default: " + this.numIterations + ")", "I", 1, "-I"));
+
 
 
 		result.addAll(Collections.list(super.listOptions()));
@@ -109,6 +119,13 @@ public class LdaCluster extends AbstractClusterer {
 
 		result.add("-B");
 		result.add("" + this.beta);
+
+		result.add("-P");
+		result.add("" + this.numThreads);
+
+		result.add("-I");
+		result.add("" + this.numIterations);
+
 
 		Collections.addAll(result, super.getOptions());
 
@@ -163,10 +180,30 @@ public class LdaCluster extends AbstractClusterer {
 			}
 			double betaValue = Double.parseDouble(betaSpec[0]);
 			this.setBeta(betaValue);		
-
-
 		} 
 
+		String numThreadsOption = Utils.getOption('P', options);
+		if (numThreadsOption.length() > 0) {
+			String[] numThreadsSpec = Utils.splitOptions(numThreadsOption);
+			if (numThreadsSpec.length == 0) {
+				throw new IllegalArgumentException(
+						"Invalid number of numThreads");
+			}
+			int numThreadsValue = Integer.parseInt(numThreadsSpec[0]);
+			this.setNumThreads(numThreadsValue);	
+		}
+
+
+		String numIterationsOption = Utils.getOption('I', options);
+		if (numIterationsOption.length() > 0) {
+			String[] numIterationsSpec = Utils.splitOptions(numIterationsOption);
+			if (numIterationsSpec.length == 0) {
+				throw new IllegalArgumentException(
+						"Invalid number of numIterations");
+			}
+			int numIterationsValue = Integer.parseInt(numIterationsSpec[0]);
+			this.setNumIterations(numIterationsValue);	
+		}
 
 
 
@@ -212,21 +249,19 @@ public class LdaCluster extends AbstractClusterer {
 		// Create a model with 100 topics, alpha_t = 0.01, beta_w = 0.01
 		//  Note that the first parameter is passed as the sum over topics, while
 		//  the second is the parameter for a single dimension of the Dirichlet prior.
-		int numTopics = this.numberOfClusters();
-		this.model = new ParallelTopicModel(numTopics, this.alphaSum, this.beta);
+		this.model = new ParallelTopicModel(this.numberOfTopics, this.alphaSum, this.beta);
 
 		this.model.addInstances(instances);
 
 		// Use two parallel samplers, which each look at one half the corpus and combine
 		//  statistics after every iteration.
-		this.model.setNumThreads(2);
+		this.model.setNumThreads(this.numThreads);
 
 		// Run the model for 50 iterations and stop (this is for testing only, 
 		//  for real applications, use 1000 to 2000 iterations)
-		this.model.setNumIterations(150);
+		this.model.setNumIterations(this.numIterations);
 		this.model.estimate();
 
-		// TODO Auto-generated method stub
 
 	}
 
@@ -286,6 +321,27 @@ public class LdaCluster extends AbstractClusterer {
 
 	public void setBeta(double beta){
 		this.beta=beta;
+	}
+
+	public int getNumThreads(){
+		return this.numThreads;
+	}
+
+	public void setNumThreads(int numThreads){
+		this.numThreads=numThreads;
+	}
+
+	public int getNumIterations(){
+		return this.numIterations;
+	}
+
+	public void setNumIterations(int numIterations){
+		this.numIterations=numIterations;
+	}
+
+
+	public static void main(String[] argv) {
+		runClusterer(new LdaCluster(), argv);
 	}
 
 }

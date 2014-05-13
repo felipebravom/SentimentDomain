@@ -24,7 +24,7 @@ public class TestLDAClusterer {
 		
 		
 		LdaCluster lda = new LdaCluster();
-		lda.setOptions(Utils.splitOptions("-N 8 -A 1 -B 0.01"));	
+		lda.setOptions(Utils.splitOptions("-N 8 -A 1 -B 0.01 -I 1000 -P 4"));	
 		lda.buildClusterer(data);
 		
 		
