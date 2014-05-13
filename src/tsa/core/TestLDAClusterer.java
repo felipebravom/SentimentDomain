@@ -1,0 +1,68 @@
+package tsa.core;
+
+import java.io.File;
+
+import weka.clusterers.ClusterEvaluation;
+import weka.clusterers.LdaCluster;
+import weka.core.Attribute;
+import weka.core.Instances;
+import weka.core.Utils;
+import weka.core.converters.ArffSaver;
+import weka.core.converters.SemEvalToArff;
+import weka.core.converters.TweetCollectionToArff;
+
+public class TestLDAClusterer {
+	
+	static public void main(String args[]) throws Exception{
+		TweetCollectionToArff ta=new SemEvalToArff();
+		Instances data=ta.createDataset("datasets/example.txt");
+		
+		ArffSaver saver = new ArffSaver();
+		saver.setInstances(data);
+	    saver.setFile(new File("datasetonlycontent"));
+		saver.writeBatch();
+		
+		
+		LdaCluster lda = new LdaCluster();
+		lda.setOptions(Utils.splitOptions("-N 8 -A 1 -B 0.01"));	
+		lda.buildClusterer(data);
+		
+		
+		
+		Attribute attrCont = data.attribute("content");
+		
+		for (int i = 0; i < data.numInstances(); i++) {
+			
+			
+			
+			double[] probs=lda.distributionForInstance(data.instance(i));
+			int clust=lda.clusterInstance(data.instance(i));
+			
+			
+			System.out.println(data.instance(i).stringValue(attrCont));
+			System.out.println("Cluster:"+clust);
+			System.out.println("Probs:");
+			for(double j:probs){
+				System.out.print(j+" , ");
+			}
+			System.out.println("");
+			
+			
+			
+			
+			
+		}
+		
+		
+//	    ClusterEvaluation eval = new ClusterEvaluation();
+//	    eval.setClusterer(lda);
+//	    eval.evaluateClusterer(new Instances(data));
+//	    System.out.println("# of clusters: " + eval.getNumClusters());
+	    
+
+		
+		
+		
+	}
+
+}

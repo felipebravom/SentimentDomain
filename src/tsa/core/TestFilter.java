@@ -21,7 +21,7 @@ public class TestFilter {
 	static public void main(String args[]) throws Exception{
 		
 		TweetCollectionToArff ta=new SemEvalToArff();
-		Instances train=ta.createDataset("datasets/twitter-train-B-copy.txt");
+		Instances train=ta.createDataset("datasets/example.txt");
 	//	System.out.println(dataset.toString());
 		
 		MultiFilter multFilt=new MultiFilter();
@@ -51,7 +51,7 @@ public class TestFilter {
 		
 		ArffSaver saver = new ArffSaver();
 		saver.setInstances(train);
-		saver.setFile(new File("sema_eval_full_clean.arff"));
+		saver.setFile(new File("example.arff"));
 		saver.writeBatch();
 
 		

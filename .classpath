@@ -5,5 +5,7 @@
 	<classpathentry kind="lib" path="lib/weka.jar" sourcepath="lib/weka-src.jar"/>
 	<classpathentry kind="lib" path="lib/ark-tweet-nlp-0.3.2.jar"/>
 	<classpathentry kind="lib" path="lib/weka-src.jar"/>
+	<classpathentry kind="lib" path="lib/mallet.jar"/>
+	<classpathentry kind="lib" path="lib/trove-2.0.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

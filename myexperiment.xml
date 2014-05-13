@@ -14,11 +14,7 @@
 
 <object class="weka.experiment.Experiment" name="__root__" version="3.7.11-SNAPSHOT">
    <object array="yes" class="weka.classifiers.Classifier" name="propertyArray">
-      <object class="weka.classifiers.rules.ZeroR" name="0">
-         <object class="boolean" name="debug" primitive="yes">false</object>
-         <object array="yes" class="java.lang.String" name="options"/>
-      </object>
-      <object class="weka.classifiers.functions.Logistic" name="1">
+      <object class="weka.classifiers.functions.Logistic" name="0">
          <object class="boolean" name="debug" primitive="yes">false</object>
          <object array="yes" class="java.lang.String" name="options">
             <object class="java.lang.String" name="0">-C</object>
@@ -26,6 +22,21 @@
             <object class="java.lang.String" name="2">1.0E-8</object>
             <object class="java.lang.String" name="3">-M</object>
             <object class="java.lang.String" name="4">-1</object>
+         </object>
+      </object>
+      <object class="weka.classifiers.meta.FilteredClassifier" name="1">
+         <object class="boolean" name="debug" primitive="yes">false</object>
+         <object array="yes" class="java.lang.String" name="options">
+            <object class="java.lang.String" name="0">-F</object>
+            <object class="java.lang.String" name="1">weka.filters.unsupervised.attribute.RemoveByName -E ^WORD.*|^POS.*</object>
+            <object class="java.lang.String" name="2">-W</object>
+            <object class="java.lang.String" name="3">weka.classifiers.functions.Logistic</object>
+            <object class="java.lang.String" name="4">--</object>
+            <object class="java.lang.String" name="5">-C</object>
+            <object class="java.lang.String" name="6">-R</object>
+            <object class="java.lang.String" name="7">1.0E-8</object>
+            <object class="java.lang.String" name="8">-M</object>
+            <object class="java.lang.String" name="9">-1</object>
          </object>
       </object>
       <object class="weka.classifiers.meta.ClassifierPerCluster" name="2">
@@ -64,13 +75,13 @@
       </object>
    </object>
    <object class="javax.swing.DefaultListModel" name="datasets">
-      <object class="java.io.File" name="0">/Users/admin/weka-3-7-10/data/iris.arff</object>
+      <object class="java.io.File" name="0">/Users/admin/workspace/SentimentDomain/sema_eval_ex.arff</object>
    </object>
-   <object class="int" name="runUpper" primitive="yes">10</object>
+   <object class="int" name="runUpper" primitive="yes">5</object>
    <object class="weka.experiment.CrossValidationResultProducer" name="resultProducer">
       <object array="yes" class="java.lang.String" name="options">
          <object class="java.lang.String" name="0">-X</object>
-         <object class="java.lang.String" name="1">10</object>
+         <object class="java.lang.String" name="1">2</object>
          <object class="java.lang.String" name="2">-O</object>
          <object class="java.lang.String" name="3">splitEvalutorOut.zip</object>
          <object class="java.lang.String" name="4">-W</object>
