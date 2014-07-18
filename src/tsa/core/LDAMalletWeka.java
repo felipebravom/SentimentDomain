@@ -2,7 +2,10 @@ package tsa.core;
 
 
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.Iterator;
@@ -93,11 +96,11 @@ public class LDAMalletWeka {
 
         // Use two parallel samplers, which each look at one half the corpus and combine
         //  statistics after every iteration.
-        model.setNumThreads(2);
+        model.setNumThreads(1);
 
         // Run the model for 50 iterations and stop (this is for testing only, 
         //  for real applications, use 1000 to 2000 iterations)
-        model.setNumIterations(1050);
+        model.setNumIterations(100);
         model.estimate();
 
         // Show the words and topics in the first instance
@@ -117,6 +120,10 @@ public class LDAMalletWeka {
         // Estimate the topic distribution of the first instance, 
         //  given the current Gibbs state.
         double[] topicDistribution = model.getTopicProbabilities(0);
+        
+        
+
+       
 
         // Get an array of sorted sets of word ID/count pairs
         ArrayList<TreeSet<IDSorter>> topicSortedWords = model.getSortedWords();
@@ -158,6 +165,20 @@ public class LDAMalletWeka {
         System.out.println("0\t" + testProbabilities[0]);
     
 		
+        System.out.println("PRINT MODEL");
+        model.printDocumentTopics(new PrintWriter(System.out, true));
+        
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        PrintStream ps = new PrintStream(baos);        
+       // model.printState(ps);
+        model.printTopWords(ps, 5, true);
+        
+        String content = baos.toString("ISO-8859-1");
+        System.out.println(content);
+        
+      //  model.printTopWords(new PrintWriter(System.out, true), 5, true);
+        
+        
 
 
 	}

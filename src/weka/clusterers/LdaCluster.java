@@ -1,6 +1,9 @@
 package weka.clusterers;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
@@ -24,6 +27,7 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Option;
 import weka.core.Utils;
+import weka.core.Capabilities.Capability;
 
 public class LdaCluster extends AbstractClusterer {
 
@@ -38,7 +42,8 @@ public class LdaCluster extends AbstractClusterer {
 	protected double alphaSum=1.0; 
 	protected double beta=0.01;
 	protected int numThreads=1;
-	protected int numIterations=150;
+	protected int numIterations=1500;
+	protected int numDispWords=5; // Number of words to display per topic
 
 
 
@@ -58,13 +63,27 @@ public class LdaCluster extends AbstractClusterer {
 
 	@Override
 	public Capabilities getCapabilities() {
-		Capabilities result;
+		//		Capabilities result;
+		//
+		//		result = new Capabilities(this);
+		//		result.enableAll();
+		//		return result;
 
-		result = new Capabilities(this);
-		result.enableAll();
+		Capabilities result = new Capabilities(this);
+		result.disableAll();
+		result.enable(Capability.NO_CLASS);
+
+		// attributes
+		result.enable(Capability.NOMINAL_ATTRIBUTES);
+		result.enable(Capability.NUMERIC_ATTRIBUTES);
+		result.enable(Capability.DATE_ATTRIBUTES);
+		result.enable(Capability.MISSING_VALUES);
+		result.enable(Capability.STRING_ATTRIBUTES);
+
+		// other
+		result.setMinimumNumberInstances(0);
 		return result;
 	}
-
 
 
 	/**
@@ -91,6 +110,10 @@ public class LdaCluster extends AbstractClusterer {
 
 		result.addElement(new Option("\t numIterations.\n"
 				+ "\t(default: " + this.numIterations + ")", "I", 1, "-I"));
+
+
+		result.addElement(new Option("\t numDispWords.\n"
+				+ "\t(default: " + this.numDispWords + ")", "W", 1, "-W"));
 
 
 
@@ -125,6 +148,13 @@ public class LdaCluster extends AbstractClusterer {
 
 		result.add("-I");
 		result.add("" + this.numIterations);
+
+
+		result.add("-W");
+		result.add("" + this.numDispWords);
+
+
+
 
 
 		Collections.addAll(result, super.getOptions());
@@ -205,14 +235,22 @@ public class LdaCluster extends AbstractClusterer {
 			this.setNumIterations(numIterationsValue);	
 		}
 
+		String numDispWordsOption = Utils.getOption('W', options);
+		if (numDispWordsOption.length() > 0) {
+			String[] numDispWordsSpec = Utils.splitOptions(numDispWordsOption);
+			if (numDispWordsSpec.length == 0) {
+				throw new IllegalArgumentException(
+						"Invalid number of numDispWords");
+			}
+			int numDispWordsValue = Integer.parseInt(numDispWordsSpec[0]);
+			this.setNumDispWords(numDispWordsValue);	
+		}
 
 
 		super.setOptions(options);
 
 		Utils.checkForRemainingOptions(options);
 	}
-
-
 
 
 
@@ -288,8 +326,22 @@ public class LdaCluster extends AbstractClusterer {
 	 * @return a string representation of the clusterer.
 	 */
 	@Override
-	public String toString() {
-		return "TODO";		
+	public String toString() {		
+
+		String content="Top words per topic \n";
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		PrintStream ps = new PrintStream(baos);        
+		// model.printState(ps);
+		model.printTopWords(ps, this.numDispWords, false);    
+		try {
+			content = content+baos.toString("ISO-8859-1");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return content;
+
+
 	}
 
 
@@ -337,6 +389,15 @@ public class LdaCluster extends AbstractClusterer {
 
 	public void setNumIterations(int numIterations){
 		this.numIterations=numIterations;
+	}
+	
+	
+	public int getNumDispWords(){
+		return this.numDispWords;
+	}
+	
+	public void setNumDispWords(int numDispWordsValue) {
+		this.numDispWords=numDispWordsValue;	
 	}
 
 

@@ -258,6 +258,17 @@ public class ClassifierPerCluster extends RandomizableSingleClassifierEnhancer {
 				.clone();
 		result.enable(Capability.NOMINAL_CLASS);
 		result.enable(Capability.NUMERIC_CLASS);
+		
+		// temporal capabilites
+		result.enable(Capability.NOMINAL_ATTRIBUTES);
+		result.enable(Capability.NUMERIC_ATTRIBUTES);
+		result.enable(Capability.DATE_ATTRIBUTES);
+		result.enable(Capability.MISSING_VALUES);
+		result.enable(Capability.STRING_ATTRIBUTES);
+		result.setMinimumNumberInstances(0);
+		// end of temporal capabilities
+		
+		
 		result.and(m_Classifier.getCapabilities());
 
 		return result;
@@ -294,6 +305,7 @@ public class ClassifierPerCluster extends RandomizableSingleClassifierEnhancer {
 			}
 		}
 		m_Clusterer.buildClusterer(clusterData);
+	
 		m_ClusteringHeader = new Instances(clusterData, 0);
 
 		// collect data for each cluster and build classifiers
@@ -302,7 +314,8 @@ public class ClassifierPerCluster extends RandomizableSingleClassifierEnhancer {
 		for (int i = 0; i < perClusterData.length; i++) {
 			perClusterData[i] = new Instances(data, data.numInstances());
 		}
-		for (int i = 0; i < clusterData.numInstances(); i++) {
+		for (int i = 0; i < clusterData.numInstances(); i++) {	
+			
 			perClusterData[m_Clusterer.clusterInstance(clusterData.instance(i))]
 					.add(data.instance(i));
 		}

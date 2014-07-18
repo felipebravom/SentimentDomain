@@ -21,7 +21,7 @@ public class TestFilter {
 	static public void main(String args[]) throws Exception{
 		
 		TweetCollectionToArff ta=new SemEvalToArff();
-		Instances train=ta.createDataset("datasets/example.txt");
+		Instances train=ta.createDataset("datasets/sema-eval-train-test.csv");
 	//	System.out.println(dataset.toString());
 		
 		MultiFilter multFilt=new MultiFilter();
@@ -35,9 +35,9 @@ public class TestFilter {
 
 		
 		// Discards the content and moves the class value to the end
-		Reorder reorder=new Reorder();
-		reorder.setOptions(Utils.splitOptions("-R 3-last,2"));		
-		filters.add(reorder);
+//		Reorder reorder=new Reorder();
+//		reorder.setOptions(Utils.splitOptions("-R 3-last,2"));		
+//		filters.add(reorder);
 		
 		multFilt.setFilters(filters.toArray(new Filter[0]));
 		
