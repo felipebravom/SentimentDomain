@@ -23,6 +23,7 @@ package weka.classifiers.meta;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
+import java.util.Random;
 import java.util.Vector;
 
 import weka.classifiers.AbstractClassifier;
@@ -42,6 +43,7 @@ import weka.core.OptionHandler;
 import weka.core.RevisionUtils;
 import weka.core.Utils;
 import weka.core.Randomizable;
+import weka.core.WeightedInstancesHandler;
 
 /**
  * <!-- globalinfo-start --> <!-- globalinfo-end -->
@@ -104,10 +106,10 @@ public class SoftClassifierPerCluster extends RandomizableSingleClassifierEnhanc
 				+ "\t(default: " + defaultClustererString() + ")", "C", 1, "-C"));
 
 		result.addElement(new Option("\t Weight examples.\n"
-				+ "\t(default: " + this.weightExamples + ")", "W", 0, "-W"));
+				+ "\t(default: " + this.weightExamples + ")", "X", 0, "-X"));
 
 		result.addElement(new Option("\t Combine predictions.\n"
-				+ "\t(default: " + this.weightExamples + ")", "E", 0, "-E"));	
+				+ "\t(default: " + this.weightExamples + ")", "Z", 0, "-Z"));	
 
 
 		result.addAll(Collections.list(super.listOptions()));
@@ -136,11 +138,11 @@ public class SoftClassifierPerCluster extends RandomizableSingleClassifierEnhanc
 		result.add("" + getClustererSpec());
 
 		if(weightExamples){
-			result.add("-W");
+			result.add("-X");
 		}
 
 		if(combinePredictions){
-			result.add("-E");
+			result.add("-Z");
 		}
 
 		Collections.addAll(result, super.getOptions());
@@ -178,8 +180,8 @@ public class SoftClassifierPerCluster extends RandomizableSingleClassifierEnhanc
 					null));
 		}
 
-		weightExamples = Utils.getFlag('W', options);
-		combinePredictions = Utils.getFlag('S', options);
+		weightExamples = Utils.getFlag('X', options);
+		combinePredictions = Utils.getFlag('Z', options);
 
 		super.setOptions(options);
 
@@ -374,6 +376,7 @@ public class SoftClassifierPerCluster extends RandomizableSingleClassifierEnhanc
 
 		// get the cluster distribution of each instance and use it to weight instances for each classifier 
 		if(weightExamples){
+
 			for (int i = 0; i < perClusterData.length; i++) {
 				perClusterData[i] = new Instances(data);	
 			}
@@ -382,7 +385,16 @@ public class SoftClassifierPerCluster extends RandomizableSingleClassifierEnhanc
 				double[] distInst=m_Clusterer.distributionForInstance(clusterData.instance(i));
 				for(int j =0; j < distInst.length; j++)
 					perClusterData[j].get(i).setWeight(distInst[j]);
-			}			
+			}
+
+			// if the classifier does not handle weighted instances, they are re-sampled from the weights 
+			if(!(m_Classifier instanceof WeightedInstancesHandler)){				
+				for (int i = 0; i < perClusterData.length; i++) {
+					Random randomInstance = new Random(m_Seed);
+					perClusterData[i] = perClusterData[i].resampleWithWeights(randomInstance);	
+				}
+			}
+
 		}
 		// otherwise each classifier is trained only from the data of the corresponding cluster
 		else{
@@ -462,9 +474,9 @@ public class SoftClassifierPerCluster extends RandomizableSingleClassifierEnhanc
 	public void setWeightExamples(boolean weightExamples) {
 		this.weightExamples = weightExamples;
 	}
-	
-	
-	
+
+
+
 	/**
 	 * gets the value of combinePredictions.
 	 * 

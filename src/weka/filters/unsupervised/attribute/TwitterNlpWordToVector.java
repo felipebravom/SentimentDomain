@@ -125,7 +125,7 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 
 		Instances result = getOutputFormat();
 
-		// if we are in the testing data we calcuate the word vectors again
+		// if we are in the testing data we calculate the word vectors again
 		if (this.isFirstBatchDone()) {
 			this.computeWordVecsAndVoc(instances);
 		}
@@ -136,11 +136,11 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 		for (Map<String, Integer> wordVec : this.wordVecs) {
 			double[] values = new double[result.numAttributes()];
 
-			// copies previous attributes values
+			// copy previous attributes values
 			for (int n = 0; n < instances.numAttributes(); n++)
 				values[n] = instances.instance(i).value(n);
 
-			// adds the words using the frequency as attribute value
+			// add words using the frequency as attribute value
 			for (String word : wordVec.keySet()) {
 				// we only add the value if the word was previously included
 				// into the vocabulary, otherwise we discard it

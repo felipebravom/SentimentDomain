@@ -7,6 +7,7 @@ import java.util.List;
 import weka.core.Instances;
 import weka.core.Utils;
 import weka.core.converters.ArffSaver;
+import weka.core.converters.SandersToArff;
 import weka.core.converters.SemEvalToArff;
 import weka.core.converters.TweetCollectionToArff;
 import weka.filters.Filter;
@@ -20,38 +21,38 @@ public class TestFilter {
 
 	static public void main(String args[]) throws Exception{
 		
-		TweetCollectionToArff ta=new SemEvalToArff();
-		Instances train=ta.createDataset("datasets/sema-eval-train-test.csv");
+		TweetCollectionToArff ta=new SandersToArff();
+		Instances train=ta.createDataset("datasets/sanders.csv");
 	//	System.out.println(dataset.toString());
 		
-		MultiFilter multFilt=new MultiFilter();
-	//	multFilt.
-		
-		
-		List<Filter> filters=new ArrayList<Filter>();
-		filters.add(new TwitterNlpWordToVector());
-		filters.add(new TwitterNlpPos());
-		filters.add(new LexiconFilter());
-
-		
-		// Discards the content and moves the class value to the end
-//		Reorder reorder=new Reorder();
-//		reorder.setOptions(Utils.splitOptions("-R 3-last,2"));		
-//		filters.add(reorder);
-		
-		multFilt.setFilters(filters.toArray(new Filter[0]));
-		
-		multFilt.setInputFormat(train);
-		
-		
-		train=Filter.useFilter(train, multFilt);
+//		MultiFilter multFilt=new MultiFilter();
+//	//	multFilt.
+//		
+//		
+//		List<Filter> filters=new ArrayList<Filter>();
+//		filters.add(new TwitterNlpWordToVector());
+//		filters.add(new TwitterNlpPos());
+//		filters.add(new LexiconFilter());
+//
+//		
+//		// Discards the content and moves the class value to the end
+////		Reorder reorder=new Reorder();
+////		reorder.setOptions(Utils.splitOptions("-R 3-last,2"));		
+////		filters.add(reorder);
+//		
+//		multFilt.setFilters(filters.toArray(new Filter[0]));
+//		
+//		multFilt.setInputFormat(train);
+//		
+//		
+//		train=Filter.useFilter(train, multFilt);
 		
 	
 		
 		
 		ArffSaver saver = new ArffSaver();
 		saver.setInstances(train);
-		saver.setFile(new File("example.arff"));
+		saver.setFile(new File("sanders.arff"));
 		saver.writeBatch();
 
 		
