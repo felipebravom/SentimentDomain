@@ -7,11 +7,14 @@ import java.util.List;
 import weka.core.Instances;
 import weka.core.Utils;
 import weka.core.converters.ArffSaver;
+import weka.core.converters.HumanCodedPolarityToArff;
+import weka.core.converters.HumanCodedToArff;
 import weka.core.converters.SandersToArff;
 import weka.core.converters.SemEvalToArff;
 import weka.core.converters.TweetCollectionToArff;
 import weka.filters.Filter;
 import weka.filters.MultiFilter;
+import weka.filters.SimpleBatchFilter;
 import weka.filters.unsupervised.attribute.LexiconFilter;
 import weka.filters.unsupervised.attribute.Reorder;
 import weka.filters.unsupervised.attribute.TwitterNlpPos;
@@ -21,8 +24,17 @@ public class TestFilter {
 
 	static public void main(String args[]) throws Exception{
 		
-		TweetCollectionToArff ta=new SandersToArff();
-		Instances train=ta.createDataset("datasets/sanders.csv");
+		TweetCollectionToArff ta=new HumanCodedPolarityToArff();
+		Instances train=ta.createDataset("datasets/6humancoded/twitter4242.txt");
+		SimpleBatchFilter f=new TwitterNlpWordToVector();
+		f.setOptions(Utils.splitOptions(" -I 0 -P LALA-"));
+		
+		f.setInputFormat(train);
+		
+		
+		train=Filter.useFilter(train, f);
+		
+		
 	//	System.out.println(dataset.toString());
 		
 //		MultiFilter multFilt=new MultiFilter();
@@ -52,7 +64,7 @@ public class TestFilter {
 		
 		ArffSaver saver = new ArffSaver();
 		saver.setInstances(train);
-		saver.setFile(new File("sanders.arff"));
+		saver.setFile(new File("TESTING.arff"));
 		saver.writeBatch();
 
 		

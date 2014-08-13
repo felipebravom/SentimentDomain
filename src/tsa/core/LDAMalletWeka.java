@@ -148,13 +148,13 @@ public class LDAMalletWeka {
         Iterator<IDSorter> iterator = topicSortedWords.get(0).iterator();
 
         int rank = 0;
-        while (iterator.hasNext() && rank < 5) {
+        while (iterator.hasNext() && rank < 15) {
             IDSorter idCountPair = iterator.next();
             topicZeroText.append(dataAlphabet.lookupObject(idCountPair.getID()) + " ");
             rank++;
         }
         
-        System.out.println(topicZeroText.toString());
+        System.out.println("NEW TWEET "+topicZeroText.toString());
 
         // Create a new instance named "test instance" with empty target and source fields.
         InstanceList testing = new InstanceList(instances.getPipe());
@@ -162,11 +162,11 @@ public class LDAMalletWeka {
 
         TopicInferencer inferencer = model.getInferencer();
         double[] testProbabilities = inferencer.getSampledDistribution(testing.get(0), 10, 1, 5);
-        System.out.println("0\t" + testProbabilities[0]);
+      //  System.out.println("0\t" + testProbabilities[0]);
     
 		
-        System.out.println("PRINT MODEL");
-        model.printDocumentTopics(new PrintWriter(System.out, true));
+     //   System.out.println("PRINT MODEL");
+     //   model.printDocumentTopics(new PrintWriter(System.out, true));
         
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         PrintStream ps = new PrintStream(baos);        

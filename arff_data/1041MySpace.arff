@@ -1,0 +1,1049 @@
+@relation '6HumanCoded Dataset'
+
+@attribute content string
+@attribute pos numeric
+@attribute neg numeric
+@attribute Class {positive,neutral,mixed,negative}
+
+@data
+'hey witch wat cha been up too',2,2,mixed
+'i was thinking... everyone is allways saying that they want racism to end and that all racist should burn in hell or something along that nature yet has anyone stopped to think that maybe people who are racist also want racism to end, they\'re just acting on there idea\'s instead of sitting on their a**\'s all day. just a thought. i thought it was kind of ironic once i stopped to think about it.its realy kind of funny when you stop to think about it yourself',2,3,negative
+'omg my son has the same b-day as you lol',3,1,positive
+'hey whats up i havent talked to you in like forever',2,2,mixed
+'hey kevin hope u are good and well miss ya dude',3,1,positive
+'sup greg....how u been?... how..s the family?.....say hi to everyone for m, pleeez....o yea and can u tell my dee dee dee brother to add me to his friends or to at least pimp his profile up....and tell not to use excuses....thanx ----- ----- ----- lates ese',3,2,positive
+'my churchland homey waht it do',1,1,neutral
+'Hey Sis,, Great job on your profile,,Bet you cant wait to be a GGILTF,,,(laughing) Annie told me to say that.',4,1,positive
+'yeah, we should totally enter the nag\'s like that, then we should dance like this!',3,1,positive
+'so every body knows this page is screwedd up and we cant get on to it so if you are trying to save wait until she gets another page.',1,3,negative
+'HEY U HAVE TWO FRIENDS!!',3,1,positive
+'HEY SEXY MAN I WAS JUST MISSING YOU AND WANTED TO SAT HI! CAN\'T WAIT TILL FRIDAY TO GET YOU DRUNK AND TAKE ADVANTAGE!!!',5,1,positive
+'Hey mom, How are you? We are great. I just thought that I would stop in and say HI... ----- Love ya ----- Gena',4,1,positive
+'Ya a regret giving my old z up. I just couldnt aford four quads. Of course that oic was taken before the race series. Ater the series it looked like shit!!',1,4,negative
+'wazz up prima ----- Damn its been a good while that i dont see u ----- well i just want 2 let you know IM STILL HERE ----- and that i miss you and i hope 2 see you soon ----- ----- ? & RESPECT L.A.: DR3AM3ER',3,2,positive
+'i do indeed hehe!! dnt c her as much as i used to tho cos shes with her new boyfriend aw th time :( a miss her!! lol u stil goin bout wi neil n th missus?? luv yooooooooo xoxoxoxoxox',4,3,positive
+'ERIC........ ----- Where have you been? I have needed some cousin time!! Call me sometime soon. Not today..I know that it\'s Ohio State and Michigan today so maybe tomorrow.',3,2,positive
+'Congratulations!!! I am so happy for you and you are going to be an amazing dad!! Can you believe it, Daddy... Wow.. Please tell her mom congratulations too. ----- She is beautiful, ----- Amy',5,1,positive
+'Hey gurlie, Just wanted 2 stop by and say HI how have u been? ----- Lisa (d\'s girl)',3,1,positive
+'wut the hell you doin online at 3 am? O yea man isnt your bday today? Or was it a few days ago? or like a week ago. fuck it, what am I talkin about, im lost.',1,3,negative
+'Prayers going out to all the soldiers today. May God keep you all safe over there.',3,1,positive
+'Sup Vinson',1,1,neutral
+'I\'ve been going to school and working my butt off. I am glad to know that you are doing ok. Much Luv! ----- ~Swee\' Pea~',3,2,positive
+'hey hey its will from school. ----- ----- Hows? uni hope ur enjoyin it 6th forms pretty cool but can\'t wait to go to uni if i go!!!! ----- ----- much love',4,1,positive
+'sorry. lol. It\'ll be okay',2,2,mixed
+'HEY!!!!!!!!! Ive been trying to get ahold of you.......so what\'s new?!',3,2,positive
+'hey boo boo thanks for add me. ----- wot it the USA like?',2,1,positive
+'HEY GIRL!!! I HAVE NOT SEEN YOU IN ALONG TIME. HOW ARE YOU AND THE BABY.COME SEE ME I LIVE IN TOWN..',3,2,positive
+'Happy Birthday Chris...now go get trashed!',3,1,positive
+'i\'ll try if i can get a sitter.I\'ll let u know',1,2,negative
+'Why thank you Hans!',3,1,positive
+'dnt b a hater cuz we need some dick! and the toys aint wk n!!!',1,3,negative
+'im goin 2 christopher friday. ----- ----- to the game && stuf. ----- ----- talk to me. ----- ----- ----- ----- ?',1,1,neutral
+'hi tim! been to the shit co (AKA the fish co) recently??? ahh the good drunk nights at fish co.... how can you go wrong?? haha.... ----- ~R',3,1,positive
+'wow the space is actually looking like a space lol! how many girls you got harrassing you about your muscles! lol dork!',3,2,positive
+'just dropping in to say hello.',2,1,positive
+'Hey Craig how are things going there in Texas I herd that you want to move here to Arizona tell Shana we said hi to her',2,1,positive
+'Happy Holidays! Hope U have a great New Year as well!!!',4,1,positive
+'yeaaaaaaaaah me edga baby here how the hell ya been...we do gaaabage soooonnsss',3,1,positive
+'Love your pics! ----- Thanks for the add!! ----- :)',4,1,positive
+imhouwant4life89,1,1,neutral
+'I just stopped to say say I LOVE YOU!!!!',5,1,positive
+'you should watch us play on the 26th if your still in town. we play a team from north carolina',2,1,positive
+'HOW U BEEN U NASTY BOY LOL',2,2,mixed
+'HOOTERS. HAHA.',2,1,positive
+'wat it do baby boo lmao hey man where have u been?',2,1,positive
+'hey HONEY what the hell you been doin...i aint seen you in a min...where the hell you been....so what you doin this weekend...DAM i see you all in LOVE and shyt when did this happen you just dont let me know SHYT NO MORE do you...NOW when we was in PARKSIDE yo ass couldnt wait to tell me shyt i see how you doin it... but do you boo...well my nigga get at me***keshia***',2,4,negative
+'What\'s up with that boy Carson?',1,2,negative
+'NEXT TIME I SEE YOU IM WHOOPIN\' YOUR COUNTRY ASS, HILLBILLY!',1,4,negative
+'i heart u too',3,1,positive
+'lol yea ill be there go on hol 4days later cant wait! x',3,1,positive
+'What it do man........holla at ya boy!',2,1,positive
+'HIIII ----- i love you ----- BOTHHHH ----- MUCHOO.',4,1,positive
+'Things are good thanx - wow emma blast from the past!',3,1,positive
+'Um, thanks for the add. Want to tell me a little more about yourself?',2,1,positive
+'Not yet, Charlie wont be done with her solo ensamble in time to go with us and she said she has a responsibility to her choir team to be there, and not at the race... I\'m so proud... anyway, her friend, Stephanie\'s mom said she can probably just pick her up with Stephanie and let her stay the weekend and go to school with her... she rides the same bus so it would be conveint... she said she had to check a few things out on her schedual but would get back in touch with me soon... I\'ll keep ya updated, its still a month away... a lot can change...',3,2,positive
+'hey thats awesome congratulations where are you getting married at? oh and im really sorry to tell u this but i lost your phone number again so could u please give it to me again?',4,2,positive
+'yeayea! you too jundo! =]',3,1,positive
+'Josh whats up my home skillet haha:) To set up a myspae background you need to set up pics on photoshop and then shift them into a code. Then use a myspace layout to make a background.',2,1,positive
+'Hey there! Thanks for the compliment! How is everything? You\'re display pic looks awesome! I like your hair!',4,1,positive
+'did you forget what we have?',1,2,negative
+'hello there, ----- ----- we thank you kindly for accepting our invite. ----- ----- much appreciated!! ----- ----- regards, ----- S.I.G.H.T.unit',3,1,positive
+'i know it cus... love ya.... call me some time',3,1,positive
+'Hey \'Liss.. ----- ----- Maybe you should RUN AWAY to MARYVILLE! :P Then we can partay like rawk stars! haha',3,1,positive
+'haha yeaaaaaaaaaaaaa',2,1,positive
+'i have free internet!!!! lol -----',3,1,positive
+'Yeah im worried too...I have two other classes that are at the same time as organic that i have to take to graduate so im really worried!',1,4,negative
+'aw big shame lol ----- I haven\'t been up 2 much really ----- jus went 2 oceana havent been sooo bored in my life saw some mates so thats all cool. hope your well speek soon xxx',2,3,negative
+'waz gud tho!!?? how u been?',2,1,positive
+'Hey thanks for the add. Dont be a stranger=)',2,1,positive
+'To Honor!',1,1,neutral
+'hey lan!!!!! things r good!!! i loved the comment you left me....nice pic!!!',5,1,positive
+'Would you please get a picture on here?',1,2,negative
+'HEY SO WHAT HAVE YOU BEEN UP TO?',2,1,positive
+'Hi Ali - Managed to get this myspace working now and thought id leave you a wee message! How do u get ur backdrop pink? Miss you! xxx',3,1,positive
+'happy birthday to you...happy birthday to you...happy birthdaaay grreegg...happy birthday to you!!! im singing to ya if you couldn\'t tell...:->',3,1,positive
+'3 days off! bastardo! im at work today :(',1,3,negative
+'definitely not dread the b chord! haha',2,1,positive
+'TAKE ME TO JAIL DROP MY SOAP SHUT THE FUCK UP MAN LOL.',2,4,negative
+'hey mike!!!',2,1,positive
+'Hey girl I haven\'t heard from you in a while so I thought I\'d stop in to see what was up?',2,1,positive
+'happy birthday',2,1,positive
+'ok ya for sure i just have to ask oh k?',1,1,neutral
+'Wow, it\'s been along time since this page has been updated, don\'t worry all I will get on it soon!! I\'ve just been real busy lately, but now that things should calm down some I should have more time!!!',2,2,mixed
+'Hey thanks for the add beautiful. Have a great summer. Alright peace',3,1,positive
+'HEY THANX FOR DA REQUEST...DO I NO U??',2,1,positive
+'What\'s up? Long time no see. It\'s not everyday you come across somebody who knows where Peyton is.',2,1,positive
+'love u',3,1,positive
+'.. i h0p3 s0 2 l0l wat ar3 yall g0iing 2 lata..',2,1,positive
+'Happy Birthday on Sunday! You\'re a class act..........',3,1,positive
+'yo matt what up.. long time man, we need to chill soon',2,2,mixed
+'Hi donna+alex How are you two on this fine evening. What are your plans?? Anything romantic or a few films by trhe bedside? xx',2,1,positive
+'hahahaha legend! ahhh blackadder and the 6hour war film will look very goood on that i bet! ----- i will be up soon to test out the new HD tv hahaha ----- mmmm capri sum and the stak and kidney pie! ----- xxx',3,1,positive
+'oh, you know.. good things. ----- i like to keep confidentiality ----- with the fam, you know lol ----- sors bro',2,2,mixed
+'blank comment?? whats up with that? lol',2,2,mixed
+'Happy Birthday!',3,1,positive
+'Hey bro, I seen that u have the buffalo skull drawing that I did erase that one and put the one that I have in my pics it looks much better and u can see the details, Later DJ',2,1,positive
+'hey whats up dogg',2,2,mixed
+'So i dont think i know you, but you probably saw my myspace and figured that i was one studly mf, and then you added me becasue you happen to have a crush on me. Am i right? Its cool.',2,2,mixed
+'lol Hows it going out in misery err... Missouri... seen any tornadoes lately? Anyways, Hope all is good ----- ----- Chat you Later, ----- ----- Nate',2,1,positive
+'Thank god for myspace! lol kidding, how have u been?',3,1,positive
+'hi,im jessica. ----- :] ----- how are you doing?',2,1,positive
+'no problem! damn dats whats really good.. i wanna lose some wieght too! so ima try it out ! thanks k.i.t n oh yeah don\'t let ur boss caught u!! lol',3,2,positive
+'becky olives is my bestest friend forever! i love you becky!!! jello shots schmello shots',4,1,positive
+'i like your picture',2,1,positive
+'yo, next time your on TS, IM me on aim so I can get on and chill with ya',2,1,positive
+'Happy Birthday bro',2,1,positive
+'fuck you man.',1,4,negative
+'alrite buddy. ----- u lot gunna b out in town on thursday? think theres quite alot of ppl goin out, shud b gd. seems a while since we were out with u lot.',3,2,positive
+'dude its been forever how you doin? what you been up to?',2,1,positive
+'little girl',1,1,neutral
+'wats up tyler?? u got 2 listin 2 the song on my pro, it makes fun of soulja boy in a hardcore verson..its awsome',3,1,positive
+'hey, just letting you know this is NOT the official Mr. Shy page, sorry! (blame Myspace!!;)) ----- ----- ----- Add-request me at my official page below, and I\'ll accept u there... and then delete this page, thx!! ----- ----- ----- www.myspace.com/mshy ----- ----- ----- ----- also join my MySpace FAN PAGE, where you\'ll get extra info and updates regularly: ----- ----- ----- www.myspace.com/mrshyfanpage ----- -----',2,2,mixed
+'hey can u believe this im in england',2,1,positive
+'things are pretty good here. Crazy busy mike works everysaturday and I work everyother. So we are really busy I am still doing a college class. I dont think we will be down any time soon just way to much happening in our lives right now.',2,3,negative
+'noo forreal haha i dont have backround girls. thats mean ----- i have girls i thnnk arehot and if things go bad they are theree hahaha',2,2,mixed
+'I wanna know you, your insecurities ----- Secrets and your needs ----- I want your mental and your physical too ----- And once I\'ve got it I won\'t stop ----- Until you know you\'re beautiful ----- ----- ~DORIAN~',3,1,positive
+'Just thought I would drop by and say happy christmas merry new year lol Take care',3,1,positive
+'Hey get ahold of me please, I have some things to discuss with ya! Love Ya!',3,1,positive
+'Honey I\'m so HAPPY to be carrying your first BABY.... I just can\'t wait until we found out how far along we are... I hope all goes well and we have no problems with this pregnancy......... I Love You ETERNITY, INFINITY, and BEYOND...... ----- ----- TISHA',5,1,positive
+'Whatever i do not hate on ppl and i was not giving u a mean face. yall were just being stupid and i was givng u a \"your wierd\" face! But u two r funny though.',2,3,negative
+'Whats up...thanx for the add! How have things been.. ----- my bad at the speedway ----- I was ----- on the phone conducting business..lol I didnt even see you come in ----- and i was already late for work =/. But yeah get back at me!',2,2,mixed
+'ZOMG It\'s Anthony! <3 The hair style on your pic, it\'s so you =P',2,1,positive
+'Hey there, ----- it was really nice to see you guys again. We should do it more often!! Hope to see everyone soon! ----- ~Ashley',3,1,positive
+'yes it has. How are you doing? We are doing good. Chad is back out to sea until November!! Gotta love the Navy!! Well, hope you are doing well. Good to hear from ya...keep in touch!',3,1,positive
+'hey hun thanks for the add hope your well and spk soon xxxx',3,1,positive
+'ACDC why did you have to blow Ken\'s cover?',1,2,negative
+'ENJOY YOUR PIZZA???',2,1,positive
+'Thanks for the add.',2,1,positive
+'thanks for the add :)',2,1,positive
+'im bleeding rectally ----- xxx',1,3,negative
+'good lad ill be in top form today mate im not hungover hope your the same lol',3,1,positive
+'wassup john how u been im jus cummin thru 2 sho sum lubb',2,1,positive
+'my babyshower is oct.2oth ima give you an invitation next week so u betta start shopping trick',2,1,positive
+'It\'s about time you gave into the world of Mysapce. So how\'s everything going?? Are you and Jess coming up for the wedding?? Well see ya later. ----- ----- Peace.',2,1,positive
+'Thank you! ----- ----- =)',3,1,positive
+'lol havent gotten it yet, i think im going today..sounds good though.',2,1,positive
+'have fun in vegas...',2,1,positive
+'heyy loser. :] ----- dont you think your cool now. ----- since you have a myspace. ----- yeahh dont you?!?!?!?! ----- well you are very cool now. ----- BECAUSE MYSPACE IS FREAKIN\' COOL! ----- ok well love you uncle loser.',3,2,positive
+'HAPPY BIRTHDAY COUSIN!!! Enjoy your day to the fullest. May God bless and keep you and guide you each and everyday. Take care and have fun! Love, Silvy',4,1,positive
+'WHATS UP MY BIG BRO!! ----- WHAT YOU DOIN',2,1,positive
+'hey catherine what ya up too well me nothin much tryna pass my classes but i love avinger so much',3,1,positive
+'Hey Joe.. Hows it been going.. -----',1,1,neutral
+'Hi dobbie! Ooo this is the magazine thing i\'ve been hearing about! cool!! if only i lived in glasgow! haha! a doi de doi de doi de doi! :) hope alls great with u! :)',3,1,positive
+'was up homie...im chillin..u?...well cmb ----- Peace ----- ~Hector~',2,1,positive
+'Happy Birthday Staz!',2,1,positive
+'miss you lover!',3,1,positive
+'who\'s that girl?',1,1,neutral
+'DID YOU SEE THE BABY :) ----- SHE IS SO CUTE. HOW IS EVERYTHING WITH YOU. BEEN A WHILE',3,1,positive
+'HAPPY BIRTHDAY!!!!!!!!!!!!',3,1,positive
+'How U doin\' baby i luv u........ The Incredible Mutha Fuckin Black',3,2,positive
+'You are by far the most amazing and wonderful woman I have ever met! I love you with all of my heart and soul Ashley!!!!!!',4,1,positive
+'nah huy its the knuckle head crew lol, hope yo arm gets betta soon',2,1,positive
+'whats up girl!! its been a long long time! how have you been?',2,1,positive
+'you suck lol =) telling my the ending or CLOSE to the ending of gatsby >.< i passed my two test hehe 10 out of 12 and 8 out of 10 on vocab >.< kinda bad oh well you still owe me vday dinner >:[ flying elephant is hungry.. i dotn think i want to be an elephant maybe something cutier =D',3,3,mixed
+'whatsup? ----- thanks for adding me!<3',2,1,positive
+'yo homeslice!! just leavin some love on your page. ill ttyl love peace and chicken grease HOLLA *joelle*',3,1,positive
+'HEY OTHER SAMANTHA (HA-HA)THAT IS SO TRUE, I GUESS THAT IS WHY I CAN\'T FORGET YOU. THANKS FOR BEING A TRUE FRIEND.',3,1,positive
+'whats up shorty cant wait till friday so i can pick on you lol',3,2,positive
+'how are u hun ----- will w/m/b love you alot ----- B&B Margie',3,1,positive
+'o, definitely, definitely, definitely!! yea...definitely...',3,1,positive
+'hey babe why dont u put picZ of u...i wanna see ur cute face again!!!',3,1,positive
+'u cassie freak',1,3,negative
+'Not bad thanks. ----- ----- In that case, fancy going to see him in august with me? It is in London but rents are prob going to go up too and go out some place else lol its like ??17.50 which i think is a bargain personally =) ----- ----- Get back to me lovely ----- ----- love love ----- ----- ox',3,1,positive
+'Alright guys I know everyones been asking and I hadn\'t made up my mind yet til now.. So here\'s the scoop! I\'m gonna celebrate my B-DAY SATURDAY THE 14th @ GLASS.. So please help me spread the word. I only have a week to get the word out to everybody, but with everyones help we should have a great turn out.. Last year we had an awesome turnout, so lets make this years b-day/reunion party bigger than last years.. I\'m counting on you guys to let everyone know about my OFFICIAL B-DAY/REUNION PARTY! Don\'t miss out on hanging with all our peeps under one roof! ----- ----- In the next day or so I should have some more details for everyone.. But start spreading the word! ----- ----- Orly..',4,1,positive
+'Tell Na,I said Happy Birthday!!!!!!!',3,1,positive
+'ya it was under warranty so it was free! and i already got everything back on it it was all saved on my computer so its all good to go!',2,1,positive
+'damn bro, Happy Belated BIRTHDAY!!! ----- ----- hehe, but yea hope you didnt party to gard and grats on hittin 16 :P ----- ----- peace out Roids, ----- ----- ~MatT~',3,1,positive
+'Hi Bry, im still at school doing a research project.',1,1,neutral
+'I just got tired of all the shit. No support, no money, no leadership. So I quit. I spent 12 years at that place, and not one person has said thank you or even f-k off since I left. It is all good though, things are going great, and it would have been foolish of me to stay amy longer. That place has nothing going for it anymore, and I don\'t want to be associated with it.',2,4,negative
+'My HERO!!! :-)',4,1,positive
+'hope you are having a killers summer so far twin.......miss ya lots',3,1,positive
+'campin in flag on the 13th!! Bring the bike budday!! Lemme know. try responding for once eh?',2,2,mixed
+'were going out tonight, you wanna go? let me know, call me, k?!',2,1,positive
+'Hi Dave, ----- All is well here by the river! ----- Just spoke to Jesss this morning and she is getting prepared for a halloween party in Edinburgh.... ----- cannot think of a better city than Ed to do that....very gothic with castles and cobbled streets etc (very Jess hey) ----- Lisa has just got a new job in London and is working for the management company that handles Mark Knopfler.... ----- money for nothin\' and your chicks for free....etc ----- James is at Newcastle uni and having a ball....which means getting pissed most nights, I think! ----- Anyway Dave,.....keep well',3,1,positive
+'hello mr, lovely wig i think it should be a permanent fixture! hope all is well and dandy!xx',3,1,positive
+'Hey ryan, ----- I heard u might be getting a bike thats sweet. Well good luck in your search. ----- ~trish',2,1,positive
+'idk what do you mean.',1,1,neutral
+'hey, did you have a good party?? sorry i couldnt go, my parents are nobbers sometimes n wouldnt pick me up :( xxx',2,3,negative
+'Shoot i guess when ever i get a chance. All the damn rodeos got me goin a bunch. i\'ll make it down there before to long.',1,1,neutral
+'girl, go do something with ya life.',1,2,negative
+'thanx 4 da add. can u comment my pics?',2,1,positive
+'yo, we gonna listen to dem tapes dis weekend fake money. ya know, CREW 2001 like 1999. ITT TECH and all dat! SLOPPY, BJ, Big DADDY LONG SHLONG, MEX, DUI till you die or me first. ----- GET DEM 40 so you can $ it!',2,1,positive
+'okay well at least it was useful!',2,1,positive
+'happy birthday =)',2,1,positive
+'Your Girlfriend would be even COOLER if she would just let us Cuddle...i mean she gets really Irrate about sharin...but who could blame her when she has such a (cute) Hardcore Rocker Boyfriend.......',2,2,mixed
+'yay ur only friend and 1st comment i feel so special',2,1,positive
+'preciate dat cuz...i\'an been doin nun but dis music shit...grindin harder than a muthafucka...it\'s payin off doe...',2,3,negative
+'Hey who is that Hott Old man in the Picture? Man I hope I look as good as he does when Im that old...',2,1,positive
+'hi thanx for the lil add.........i take it you know my bff saMMI............yeah she rocks!',3,1,positive
+'hello baby ----- im so glad where still together ----- just wanted to show you some love ----- ----- love stephanie',4,1,positive
+'uhhh why am i not in your top whatever??? ----- i think i should be in it. ----- and how do you know adrienne the indian freshman?',2,1,positive
+'\"Kim is highly aggitated for no particular reason\" ----- ----- ...of course you are, you work with MIKE. ----- ----- miss you!',2,3,negative
+'Hey are yall going to the bash this year ?',1,1,neutral
+'I LOVE YOU!!!!',4,1,positive
+'whats up with the name ginger and fransic hehe no offense brad but really what is??? ----- its kinda streange but oh well that is like u so nevermind... ----- where u at the library hehe that is for little kids not big kids like u guys!! ----- brittany your little sister ----- (im little so i can go to the library)',2,2,mixed
+'I hate liars and bitchassness, too!',1,4,negative
+'Thanks for adding me... xoxoxoxo... ----- ----- Love Always, ----- Miss Phoebe',4,1,positive
+'are we having fun',1,2,negative
+'hey thinks for visting my myspace and requesting to be my friend hit me up when you see it leave me a message',2,1,positive
+'Yeh T tickets didnt really happen.. ----- Did you go to Bled or anywhere exciting like that?! I want sunshine now - Feb was miserable, time for daffodils',1,3,negative
+'nah its more like bbBOOOOOOOMmm',1,1,neutral
+'hey sexy im at work, i just wanted to say have fun shopping...love ya -----',3,1,positive
+'Oh no...your song is broken! ----- Happy Birthday Bitch! ----- Love ya!',3,2,positive
+'It would be great to play togther again because knowing we have played together pretty much our whole football careers is gunna be hard to leave. im proud of you tho john im glad your having great success ill be here for u if u need me man. and sorry for this sympathetic stuff but im glad your my friend my man.',4,2,positive
+'hey mai why are\'nt u on aim?',1,1,neutral
+'Mary ----- I ? YOU!! ----- ----- im jus a tad bit bored ----- lol ----- so hows summer treating you?? ----- ----- ???',2,2,mixed
+'I am ill!!! With something called Labrynthitus!! ----- ----- Inner ear is fucked!! ----- ----- Cant stand up without falling over!!!!!!! ----- ----- ----- x',1,5,negative
+'trying to graduate on time and get the hell out of here so i can start a life of my own.',1,3,negative
+'My life is complete. Chad is my myspace friend.woo hoo!',3,1,positive
+'welcome aboard matey - see you saturday? for a bit of fighting?',2,1,positive
+'im good....... you?',2,1,positive
+'YAY! I am so glad you are free to roam again. :)',2,1,positive
+'YES whats up u half black son of a gun you',1,2,negative
+'Hey DUDE!!!!!!!!! You need to call me so we can have band practice. ROCK ON DUDE!!!!!!!!!',4,1,positive
+'wats up biatch.....u like tha movie',1,2,negative
+'sup bitches. ----- ----- ----- auto-robotic asphyxiation',1,2,negative
+'happy birthday to you happy birthday to you happy birthday dear popssss happy birthday to you! ----- ----- umm.. i think i deserve to be on your top!! ----- ----- love you, ----- sierra',4,1,positive
+'thanks, i will be back somewhere around that day too because shawn and i have a wedding to go too.... i have 4 weddings in aug to go too this year.... im goin to be so poor.... i need to find a job out in cali... okay ill talk to ya later, bye',2,2,mixed
+'Hey Maribel!!!How have you been?',2,1,positive
+'ya i miss u to. lol',3,1,positive
+'so how was ur weekend? i hope yall liked the game i did and didnt lol -----',2,2,mixed
+'hummm water edge, well im not sure what the place is called but my buddy Kenny and my friend Wendy both live on Hiatus. so i\'m not sure where....what color are the places that u live in??',1,1,neutral
+'O MY FUCKING GOD!!!HA,HA,HA!OH GOD!!!! ----- =D',3,2,positive
+'THATS GOOD. THATS HOW YU GITTA DO iT NOW DAYS FA YU G3T iN TROUBL3.',2,2,mixed
+'hah I feel loved I am on ur tops..=)',3,1,positive
+'alright savy! Got a few pictures ere for you mate, sorry I got distracted the other night man. Must see you guys soon for a few. I can send you them pictures over msn if you want to grab my email from our page!',2,2,mixed
+'lol doin good! kinda tired though from track.',2,2,mixed
+'aye congrats on da new born my nigga',3,1,positive
+'Jim doesn\'t get pissed off- why you mad?',1,3,negative
+'hell yeah you know it.',1,1,neutral
+'is that truck worth havin? shoot',1,1,neutral
+'Nigga Henna! wuts tha mutha fuckin deal cuz? i havnt seen ur punk ass in a few mins man! fuckin holla @cha boi bitch! ----- ----- Twankie',1,3,negative
+'sox/yankees you take Yanks?!?! ----- ----- are you kiddin me?',1,2,negative
+'hey love you are so cute in those pics.... message me back!',3,1,positive
+'hey hun how have u been',2,1,positive
+'hello new fwend :D',2,1,positive
+'Happy Birthday B-E-N!',2,1,positive
+'look at that lee top of your leaderboard, oh yeah and im probs the person that know you least. sorry didnt get hold of you left my phone in my dads car. but ill catch ya on monday buddy. much love xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',3,2,positive
+'um u a offie 4 real nick! haha naw im just playin...u know ur sexy as hell lol...',3,2,positive
+'hey tiffany welcome to myspace. i seen that nobody sent u ne coments so i figured i would send u one. Hit me back maybe we can do sometime yah know. well ill ttyl bye earl',2,1,positive
+'wood lake?',1,1,neutral
+'how do i add a pic to my background?',1,1,neutral
+'it runs?? but i rolled a bearing in it.im also doin some high po work to it',1,1,neutral
+'----- Just to warn you for liability reasons, please read this article.',1,1,neutral
+'Ay whats up bro?',1,1,neutral
+who?,1,1,neutral
+'Did the strom hit in your town?',1,1,neutral
+'Love you :)',3,1,positive
+'STEVE--OOO whats up man -----',2,1,positive
+'HEYY!!! ----- THANKS FOR THE ADD! ----- ?KRiSTiN',2,1,positive
+'YAY...i can read your profile!!! lol Terri, i know you wont get this for like 10 friggin years, but i love you and thanks for being there for me when i need you the most!! you\'re a WONDERFUL mother-in-law! I couldn\'t ask for anything more!',4,1,positive
+'HAPPY BIRTHDAY!!!!!!!!!!! ----- BRITTONI ----- A*K*A ----- THA ***ALL$TAR***',3,1,positive
+'Think you were off from work enough this week?',1,2,negative
+'lol ----- soo wut ----- =p ----- ----- we finally finished the floors.. ----- thank GOD..',2,2,mixed
+'HEY BOII!!! HAVENT TALK TO YA IN AMIN!! WHATS GOOD WITH YOU?? WELL IM JUS COMMIN BY SHOWIN MY PRESCIOUS LOVE',3,1,positive
+'I love being your myspace friend!',3,1,positive
+'HEY YALL I MISS YALL TO IM HOPING TO COME HOME SOON SHOW-MEI HAS MY DATES WEAN ILL BE BACK IN THE STATES I CANT SAY RIGHT NOW LOL ALL THE CLISSIFIED STUFF AND ALL LOL BUT ILL KEEP IN TOUCH AND TELL EVERYONE I MISS THEM ALOT AND GOOD LUCK HUNTING THIS YEAR',3,1,positive
+'Hows the grind comming?',1,1,neutral
+'a big dave whts krakkking man its ceen a long a$$ tyme since i seen you .how have youu ceen .how is skool man ......i live out here in mizzouri still going to skool....well its good to c you on dis shit...good luck and JAH bless...',3,2,positive
+'kieron ----- you blaits think my space is amazin..:D ----- loveuu x',3,1,positive
+'lol, i feel u ----- ay, if u get a chance listen to da original of that theme song, u can hear how much i had to chop and flip it to get it rite for da beat',2,1,positive
+'AAaaaay bitch.........lol naw wassup baby yo page is aight it aint all dat nigga but yea change that pic got yo big ass head in the hole pic no back ground..... but yeah ya nigga gettin ghost im out i love u............',3,2,positive
+'whats up with the falcons',1,1,neutral
+'yes Simon ----- ----- a punk bitch slap ----- ----- and thanks mate =]',2,2,mixed
+'hey bab, we really need to sort somethin 4 valentines so please stop bein a big gimp! 8 days till im home, love u xxxxx',3,2,positive
+'wassup babe hit me up tomorrow :o)',2,1,positive
+'navid! ----- hows it going? i miss you! =[ ----- hope everything is well ----- ----- ? ----- shelby',3,2,positive
+'Ali wear to start i really have no clue...I MISS YOU SO MUCH...come back home...ts so weird not having you around down here..like for real...makes me cry just thinking about ya...and lookin at the pictures on my closet doors what have ya on it makes me cry to...even though right now i cant walk up my steps to get to my closet doors lol...but i hope you are havin so much fun up there with all the hott guys i bet you are..and i bet it was so hard for you mom to leave her little girl...cuz i no my mom couldnt have done that..she dont even like to think about me leavin for college cuz we were talkin about you today and she was like why dont you just go to a community college in pad or madisonville for 2 years were you wont have to leave me..and i was like pssshhtt...whatever im gettin as far away from here as possible and i told her today that i was commin up there all the time when i got my licenses lol...and i am going to or else im pretty much going to go into depression...cuz i miss my ali that much right now...and it hasent even been like a whole 4 days lol and im already going like insain like you dont no...but i have wrote alot and you have alot to do i bet with gettin moved in and everything...but you have to tell me all about your first day tommorow and your new roomate hopefully she aint gay haha..i think you told me she was really pretty...but write me back...love you with all my heart...alex',4,4,mixed
+'thanks for the add. wat good wit you...',2,1,positive
+'CONGRATULATIONS on the new addition to the family! Can\'t wait to watch James grow & develop into a young man!!',3,1,positive
+'Aye I\'m not feelin the best either atm..but that\'s probably only cos of my shit weekend haha ----- ----- Good luck with algebra then ;] ----- ----- School sucks here...like loads of my mates in the year above me have left, and they were the fun ones...so school is majorly boring >_< ----- But I\'ll live haha ----- ----- xx <3',2,3,negative
+'Thanx for the love girl!!! ----- ----- You\'re very pretty....I know ur gonna do great with dancing & modeling as long as u stay aggressive. ----- ----- I\'m not modeling yet. I work full time so its kinda hard....but ima try to get on top of right now =p gotta get ourselves out there. Its all about running across the right people =) ----- ----- Hope u have a great weekend. ----- ----- Show me sum love and ill always return it. Don\'t be a stranger. ----- ----- ~!> MIZZ FAITH (B.B.)<!~',3,2,positive
+hey,1,1,neutral
+'HIIIIIIIIIIIII RISSA!!!! Good to see you on-line!!!',3,1,positive
+'yooo holla at me this weekend man so we can party we aint gotten drunk ina minute',2,1,positive
+'Whats up homie',2,1,positive
+'I hope you\'re having a GREAT Weekend! ----- ----- Yes, I finally posted my latest blog entry! I had so many requests to put it up but many things have happened recently. I\'m not sure if you were one of the ones who messaged me about it, I mean I had hundreds and that\'s a lot to remember...lol ----- ----- - MC ----- ----- P.S. - If you haven\'t subscribed yet, Subscribe now, and you\'ll be notified when it\'s updated!',3,1,positive
+'I LOVE YOU AND MISS YOU CANT WAIT TILL YOU COME HOME TODAY!!!WOOO PARTAY TIME!!',4,1,positive
+'Hey Baby! There you are. See you tonight.',2,1,positive
+'WUT^ IM JUS PASSIN BY TO SHOW U AND UR PAGE SUM LUV SO WHEN YOU GET THIS I HOPE YOU RETURN THIS AS SOON AS POSSIBLE BE SAFE 1',2,1,positive
+'Your page gives me a headache.... lol',2,2,mixed
+'na na na na....na na na na....HEY HEY HEY...GOODBYE ATL!!!!............na na na na....na na na na....HERE WE COME...HTOWN!!!!!!!!!!!',3,1,positive
+'Thanks you rock! HA thats my first message. Later',2,1,positive
+'hey bud!! whats up? i see you have um changed your page a little haha!',2,1,positive
+'I miss and love you!',3,1,positive
+'lol i still love u no matter what',3,1,positive
+'OMG!!!...that is a great picture',3,1,positive
+'wuts up mayne? ----- just stoppin through and gracin your page. ----- make sure you return the favor ya digg?',2,1,positive
+'Hey<3 ----- I\'m Steven ----- How are you?',2,1,positive
+'Yep! We actually have 10 that we know of! Six black ones and four brown ones!',2,1,positive
+'hey girl thanks for the add looking good',2,1,positive
+'What\'s up dude, what are you doing tonight any plans? I might hit the bar up later but not sure yet. Call me if you are going out...',2,1,positive
+'wat up asshole dis Dough holla at me',1,3,negative
+'Hey baby....I\'m the first one to comment on your myspace...............I LOVE YOU!!!!!!! <3',4,1,positive
+'hey boy what u been up 2?',1,1,neutral
+'Senor Gorgo, How nice of you:-) ----- Good luck with everything! ----- Kizzy',3,1,positive
+'wow.i haven\'t been gone from the house yet for too long, and now you are adding me on myspace!! hahaha you must miss me a lot. hahahahahah ----- ----- x',3,2,positive
+'you found me you little jackal! haha, ----- I love you lots, bro!',3,1,positive
+'Hey im glad i am the first one to comment on your page, fix it up, make it look nice, and they WILL come...',2,1,positive
+'U are such an old soul...lovin the fro!! Get @ me Hun...I never see ya anymore. :)',3,2,positive
+'funn!! (minus the back and forth stuff) did u start school...in august??',2,1,positive
+'yeh defo we can meet up wen were back off hols an do summit guna be a bit busy until then. tell me if u hear from summer school cos i still havent got nething yet, cheers bigears!',3,1,positive
+'so im listenin to ratm ----- and i thought of you <3 ----- haha word ----- but speaking of burned victims ----- we needa hang out again ----- lol',2,1,positive
+whaddup?,1,1,neutral
+'ur an animal',1,3,negative
+'who recruited you? cuz if i am right there were two sgts there msgt rosario, and tech sgt. green. msgt rosario got me in',1,1,neutral
+'CHEERS , NEYE.... I AM HUMBLED. ----- DID I MAKE SENSE? HA HA HA.... ----- ----- BEST WISHES FROM KUALA LUMPUR.',2,1,positive
+'thanks bro!',2,1,positive
+'HAHAHAHAHAHAHAH UR PIC IS FUNNY......... ----- -CJ aka LiL\'J.C. ----- comment back',3,1,positive
+'You didn\'t let brother Kevin have a guest appearance solo on the new album???',1,1,neutral
+'hi aunt donna,love you hopefully i will be able to see you guys soon.tell Gab and Josh i said hello.',3,1,positive
+'whats up. ----- ask fes to add u to his friends list.',1,1,neutral
+'How ya feelin Bob! Hope your not too hung over this morning.',2,1,positive
+'you are welcome Renji ^_^',2,1,positive
+'how goes it lady!!!!',2,1,positive
+'at college lol how bout you?',2,1,positive
+'whats up girrrllllllllll',2,1,positive
+'Me and my dude smoke fat rocks all day if you got something to say about it ill shove a can of beans down your throat',1,4,negative
+'hey cuttiiee',2,1,positive
+'whats up kenny?!?!? just saying hey!!',2,1,positive
+'Getting rid of the kid this weekend I hear....you two behave yourselves! No crazy games of butt darts allowed.',2,2,mixed
+'Not the mama! ----- not the mama!',1,2,negative
+'hey how are you doing ...thanks for the add',2,1,positive
+'hmmmmm what did you end up doing this weekend',1,1,neutral
+'Wassup, lil bit. Stoppin by to show some love!',2,1,positive
+'----- Pimp Your Profile! -----',1,1,neutral
+'Now look whos trying to get into a frat. Its kind of weird, I mean just because some of us are in alpha beta twat doesn\'t mean that just anyone can get in...Maybe i\'ll put in a good word',2,3,negative
+'i miss you!',3,2,positive
+'Hey girl!!! Thank you so much for the comment on my blog I posted. You need to join us for one of our girl nights at my house....we have lots of fun. Talk to ya soon.',3,1,positive
+'hey girl im good been busy hope everyone is doing good',2,1,positive
+'Hey chica! Whats been up with u! Get ready for camp on Monday!',2,1,positive
+'WHAT A GOOBER',1,3,negative
+'Hey. How have u been? I have not talk to u in sooo long. Call me some time.',2,1,positive
+'hey you love the new pics how was Ibiza?',2,1,positive
+'did derek buy that 4 wheeler yall went to go look at',1,1,neutral
+'Hey, old roomie. ----- ----- How are you?! :) Do you still go to LA Fitness? I got hooked on the cycling class, but I go at 6:45 p.m. Tues/Thurs instead of at noon now.',2,1,positive
+'k so i tried to put the pic of the cartoon saying il just pretend to hug you until you get here as a comment but you know im special and for some reason i couldnt get it to work. sorry but it was the thought that counts right? haha be good dont have too much cyber sex!',3,2,positive
+'sure that would be nice ok what will we call it???respond plzz ok ttfn',2,1,positive
+'happy new year',2,1,positive
+'i miss you too!! merry late x-mas! we deffinatley hafta hangout, i didnt know you were back in the area. call me or send me a message or sumthin.',3,2,positive
+'I got peas on my head but don\'t call me peahead!',1,2,negative
+'hey where i\'m i at on this myspace',1,1,neutral
+'happy birthday tomorrow!!!!!! when i see u at work i\'ll tell u happy birthday again ok! lol ----- ----- ----- ? nell',3,1,positive
+'i am refusing 2 talk 2 you until you post some pix, mr. triathlon!! (JK...... congrats on the baby on the way!!!)',3,3,mixed
+'Tell Aiden that great Aunt Jen says I understood everything he said and I agree ;-)',3,1,positive
+'sup cuz! nah not on this, all about facebook these days! ----- My mum being a Biiiiaaatch! thats why bullied.but goin uni soon, so not even bothered any more! Tell me whats happening in ur life then?x',2,4,negative
+'dam j thats a bad ass backround',2,1,positive
+'I want to put a vote down for ----- X Factor 1',1,1,neutral
+'I miss you, fix it.',2,2,mixed
+'your crazy booooomer you didnt read its ( JESSICA MYSPACE) not mike. Mikey he got his own \"MYSPACE\" damn you left me two commetns and not one said jessica you crazy but ill forgive your crazy ass! So what have you been up too i see im in your top 12 but that might be becuz of MIKEY!!!! lmao j/k so hit me up \"JESSICA\" ok !',2,3,negative
+'your neva on msn you dorkazoid. *smiles*',2,3,negative
+'Brandon! U never told me wat santa got u! Lol',2,1,positive
+'hi loser jus adding more kommments ----- kk....ily :]',2,2,mixed
+'hi cousin how r u? did u still remember me? we stay in yur hauz before me and my brother and sister leah in clark air base remember.god bless u!!!!',3,1,positive
+'Thank you. Yeah it is crazy! You prob dont know this, but Zack and me have been very close the last 5 years. He came to visit me and asked me to marry him. So I said yes. He is my very best friend. We have been through it ALL! We are having a small ceremony here in Nashville during the Holidays, but we are going to have a wedding up north when he gets out of the Army. You gotta come! Dont quite have a date, but I will let you know. So What have YOU been up to love? Tell me about your life now...',4,1,positive
+'The monster is excellent :) He was late too and was supposed to be induced, but we kind of helped him along. You know, the way you got him there is also a way to help him along, get it? That, and take some long walks. Like 2-3 miles at a time. But bring a cell phone! BTW, child birth, so not bad, just get the epidural :)',3,1,positive
+'Hello ----- Just wanted to let you know that we are having a get together on Saturday. We plan on cooking out, It is bring your own food and drinks and then later on in the evening we are having a fire. Let us know if you can make it.',2,1,positive
+'hello mate, thing are good thanks, good to see your still on the drums, and doing well I checked out your band they look good i\'ll have to check you out when your playing over this way, ----- been speaking to a few school mates on here should get some sort of reunion together.',2,1,positive
+'Hey girlie Wats^ havent talked to you in forever--how r u and Brent and Owen doing? ttyl love ya tons',3,1,positive
+'yo, village! gotta git me some village!',1,1,neutral
+'hey sexy bum!! love u!!',3,1,positive
+'you definitly have a good chance, last i heard not a whole lot of people are even coming back next year.. youd be a good staff member too',3,1,positive
+'Happy Birthday Mike. Don\'t forget to drink a beer for me.',2,1,positive
+'I LIKE YOU AND YOUR SON',3,1,positive
+'Glad to hear that all is going well. The cutie, Logan, is my cousin Becky (Klinkenberg, Melissa\'s sister) that is her little boy. The pic is older...he is 3 now. You should be biased that your kids are beautiful....but coming from me, I much agree with you...they are beautiful. You are very fortunate to have such a great family.',3,1,positive
+'not really, i think a bit of socialising is in order so goin out tonight is defo on the cards! ----- still gonna have a quiet one? xx',2,1,positive
+'hiya what\'s up? i dont know if you remember me but im your cousin samantha bestfriend. well anyway, i love your page and the music is hot. ----- ----- $ladyrose$',2,1,positive
+'Hey hunny! Havent seen you in a long time! Im having a jewelry party what is your address?',2,1,positive
+'Hey man how you doin? its been a long time. well I am living in Brussels Belgium now I will be here three years and then I will be done with College. Took me long enough! ha ha well let me know how your doing and how your family is. later',2,2,mixed
+'Hey Buddy!!! We miss you, hope you come home soon...',2,1,positive
+'Its what Jamie and John Collins named me. I have no idea why.',1,1,neutral
+hey!,2,1,positive
+'God, are you alive.',1,1,neutral
+'Hey CUZ!! Just dropping by to say,\"HI\"\" Peace',2,1,positive
+'Ah thanks! ----- I look ok. Another 46 to go. Down 70 so far. ----- Happy Birthday, btw!',2,1,positive
+'texas totally kicks ass ----- ha ----- its pretty fun i guess ----- love uuu',3,1,positive
+'haha hi daniel',2,1,positive
+'hey whats good thought id come by and show you some love. so you better return the favor. It should be nice to have me the infamous AYE bless ya page!!!!!!!!!!!!!',3,1,positive
+'Carl, we are just lame. It\'s always mainly because I don\'t have credit, plus I\'m lazy and work takes ALL my time away! It\'s an arse. ----- ----- Ah, you don\'t need uni, it\'s for losers ;o) Are you gonna go next year? My job is okay, just a tad boring and I hate working every day! ----- Nick was telling me that the new garden centre get ??7 an hour on a Sunday, SEVEN POUNDS. I was nearly sick in my mouth! I miss it too, especially as Sndays would have made us rich. Does anyone we knew still work there? ----- ----- I do often think about Maureen, I hope she is well. And I hope you are well my friend! Do you still go out in Farnham and stuff? ----- ----- LOVES xxxoxoxo',3,4,negative
+'OMG your birthday is comng up! What\'re you guys gonna do to celebrate?',2,1,positive
+'Yea the wedding and everything went really great. I hope the best for you three. I cant wait for my new life to start even tho it has already. lol I hope alleria is doin ok. I know i spelled her name wrong you will just have to tell me how to. Ttyl',3,1,positive
+'haha yeah i cut 6 inches off... it feels SO much better though! hows everything going?xoxox',3,1,positive
+'have a listen to my new profile song, fan bloody tastic!!',2,1,positive
+'what\'s up hammond? how\'s life treating you brother?',2,1,positive
+'HEY MA SEXY BABY CAKES...LOL...IM PLAYIN BUT ANYWASY IM JUSS SHOWIN YA PAGE SOME LOVE AND I JUST POPED YA MYSPACE.CHERRY....LOL...WELL IM FINNA CALL YEW IN A MIN..SO I CAN TALK TO YEW BOUT WAT I SUPPOSAH YESTERDAY.. :).. ----- ----- LOVESZ YA, ----- ATAVIA',4,1,positive
+'hey, I think I just saw you...weird... ----- umm..I like your background! who ever helped you with your page is pretty cool. ----- :)',3,1,positive
+'4 real though, we haven\'t talked in a long time!',1,2,negative
+'its come natural. no trying involved! ----- lol',2,1,positive
+'Whhey Up Gawgus!!!! ----- ----- Must Meet up Soon! ----- ----- Hows You? ----- ----- Wubu2?? ----- ----- Love You Loads! xxxxxxxxxxx',3,1,positive
+'Happy early birthday! Love your bargain alerts!',2,1,positive
+'That sounds Perve-like...',1,2,negative
+'CONGRATS!!!! I\'M SO HAPPY FOR YOU GUYS, BUT NOW YOU CAN\'T RIDE THE BULL!!!',4,2,positive
+'i like ur page,u movin up in myspace ----- ----- <-JUICE->',2,1,positive
+'thank you aaron! and i did have a good time. oh and u already know what i want...didnt we talk about this before ;)',3,1,positive
+'Anna, you need a computer woman!!! Go hit up rent a center or something :)',2,2,mixed
+'darlin\', i\'m gonna buttah yo bread.',3,1,positive
+'That was super sweet!',3,1,positive
+'Hey!!! Happy Birthday!!!!!!! hope you have a great day!',3,1,positive
+'hey luke how u been???...i like ur headline...lol...thats real',2,1,positive
+'Hey where do I kno u 4rm?',1,1,neutral
+'hey girl how have u been,i miss ya happy birthday!!!!!!!!!!!!!!',3,1,positive
+'Hey Josh! I sure hope you are doing well up there in Jacksonville. Don\'t be a stranger, alright?',2,1,positive
+'cherrybomb was asking if she could come visit you, she was out this weekend and wanted to stop by to say hey. i told her we\'ll have to give you a call next time she\'s out here so we\'re not invading!',2,1,positive
+'HEY girl, how have you been? Are you still getting married? When? Sorry I\'m hardley ever on here my computer is too slow,I hope everything is good for you! Where are you working now?',2,2,mixed
+'like hows it going what new',1,1,neutral
+'hey chris. whats been going on. no alot on my end. just tryin to take things one day at a time. well get up with me sometime.',1,2,negative
+'Hey whats up? How is everything up your way?',2,1,positive
+'hey chick whts good? yeaaa tht movie was brokke and when i came to findlay i really didn\'t except to check ma myspace lol so i didn\'t kno bout the football game or ne thing til i got home well yea i dunno when ill b up again so yea hit me back im out ~1~katie aka real',2,2,mixed
+'I know we do not really know each other that well, and I really shouldn\'t be asking you this, I feel shy, but I want it so bad, don\'t get me wrong it\'s just that I haven\'t had it for a long time. I could already feel it going in so hard and coming out so soft and wet. No one has to know about this. I need it. I\'m desperate, but your help can be very grateful you must think I have a lot of nerve asking you for this, but I can feel my tongue around it sucking all the juice out until there\'s no more left, this has been on my mind all day long and I hope I\'m not being forward, I\'m usually not like this, but .......can I have a piece of gum???LoL',2,1,positive
+'YO WUT UP JUST RETURNIN THE LOVE LATER! ----- ----- -MR. LAZY-',2,1,positive
+'JOHN BABY;; I LOVE YOU =D ----- ----- i deff. can not wait till ----- ----- we get to hang out again ----- ----- like old times =]] ----- ----- remember that ill always ----- ----- be here for you no matter what ----- ----- cause you mean the world to me ----- ----- ----- ----- ? ----- ----- Sammy -----',3,1,positive
+'yo whats up man i aint at work i have been chillin at the crib all day i got that big check you know what that means its time to get fucked up later D-Mo',2,1,positive
+'MY COUGARS ARENT AFRAID OF ANYTHING THEY WILL PUT YOUR TIGERS TO SHAME ANYTIME! LOL',2,2,mixed
+'I been doing great...',2,1,positive
+'Everybodys good! How about you guys? I tried to make it down a few weeks ago but got a little busy due to the Ole Miss games. TTYL! ----- ----- P.S.Happy Birthday',2,1,positive
+'u finnally added me from the past minn lol',2,1,positive
+'how u doin.thanks for the add',2,1,positive
+'hey cutieface... ----- ----- you defult pic makes me wanna dance and smile and giggle and DANCE somemore ----- ----- but yeah ----- ----- hehehe ----- ----- <33 Anna',3,1,positive
+'Are we still on for Burning Man this year? I\'ve got a great unicorn costume. You should be a satyr again.',2,1,positive
+'I LOVE U SO MUCH BOO',4,1,positive
+'hey jake what\'s up playa? how\'s school goin?',2,1,positive
+'AWW WUS UP BLUD I CNT BELIEV I AINT BEEN TA DA PAGE YET TA SHOW SUM LOVE BUT YEA IM DOEN SO NOW!! SO GET BK AT ME!! LOVE ALWAYS! ----- ----- ----- *NIE*',3,1,positive
+'HEAVy SLiDdN!',1,1,neutral
+'This is a little message for NASTY, are we going to fight on Kellen\'s profile (that he never checks) or are you going to be a man and fight with me on my profile?!?!? just kidding, bitch! get rid of Tom!',2,3,negative
+'i aint forgot about my niggy. whhat it is kid? ----- get at me fammo im in nap town now cha lee. ----- ----- ----- ----- 2 fingas to the left kid ----- C Bake',1,2,negative
+'nuffffink:D jus urself:):) lol.xx',2,1,positive
+'Wow, nice layout! Looks awesome ... oh, and I promise I won\'t tell mom what song you posted ... (^=',3,1,positive
+'yo beatch!i forgot u actually sent me a message on this, it was aaaages ago, but i am mentally retarded and did mean to send one back but never did!wot u been up2 lately??parpxxx',2,3,negative
+'hey bobby! ----- sounds so weird after all the different names ive made up for ya anyhow cheer up sis will b home soon and i hate down ppl hurts the wittyness that i hav as u call it ----- cheer up plz-ill buy u sum chocolate byexxx',3,2,positive
+'Be safe today! Hope you guys have a great 4th of July! Much love to you my brother! Miss you man.',3,1,positive
+'HAPPY THANKSGIVING!! I HOPE U HAD A BLESSED DAY...HAVEN\'T HEARD FROM U IN AWHILE---HOPE ALL IS WELL.',3,1,positive
+'B**** I dont have a scaner to put my baby\'s pic.',1,3,negative
+'call a nigga son',1,3,negative
+'Just went to Kokua Festival. It reminded me of that time we went and saw Jimmy Buffet. I think we were drunk that day. I don\'t know I was too drunk to remember.',2,1,positive
+'hey whats up i just wanted to write and say thanx for the add but anywho write me back and i guess ill talk to you laters',2,1,positive
+'Hinkle!! what is this craziness of you not coming back? im graduatin baby and comin back for business, you cant miss that!',2,2,mixed
+'----- This will add some spice to your page but will probably get annoying quite quickly as well. ----- ENJOY',2,2,mixed
+'Finally!!! And where the heck is Georgia!? LOL ----- Can\'t wait to catch up with you guys!',3,1,positive
+'wut up',1,1,neutral
+'HEY B.READY ... YOUR PROFILR IS SO NICE !!! I LOVE IT !!! WELL GOD BLESS..SEE YA AT THE BANQUET TABLE !!!',3,1,positive
+'Hey Tay!!! I love u soooooooooooo much!!! You are sooooooooooooo beautiful :)',5,1,positive
+'Happy Birthday!! I love you...I need your cell # ----- Hope you\'re feeling better!!',3,1,positive
+'Hey there you sexy beast!! So I haven\'t talked to you in like forever... you should come out to starved rock tomorrow night and root me on in the competition. Take care buddy!',3,1,positive
+'kk just tell me when the try out rkk',1,1,neutral
+'your a homo lol jp but wut u doing damn ur still asleep i bet',2,3,negative
+'hi bosley',1,1,neutral
+'What they do? I was just stoping by your page. MUCH LOVE. MS. FELISHA',3,1,positive
+'HEY, I THOUGHT I MIGHT NEED TO SHOW MY FACE JUST THAT I WOULD SHOW YOU SOME LOVE!!!!!!!!!!! ----- LOVE YOU BOO!!!! ----- \"MRS, U ALREADY KNOW\"',4,1,positive
+'Hey Hom[eee]...lol! Whats up? You needs to come with me and AAron to the mall whenever we go...otay! U gotsta come over sometime....k? adios...hasta la BYEBYE! [nia]',3,1,positive
+'stop being a pussy your whole life and find a way to get to jersy!',1,4,negative
+'woohoo! #1! why am i #1? ----- ~julie',3,1,positive
+'hey i was just stopping by and you don\'t have nobody that gave you a coment so iwas just stoping by to give you some love',2,1,positive
+'hey you wats up?? long time no talk!! how have you been??',2,1,positive
+sure,1,1,neutral
+'HAPPY 18TH BIRTHDAY VICKY I HOPE U HAVE A GOOD DAY DARLING SEE U SOON LOVE YA AS A MATE LOVCE SAM',3,1,positive
+'Have a Great Birthday!',2,1,positive
+'CHEK OUT OUR NEW VIDEOS ----- D LOS POLVILLEROS IN MY PAGE ----- MY DAD STARS DANCING',1,1,neutral
+'Hello Leeroy, how are you? Was so battered the other night! Did you find Paul?',2,2,mixed
+'ohh well arent we just an over achiever..heheh just jokin thats a good thing... andddd i am about to go but i will call you when im done cleanin...i gotta clean the kitchen and dinnein room and living room....so i gots alot to clean for only 20 freakin dollarsss!! but ill call you babe.',2,3,negative
+'Hey hunny, just wanted to say hi & see how you\'ve been. Hope all is well ttul xo',2,1,positive
+'okay you need to pimp your page girl',1,2,negative
+'i think im going to keep dispatch to myself, you can have my kids in 20 years i dont car ill probable be sick of them by then anyways...wait what was i going to say o yea your an asshole',1,4,negative
+'im not gunna put u in my top because u dont have me on ur top',1,2,negative
+'Hi Rachel, How RU? Hope you are doing good!! Talk to you later! :)',2,1,positive
+'i love you uncle donnie',3,1,positive
+'Hey up Neil! ----- You had a good weekend? Im still recovering. Went in Crown last night for a couple of drinks. Two bottles of wine later.... Ended up in V bar I was a wee bit drunk. All good fun :-)',2,2,mixed
+'que laa?!?!? hey babe...look i finally put up a new pik of me. lol. yay 4 me. anyways jus wanted 2 stop by n sho ur page sum luv. so yuh. im out. dale. i luv u. mwahz',3,1,positive
+'thanks i\'m glad to have you too as a friend.love melanie',3,1,positive
+'Hey you fucker! I\'ll see you friday! Me and Mel are comin out! If that\'s ok. Seth said we could come so we are whether you like it or not bitch! LOL! LOve Ya Quickie!',3,4,negative
+'heeey, ----- thanx 4 acceptin the add, ----- did u have a good weekend? ----- x x',3,1,positive
+'hey hows it going? thanks for the add',2,1,positive
+'IM REALLY MISSING YOU GUYS!!!!! HOW ARE YOU DOING??',2,2,mixed
+'Just was stopping in to say hi. Hope all is well, love and miss you!!! ~kisses~',3,1,positive
+'Great seeing you this week Devin. Hope all is going well.',2,1,positive
+'heyy alex how are u doin u knw who this is shaquanna',2,1,positive
+'HAPPY bIRTHDAY! dude!!!',3,1,positive
+'Hey Papa, ----- ----- I love your layout! It is auesome!! ----- I am so glad you have a my space now! ----- Its it fun!',4,1,positive
+'who the fuck are you!!!!!',1,4,negative
+'Happy Thanksgiving!',2,1,positive
+'AnthOnY! ----- Oh No i DonT knOw whAt iS on Mr.TecHz FinaL!!',1,2,negative
+..,1,1,neutral
+'Fuck You',1,5,negative
+'And the story behind the (really very hot) carhart\'s is..........?',1,1,neutral
+'Yay! ^_^ It\'s gonna be so rad. Ha ha. What color are you going to do?',3,1,positive
+'im in love with andrew bird and beirut too :]',3,1,positive
+'so...how the heck are you?',2,1,positive
+'Hey... whats up? you know what fuckin sucks? i won\'t have any money for the app. and shit for the apt. for 2 weeks, it\'s pissing me, off, and i\'m gonna try to get it soon... i\'m so pissed, my check was only $100, but, don\'t worry, my next 1 will be about$350. so it\'s all cool. well, later.',1,4,negative
+'Thanks for commenting my page. Your a cutie as well.',2,1,positive
+'Dewd. People are going to think you are a total bitch automaticly with that blurb! You should let them come to that conclusion naturally....lol. \"psych!\" Anyway, so glad you are back, love working with you...love kickin it! This weekend...on like kong...literally.',3,2,positive
+'hey is this kacy???',1,1,neutral
+'I love you too!!!! Glad to see you \"friend\" is no long your friend lol',3,1,positive
+'lol hmm lets see, probably about mid way through the summmerr haha',2,1,positive
+'FIRST COMMENT!! Heheh I win. Do I know you?',2,1,positive
+'Hey do we need to go toward knowxville to get home. or how bout through hot springs',1,1,neutral
+'HELL YA. WELL GOOD LUCK ON THAT.',2,1,positive
+'yea i would have crushed that mutha fucka\'s skull in...i cant believe that shit...i would have killed him',1,5,negative
+:o),2,1,positive
+'thanks calvin love you sexxxxy ----- ----- mwahhhh<33',3,1,positive
+'Aye What Up Boi...Holla',2,1,positive
+'wow i love ur songs but u have to go here mine it is so kool....lol',3,1,positive
+'MISS YOU! We want to know when you are coming back to chat???? Hope you are having a great time! ----- Love ya ----- Aim and Ali -----',3,2,positive
+'my parents want me to go to concord carlsile.. they heard good stuff about it, so i\'ll just be driving there.. no biggie.. oh, are u on varsity football?',2,1,positive
+'yea. some time i would like to play volleyball with you guys.',2,1,positive
+'thanks for the add',2,1,positive
+'I\'m in love with a Shin. Don\'t tell! ----- xoxo, ----- ----- kwm',3,1,positive
+'WOW!! I guess I am sooo cool! Thanks! Don\'t forget Micro this Sat. Wear white!',3,1,positive
+'i want to watch video.what is malt?',2,1,positive
+hi,1,1,neutral
+'so how was Kings Island and yo when do u work?',1,1,neutral
+'heyy eddie...was up long time no see! ----- ----- hows your summer going?? ----- ----- catch ya later buddy ----- ----- ----- ?anna',2,1,positive
+'thanks for the add mate',2,1,positive
+'Just came by to say HI!',2,1,positive
+'sorry you gettin all you in your grill nikkie peace out',2,2,mixed
+'check out my myspace somebody did something to it sould i leave it like that with all the music vidoes',1,1,neutral
+'Kisses come see us at the mall...',3,1,positive
+'How about i leave a msg for ya ----- COME TO MILLERSBURG NOW... MILLERSBURG...MILLERS...BURG UMMMMM YUMMY MILLERSBURGER MILERSBURG RIGHT NOW MILLERSBURG I KNOW YOUR FAT AND WANT some millersBURGERS',2,2,mixed
+'You suck at the internet. Just a friendly FYI.',1,3,negative
+'hello how are you?',2,1,positive
+'hey dork brain!!!! wow was a lil surprsisin seein u on my thingy long time no talk!!!!! i heard ur datin danielle which is awesome!!!! hopefully ur good to her as well is her to u!!!! well hope all is well and ur life is good!!! where u livin now???? n e ways hit me back when u get this k!?!?!?! i since u got a girlfriend now that means well prolly see eachother at joce\'s party tomorrow night so no hard feelins!!! i wish the best for u guys!!!! ----- xoxoxTara',3,3,mixed
+'Hey, how are ya?',2,1,positive
+'Hey Kat what you been up too?',1,1,neutral
+'Hey, Crystal! ----- I hope you had a wonderful Christmas and that your 2007 is your best year ever!!!! Miss you lots!',3,2,positive
+'when did i ever tell her that, i honestly do not recall.',1,2,negative
+'yea we can',2,1,positive
+'chillin chillin u no tryna keep up on da finals man even though im bout to die!!!!!!!!',2,3,negative
+'Awww you had the baby??? I bet she is just beautiful!!! Big hugs for you and the baby!!! Can\'t wait to see pictures! Love ya!!!!',4,1,positive
+'lol yeah true. im not looking forward to the shoping or the actual pictures at all',2,3,negative
+'Hi Conner Reede Grandpa loves u',3,1,positive
+'hey wats up dude we miss u sosososososososososososososossosososossososososososososososooooooooooooooooooooooooooooooooo much!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! luv ya man peace nigga',4,2,positive
+'cry me a river...I need more rain around here...j/k. There I added your pics...happy now??? luv ya',2,2,mixed
+'thank you my good friend',2,1,positive
+'Hey Man ----- You Marching at SC? ----- I didnt see you after the game!',1,1,neutral
+'Thank you very much. I miss you too. You know, this Thanksgiving and Christmas is going to be very hard for me. Miss you...',3,3,mixed
+'Dude we won a game. ----- We beat Hudson by 11 points haha ----- so now we have an impressive record of 1-6 haha',3,1,positive
+'Hey, I wuv oou 2, Miss you lots, see ya soon. Awesome pic. Haven\'t heard the tune yet don\'t know what happened will try to fix speaker.',3,2,positive
+'Hey girl!! You know that I will always be here for you and those three beautiful boys!! Let me know anytime I can help. I will be there in a flash!! Be strong and know that you have people that care and that are praying for ya!! Love Ya Girl!! See ya soon!',5,1,positive
+'ROW ROW ROW MY BLUNT ----- TWIST IT @ THE END. ----- LIGHT IT UP AND TAKE ----- A PUFF,AND PASS IT ----- 2 A FRIEND!!! ----- KEEP MY BLUNT GOIN... ----- DONT SKIP ANY HOMIES!!!',2,1,positive
+'yay!!!!!!!!!! im elissas first comment!!!!!!!!!!! hmm i still think you should of gone with allisoncurboismyidol but whatever dude!!!!',3,2,positive
+'cool and worrd u right u r da only 1 lol ----- will joe start in football lol da coaches said dat about u',2,1,positive
+'i had a great day thanks. been working all day today nd ive just come on here for a few mins b4 i go back 2 work, how about u wubu2? x',2,1,positive
+'Whatup Hobag? Awesome time this weekend! Come to LA',3,2,positive
+'happy hump day. I luv u!!!!!!',3,1,positive
+'HHHEEEELLLLLLOOOOOOOOO.....AAWWWWW BABY\'S GETTIN SO BIG!!!! DAMN WE GOT ALOT OF CATCHIN UP TO DO....',3,1,positive
+'if it doent get called off',1,2,negative
+'URBAN PARADISE!!! ALL YOU BETTER COME! HAHAH INFO ON MY DEFAULT =)',2,1,positive
+'hey noodle brain!',1,2,negative
+'Thanks! I\'m doing ok.Really anxious for ya\'ll to get back! I miss Rob!! How are you doing?',2,3,negative
+'watz gud? c/b',1,1,neutral
+'Hey kids whats up i will be your mother if you dont have 1',2,2,mixed
+'that is my 17 year old brother n law',1,1,neutral
+'hey u congrat hey but i am glad u had it ok well tell ur mom hi and britt and u dad and mike love u lots later ----- ----- heres my number so u can call me 719 474 9862',3,1,positive
+'hey I\'d pay Huey, Dewey and Jigbooey , to shank u but, your safe in your little fag ward, so let mother nature take her course.',1,3,negative
+'That is funny that you should leave that comment, because I just left one to my roommate making fun of the Giants (her team)! That was a pretty sweet score and I wish they could do that all of the time.... that would be amazing!!!!! Oh and when hell freezes over I will root for the yankees... so fat chance... I will be rooting for the Mets!!!!!!!!!!',3,2,positive
+'I could totally go for some deep fried ravioli or a 5lb bad of fries!!! Oh and don\'t forget the cause of those wonderful meals....could go for some of that too...Good times',3,1,positive
+'whats up dogg!!',1,2,negative
+'YOUR SO CONFIEDENT! ----- and i mean your funny ----- and you care about people feelings ----- gaw this is makeing me like you even more!',3,1,positive
+'just droping by to see how you all are and say hello. Take care',2,1,positive
+'sweet thatd be awesome',3,1,positive
+'hey man ill see you tomarow',2,1,positive
+'Keepin it real.',2,1,positive
+'Only 5 friends? ----- This is an outrage!',1,3,negative
+'Give me a call',1,1,neutral
+'hey there hows it goin? I havent seen you in forever, and when did you have a baby?',2,1,positive
+'Hello my dear!!! Sam has luckily got his hands on a room in the Bedford Park pub in Streatham, which is now owned by the owner of the Windmill in Brixton. Sam is gonna start doing gig nights there for all types of bands, and some club/party nights maybe too!!! All very exciting! Well anyways the 1st night is gonna be Sat 30th, so y\'all gotta come down!! Luv Gem xxx',3,1,positive
+'wasup? Jasmin from Iowa t0ld me this i~ll ringones internet-page www.mobefwerg.com',1,1,neutral
+'your welcome. ----- ----- oh yeah, do you remember the homework we had for extra credit for NPLUS?',2,1,positive
+'thankkx!but hu r u?no afence!',2,2,mixed
+'FIGGUMMSSSSSSSSSSSSSSSSSS!!! hahaha',2,2,mixed
+'i love youu',3,1,positive
+'Peterrrr get better, i <3 you!',3,1,positive
+'Im fine sweetie! not seen you in ages hun what you been doin??? prob hidin from us lol!!! you havin a crazy weekend? you have missed a couple of mad nights :( my parents were away ----- muchos love xxx',4,1,positive
+'Hey baby ..... i miss you to and i don\'t have a bed partner either isac is at amy\'s so i am alone too! Bj said whats up. ----- I love you baby and i can\'t wait to see you tomorrow ! ----- good night sweet dreams ----- i love you ! ----- oxooxoxooxoxoxox ----- Kris',4,2,positive
+'i just popped your comment cherry!!!! ----- ----- ----- lol haha',3,1,positive
+'thanks 4 accepting my add',2,1,positive
+'hey hottie! lol ----- ----- Welcome lol lame but im colin if you need to talk to someone im here.',3,1,positive
+'Check your page more often frodo!',1,2,negative
+'Not much just sitting around on a Friday night.. sad huh>? I must be old :(',1,3,negative
+'yo u got aim',1,1,neutral
+'mundelein... ----- r team sucked ass but it was better when we won ----- ----- we played u both at home.. ----- so yah ----- im danny',1,3,negative
+'hey sean! how r u?! I miss u, Im so happy u got a myspace. How is everything going at college? I have to have my applications in in about a week....its awful! lol Well Ill ttys luv ya!',3,2,positive
+'Evening young man.... fancy Doncaster at home on your birthday(ish) weekend? Its officially retro day so i\'m sure the silver surfer shoes will fit right in!',2,1,positive
+'what up baby?',2,1,positive
+'Hey hunny! i\'m fine and dandy thanx. i\'ve only just managed 2 sign in on myspace cus its not been letting....computer says no!! rubbish hey! so how\'s the lovely university of warwick then? hope your not getting 2 drunk!! x x',3,2,positive
+'happy birthday dude...',2,1,positive
+'Hey, I uploaded your photo and am printing it out. Cool beans.Mom',2,1,positive
+'Hey, Hey kid what is new?',2,1,positive
+'hey tortilla boi..lol wat u been up 2me juss chillin well write back',2,1,positive
+'Hey ya we did alright. I shot 3 and cory shot 3. Seen alot the first day but only decided to kill 3 that day, didnt see anything the following days.. thats how it goes tho.What you up to? hows school going for you',2,2,mixed
+'Iin my break iis your brother home....',1,1,neutral
+'Haha! Yeah very funny! Your just jelous cause Im shorter than you!! ----- :-] ----- ?AnGeL',2,2,mixed
+'Let me know where and set up people who are interested and i\'ll be there',2,1,positive
+'Hope that you all have a great holiday!!!!',3,1,positive
+'what up son',1,1,neutral
+'hey thanx 4 the add dude ----- ----- farnborough 6th? or just have mates that go there? ----- ----- Emma ----- ----- x',2,1,positive
+'Heyahh Babe x ----- Ii Love Yuu x',4,1,positive
+'Hello Josh :)',2,1,positive
+'Thanks for the compliment Duane...however you need to get the program straight lol!',2,2,mixed
+'get your rat out',1,2,negative
+'lol i wag my bum at u everyday!... wink wink** too bad u only wag it bak... lol',3,1,positive
+'I think you\'ll find I did that on purpose. and you\'ve used a capital letter at the end of your name instead of the start. Very Poor Gramma young man!!',1,3,negative
+'HAPPY BIRTHDAY ERIC!!!!!!',3,1,positive
+'Hey Mr Crab, thanks for the add. Love your hat & profile song. Have a groovy easter weekend & stay away from the DIY, you know it\'s a killer during Bank Holidays. Love n hugs x',3,1,positive
+'QUE ONDA PUTO? ----- OH WAIT LET ME TRANSLATE THAT FOR U BLACK MAN>! ----- WHATS UP FRIEND? ----- HAHA ----- AYE WEY U WANT SOME FEATHERS?',2,2,mixed
+'doin good.Cute baby, but what is that next to it? =P',3,1,positive
+'lol i havent had too much c/w not as much as i expected. what subjects did u take? iv just got back from the farnham college open evening, it doesn look half bad =] ----- ----- ummm tbh not bin up to much at the wkends, alot of shopping and chillin, and i now work sundays at argos! woop woop haha. hannahs party was pretty good in the end =D ----- ----- u been up to anything exciting? ----- ----- wb love u xxxxxxxxxxxxx',3,2,positive
+'you are such a hottie. ----- lol ----- i heart you.',3,1,positive
+'whew that was one intense game of softball on Saturday :D',2,1,positive
+'Hello ----- ----- I hope you had a lovely birthday and weekend. ----- ----- Keep It Metal ----- ----- Cilgrug',2,1,positive
+'I popped your comment cherry :P You need to add some words, and some pictures. I feel like i\'m looking at an empty room or something',2,2,mixed
+'hey sup man how are ya how is life treatin u im doing good i just got done with ma colege applications so thats a big release',3,1,positive
+'Hey. ----- ----- I Havent talked to you in soo long. I miss you ? we need to hang out soon. This summer you need to come to my house and swimmin. Well im glad you finally got a myspace. now we can talk :] ----- ----- ? Brii',3,2,positive
+Hello!,2,1,positive
+'hi tom! hope ur okay!? looking forward to uni? kinda wish i was goin now!lol! maybe one day when i grow a brain cell!lol! hope ur good ----- faybe x',3,2,positive
+'watup thuggin... how is ursuline treatin ya? u no i miss u keep ballin over there tho. maybe we\'ll chill one day. have funn u know ----- -vic',2,1,positive
+'Ana you rock!!!!! love the slide show...',3,1,positive
+'miss u guys',2,2,mixed
+'oh.......my........god. ----- ----- Laura has got a myspace. what was it you said at work? something like \'i dont need myspace, i\'ve got a real life\'.',2,2,mixed
+'Happy B Day sister I tried to call u yesterday n could not get a hold of u so this is the next best thing, LUV U',3,1,positive
+'kacey! ----- i miss you! ----- call me, and let\'s hang out soon. ----- ?',2,2,mixed
+'hey chick - where you now in the world??? i\'m now in laos and loving it. big love to ya xxxxxxxxxxxx',4,1,positive
+'Hey you!! Hope the Holidays have been good to you and yours.',3,1,positive
+'hey i like ur backround its cool',2,1,positive
+'happy smurfday... -----',2,1,positive
+'DAMN NIGGA U FAKE AS FUCK WIT UR FAT ASS U LUCKY I HAD YOUR BACK EARLIER BUT FO REAL TAKE THEM PICS OFF BEFORE THEY FIND OUT U FAKE',1,4,negative
+'well i was bored but now i am going to dinner with tara and amen and then we r going to see the movie the pursuite of happiness! ----- so yea',3,1,positive
+'dangg foo. i dont wanna enterr this one. im sorry ferr surr.',1,3,negative
+'sorry how do you spell it?? lol im waiting until the spring semester to start school.',2,2,mixed
+'I love you Mwah!!!<33 ----- ----- you knoe who?',3,1,positive
+Helloooooooo,2,1,positive
+'good day sir!! ----- you have an event to reply to on facebook!!....but a text would be MAGIC!! ----- you out tonight?? ----- hope your well. ----- ----- love ya.',3,1,positive
+'hey boy! how are you doin!!gettin ready for college?',2,1,positive
+'Damn Did u see that game it was fucking bad as fuck!!!!!',1,4,negative
+'Thnax for the add!',2,1,positive
+'I signed the Pention ----- ----- that website was soo sad ----- i cryed for like 20 minutes...',2,3,negative
+'We missed you at the movies last week! Although yo did not miss a lot with that movie! I hope to see you soon! Let me know if you need anything!!!!!!!!!',3,2,positive
+'sup james, sup cuz, lol nah idk if i am i think i going football, i think i just might stick with basketball, idk but i going play senior year gurrintees, lol well ttyl',2,1,positive
+'had to be the first to leave a comment on your page lol love yous',2,1,positive
+'just because you want to lick my bumhole',1,3,negative
+'YOU WOULD HAVE THIS SONG! HA HA GOOD STUFF!!',3,1,positive
+'no im not just cause i asked im a flirt.lo hhahaa',2,2,mixed
+'Ayah. ----- I ? U! ----- ----- ?$H&!L@.',2,1,positive
+'hey sis just showin sum love',2,1,positive
+'wow i feel so special - personalised comment on how im a bitch!:D you know its all lies, you love me really!! xxx',3,2,positive
+'HEY SARAH HOW ARE YOU?????????',2,1,positive
+'Happy Birthday!!!!!!!! I hope all is well, and hopefully we will all catch up soon!',3,1,positive
+'whats up...howz ur summer been',2,1,positive
+'like the videos bob you tore the shit out of that blocking sled! You should have went pro.',2,2,mixed
+'robbie you my numbah one homie.',2,1,positive
+'THERE IS NOTHING WRONG WITH YOUR DETAILS... MINE ARE THE SAME..',2,1,positive
+'Hey Cuz ----- ----- How are you? Thanks for asking me to be your myspace buddy! ----- ----- What have you been up to lately? ----- ----- Gem xxxx',2,1,positive
+'Thank you for adding me.Can\'t wait to get to know you better...',2,1,positive
+'Merry Christmas!',2,1,positive
+'Hey babe i love you so much it really sucks that we dont get to see each other much now i hate it :( only 2 more years and we\'ll get to see each other ALOT =) so yeah i hate school and work ..just got done watching OLTL =) now im watchin GH waiting to go back to work...so excited!! ha ha yeah right...who knows maybe i will quit today ;) just kidding oh yeah by the way....YOU NEED TO HURRY UP =) ive been waiting ...lol By LOVE!!!',4,3,positive
+'I see you finally made a myspace page!! Loser!!',1,3,negative
+'Want to go to Publix?',1,1,neutral
+'HAPPY BIRHDAY BUDDY!',2,1,positive
+'yo hoochie mama, i saw your papa\'s myspace. lico righhhht? but that is [my] jonathan\'s cousin! hahahaha i saw him in his pictures, what a small ass world, huh? but yeah, did you find your dress yet? ----- ----- oh em geee, this is like the third time i wrote this comment \'cause your comment box is like on craccccck, k byeeeeee booch!',2,2,mixed
+'Cheers for the add! ----- Feel free to drop by and leave a comment! ----- ----- Birmingham x',2,1,positive
+'Happy B-day Gabbi. I love you.',3,1,positive
+'hey sexy whats up?',2,1,positive
+'TOBY!! where yah been all my life?',2,1,positive
+'hey pimp we really need to hang out again soon, im in need of a very strong drink!',2,1,positive
+'we are hanging out before you go to basic my friend!!!!!!!!!!!',2,1,positive
+'thanks for the add request!!! ----- ----- xoxo ----- janine siu ----- www. janinesiu. com',2,1,positive
+'I Love You! I Love You! I Love You! Im about to get a couple man, and I ll put a name on one for you! Give me your address now. So that I may contact you! Im on here every so often so I can right more then I can get on here!',4,1,positive
+'hey baby... ----- god i miss you i cnat wait to see you again!! ----- love ya and always will ----- Ur best friend',4,2,positive
+'Big win BUCK!!!!',2,1,positive
+'Hey! I\'m going to be in Austin starting this Friday through Monday for ACL. We should get together for drinks or meet up during the day if you are going to the shows. Give me a ring.',2,1,positive
+'hey mamores... ----- haha im the first one to comment yup yup... ----- well hey im just showing ur ass some love even though u just left to the home!hahaha u know the way we have fun...well yea...love u pumba! ----- timon & pumba ----- ? 4 eva!!',3,1,positive
+'i got it made in chicago when i went there why',1,1,neutral
+'Llama\'s are wonderful!',3,1,positive
+'Hey Lee!! Thought Id leave u a message even tho u neva eva message back!!! How u doin? Not seen u about for agggeezzz! Hope alls good :D ----- ----- x x x',3,2,positive
+'Ey up, have a good weekend? If you use MSN at all and fancy a chat sometime, I\'m on: clarky1979@hotmail.co.uk',2,1,positive
+'WHATS POPPIN SEXY U KNO I HAD TO CUM SHO YA SPACE SUM LUV BRING IT BACK',3,1,positive
+'We have ridiculed the absolute truth of Your Word and called it pluralism. ----- ----- We have worshiped other gods and called it multiculturalism. ----- ----- We have exploited the poor and called it the lottery. ----- ----- We have neglected the needy and called it self-preservation. ----- ----- We have rewarded laziness and called it welfare. ----- ----- We have killed our unborn and called it choice. ----- ----- We have shot abortionists and called it justifiable. ----- ----- We have neglected to discipline our children and called it building self-esteem. ----- ----- We have abused power and called it political savvy. ----- ----- We have coveted our neighbours?? possessions and called it ambition. ----- ----- We have polluted the air with profanity and pornography and called it freedom of expression. ----- ----- And we have ridiculed the time-honoured values of our forefathers and called it enlightenment. ----- WHY CANT WE JUST LOVE, HONOUR AND RESPECT EACHOTHER??',2,3,negative
+'wut up foo!!! ima bout to bounce out but just showin sum love!!',2,1,positive
+'Happy birthday, I doubt youll see this for awhile, put our song on my page, THE MUTHERFUCKING REEEEEEEEEEEEEAL! i JUST REMEMBER BACK IN THE DAY, SITTING ON YOUR PORCH SMOKING CHEAP AS Private Stocks waiting for some adventure! Miss the Shit out of you!!!! LYLAS',3,2,positive
+'wats good white chocolate, lol. aint talk 2 u since da movies. wats happennin? holla back when u get dis',2,1,positive
+'oh did some one hack you are some thing',1,2,negative
+'dude ... i was just thinking about you. Hope you are doing well!',3,1,positive
+'I think Matt may want YOU bad. Haha.',2,1,positive
+'Hey, I just took the So... survey on survey machine! You can see my results here - you should take it too!',1,1,neutral
+'Did she say tiz-ight, anyway. \"If she really wanted me to relax, she would have said, go grab your favorite pillow, curl up on the couch, throw this tape away and rela...hax rela..HAX!',2,1,positive
+'Yo :). I forgot to find out what kind of background you would like on your profile (so I can write the code ^^).',2,1,positive
+'What\'s Good O - ----- I hope you had a great time celebrating your birthday and I wish you MANY more.',3,1,positive
+'hi sista... hope you can log on soon... i love ya.... hope everything is good back in rap... love you.. ttyl...',3,1,positive
+'i have a question for you but i realized i can\'t ask you it through a comment for certain reasons - hehehe - so call me sometime - we\'ll catch up as well',2,1,positive
+'oh, my dear, I love you too! ----- ----- it has been far too long! ----- ----- oh for the holidays...when I might see you again!',3,2,positive
+'Ahh the smeagsters!!! lol',2,1,positive
+'yo dogg what it ----- dooooo ----- how have you been?!',2,1,positive
+'quyen who?? ;D we\'re not close friends. i don\'t like that girl. when you see her tell her, i\'m going to beat her up.!',2,3,negative
+'whats up cousin havnt really talked to you in a while?',2,1,positive
+..,1,1,neutral
+'thanks for the addd',2,1,positive
+'hey baby...first comment... :D',2,1,positive
+'YOOO! Remember when Lily(Leung lady) abandoned our group in Mr. Snyder\'s(MOBEEEEEEL daii) class?! ----- What\'s good, man? It\'s been years, holla back.',2,2,mixed
+'thanks for the add',2,1,positive
+'err..ur a crazey passy err u err be scareyin me friendz off myspace err.. konntz is off now so get off passy fuck',1,4,negative
+'hey babe, u have 2 do a beta pro than this!!! At least put a pic up lol',2,2,mixed
+'so did u fix that damn truck of urs yet?!! haha',2,2,mixed
+'hey how are things going? i like you new background? I\'ve been learning how to snowboard. its been fun glade that spring is comming. take care',3,1,positive
+'yes!!haha! whats you doin love',2,1,positive
+'What is up man! ----- You need to stop by sometime.',2,1,positive
+'sweet... there growing too fast... o-well that\'ll happen...',2,2,mixed
+'Wat poppin lil sis?',2,1,positive
+'CRACK MOUSE KILLZZ ----- hahahahhahaahahha',2,2,mixed
+'thats pretty good mom im proud of u',3,1,positive
+'Thanks For The Add!!! ----- ----- (I had to say it!) LOL!!! ----- ----- GO GO GO!!! NASHVILLE NEWS!!!!',2,1,positive
+'hey brandon. ----- whoa i havent talked to you in forever. ----- well that might be, because everytime i was at the rink, you looked at me like you didnt even know me. ----- but thats okay. i guess ----- it kinda hurt my feelings but w..e ----- i still love you too. ----- i miss you ALOT. ----- and yeah my dad is pissing me off really bad. ----- i miss you. ----- brudda<3',3,4,negative
+'Hey! We can tell stephanie made this her pictures are all over it!!:) Im gonna go get the pictures from the party developed!!!',2,1,positive
+'Hey Betty, It\'s ME Zoink...How are you lately? :) xXx',2,1,positive
+'Hey..uhm wo are you.? apparently you know me and all my friends and we have never ever even heard about you. Can you plz plz plz with a cherry on top tell me ho you are?',2,2,mixed
+'hey whats up? not much here...just got home from work...and really bored lol.',2,3,negative
+'waddup head ;P jus showin u sum luv. holla atcha boy!',2,1,positive
+'Heavan do u like magic? ----- I didnt think u did but if u dont y u talk to tricks?',1,2,negative
+'haha, k kellen, we need to get you some more friends...and more pictures and fun stuff!!! you can find thi and marc under my friends :P',2,1,positive
+'Go to bed now. I love you!!!',3,1,positive
+'Hey just passing through to say Hi and let you know I have A new saturday Spot in Jerz Called feel good lounge... Starting this Saturday... let me know if you can come through... ----- ----- PS when you get a chance check out my new song The Things You Do with Nina Sky and Red Cafe... Thanks...',2,1,positive
+'Yay!!! You joined myspace!!!!',3,1,positive
+stealing,1,2,negative
+'Just wanted to say HI!!! & 2 see how u r doing. All is ok on my end. ----- Love, ----- Traci',2,1,positive
+'Twas nice seeing you and the girls this X-mas. Hope you have a great New Years.......Don & Sheryl',2,1,positive
+'How\'s Maine? :d ----- I like live in Rhode Island now.. like about 4 hours away from Maine itself so i hope maybe just maybe to attend the family picnick thing :O',2,1,positive
+'i am good. i got just Engaged to my gf!',3,1,positive
+'whats up ugly',1,2,negative
+'Happy birthday Abby!',2,1,positive
+'Hey baby, just wanted to tell you how much i love you, and that you are such a great father... our son will grow up with the best parents!!!!',5,1,positive
+'heyy u need more comments.. soo here they are...lol',2,1,positive
+'was up con i call you fool .......pick up homie',1,2,negative
+'best couple right hereeeeeee!',3,1,positive
+'whats up. ----- ask fes to add u to his friends list.',2,1,positive
+'that shirt says..... this is what cool looks like...LOL? I guess he thinks he is cooler then he is',2,2,mixed
+'Hey u fucking punk did u forget about your people or what. Wait till i see u, u are a dead manhahahhaahaha. By the way tomorrow i go the 38th MP\'s and get my packet. I already have my 322R and i am on my way... Hit me dawg later....',2,4,negative
+'we all miss u like hell. i cant make it sun cause im goin campin wit my mom but i wish i could b there. wana c u belly u need to send us pic of u and u little gurl i still have the one on my phone. u were a joy to work wit and no one can replace u. if u get bored and need money in a few years u know where to go lol ttyl muah',3,2,positive
+'hey prima just droping bye showing u some love well hopefully ur doing go with my primo latez talk to u laterz',2,1,positive
+'Thanks! You can, but it\'d be more like the \"Fred\" from \"Scooby Doo\" Freddie Prinze. Anytime you\'re home, let me know, and we can play.',2,1,positive
+'simply amazing.',3,1,positive
+'If I didn\'t know better I\'d say you wrote this, anyway thought you might like it. ----- ----- Now I sit me down in school ----- ----- Where praying is against the rule ----- For this great nation under God ----- Finds mention of Him very odd. ----- ----- If Scripture now the class recites, ----- It violates the Bill of Rights. ----- And anytime my head I bow ----- Becomes a federal matter now. ----- ----- Our hair can be purple, orange or green, ----- That\'s no offense; it\'s a freedom scene. ----- The law is specific, the law is precise. ----- Prayers spoken aloud are a serious vice. ----- ----- For praying in a public hall ----- Might offend someone with no faith at all. ----- In silence alone we must meditate, ----- God\'s name is prohibited by the state. ----- ----- We\'re allowed to cuss and dress like freaks, ----- And pierce our noses, tongues and cheeks. ----- They\'ve outlawed guns, but FIRST the Bible. ----- To quote the Good Book makes me liable. ----- ----- We can elect a pregnant Senior Queen, ----- And the \'unwed daddy,\' our Senior King. ----- It\'s \"inappropriate\" to teach right from wrong, ----- We\'re taught that such \"judgments\" do not belong. ----- ----- We can get our condoms and birth controls, ----- Study witchcraft, vampires and totem poles ----- But the Ten Commandments are not allowed, ----- ----- No word of God must reach this crowd. ----- ----- It\'s scary here I must confess, ----- When chaos reigns the school\'s a mess. ----- So, Lord, this silent plea I make: ----- Should I be shot; My soul please take! ----- Amen',2,3,negative
+'X-BOX 360 FOR HALO 3 DUDE!! YOU\'RE TOO FUNNY!!!',2,1,positive
+'Thinking of you ;)~',3,1,positive
+'watz gud sexi baby???jus stoppin by 2 show u sum luv on ur page!!!holla biak!!!!',3,1,positive
+'thanks yours are pretty good too!',2,1,positive
+'Thanks for finding me. Cool page. Keep the Metel alive. Best of luck.',2,1,positive
+'Cal me bitch! LOL! What are you doing this weekend? Camping?',2,2,mixed
+'hey how r u??',2,1,positive
+'hey hows u??? u home for xmas time???',2,1,positive
+'I thought you could appreciate the absurdity of it all... ----- ----- -----',2,2,mixed
+'hey watsup, are u goin to ellenville for memorial day weekend this year?',1,1,neutral
+'lol sweeet,,,,,, frm b-ham ma lady . hopes ur all gd ne ways , ----- wb brynn x',2,1,positive
+'Mommyhood has been great. We are getting ready to move up there. So yay!',2,1,positive
+'hi mom, i\'m pretty good. just trying to meet everybody',2,1,positive
+'just wanted 2 come thru and say thanks 4 tha friend request... take care.. and don\'t b a stranger',2,1,positive
+'HEY! GOT THE PICTURES..CAN\'T WAIT TO HOLD JADEN HE IS BEAUTIFUL...I SENT HIS PACKAGE MON SO HOPEFULLY IT WILL GET THERE SOON..ALSO YOURS, MELISSA AND JADENS CHRISTMAS IS ON THE WAY TO..BET YOUR GLAD TO BE BACK IN GUAM WILL BE GLAD WHEN YOU ALL GET TO COME HOME..LOVE TO ALL MAWMAW',4,1,positive
+'was just strolling by...how\'s life over there?',1,1,neutral
+'Put me in ur top friends!!!',1,1,neutral
+'Nice meeting you the other night! Tell Christina she needs to get with the program so she can actually have a drink at dinner one day! haha! ----- -Ashley',2,1,positive
+'loserific.. thats u.. i will slice ur neck with a battle ax',1,3,negative
+'Thanks for looking me up and adding me! I\'d love to stay in touch. Andy and Cory became my new \"sons\" over the last few weeks.Such polite, handsome young men!! Julie and Leann became my sisters, having gone on this journey together has forever bonded us!! Let them both know that as soon as I hit Walmart on Wednesday for ink and photo paper that pictures are on their way!!!!',3,1,positive
+'hi tim',1,1,neutral
+'My dear, I hope you got home okay.... heard you were half way... Lawrence has given Chris hayfever, but otherwise is mostly sleeping on your bed... I\'ll be sure to boss him around soon, get him to make my bed and pack my bag :) I will miss you though I have not seen you often enough. Postcards will be the new communique, and maybe once in a while you can check your myspace or shock horror, even your email! Hope you feel better, big hug, lots of love, Kate XXX',4,1,positive
+'Hey there how have you been I saw you driving Saturday I think but you never looked over',2,2,mixed
+'hey saw that you did not have a comment so I thought that I would drop one off!!!',2,1,positive
+'what up pimp juice?',1,1,neutral
+'*smiles from ear to ear and hugs josiah back* im glad you like it .* he walks up to layel* qhat would you like?',2,1,positive
+'brah...what you been up to? I\'m comming cali in three weeks if you like hang out.',2,1,positive
+'thanx for the add!!',2,1,positive
+'enjoy ----- .. width=\"425\" height=\"350\">',2,1,positive
+'you dont have all the intresting stuff up on here about u like where u were born and all i think that kinda stuff rocks u just put the basics and u need alayout get busy bro...lol',1,2,negative
+'Hey there. Long time no see :)',2,1,positive
+'Happy Birthday!',2,1,positive
+'i love you',3,1,positive
+'----- ----- ----- ----- This ----- is ----- SO ----- funny! ----- ----- ----- -----',3,1,positive
+'west west',1,1,neutral
+'well sup johnathon C? Haven\'t heard from you. Call me again sometime.',2,1,positive
+'Awww Chou, ur babies are so cute! They\'re so big now....especially ur daughter..she\'s beautiful.',3,1,positive
+'Happy Mother\'s Day Monica! Hope you are having a good one!',3,1,positive
+'Guess what I called and got today??? Yup, it\'s taken care of...finally. Thanks for making me do that :-) ----- ----- Great pics you posted on mine and Amanda\'s page!!! I guess paybacks are a bitch huh...LOL',3,2,positive
+'aww i miss you too! i\'m coming in town for fall break this wed-sun so i\'m coming to visit you on thurs so you better be working!!! ahh!',3,1,positive
+hey!!!,2,1,positive
+'hey baby ----- wanna go to the club tonite? ----- u looked hot yesterday ----- i love u so much ur the hottest girl in the world ----- ----- love you so much ----- -Brad',4,1,positive
+'Most def give me a call-maybe we\'ll go to Village Inn!!:)',2,1,positive
+'hey little hooker i am gonna miss you!!!',2,3,negative
+'yo John! its been good, i\'m a senoir now! hows college treating u?',2,1,positive
+'Tell Justin I\'m sorry and I love him soooooooooo much!',3,2,positive
+'Nothing much ... Just here BORED !!!! Can I get a job .... Save me from this boredom ... :)',1,3,negative
+'Hey baby just wanted to say hi and I love you!!!Hope you are keeping out of trouble!!I miss you and can\'t wait to see you again!Till then....... kisses!!',4,2,positive
+'Thanks for the add Jeremy!! Gotta love those Macross toy pics. Sadly I don\'t have them anymore...',2,1,positive
+'merwin it is hugo i aad you as my top firend',2,1,positive
+'hey whats up',1,1,neutral
+'Well, my \"lovely\" is gone, but never forgotten. ----- I miss you SO freakin\' much! ----- I hate that our schedules kept us apart. ----- And I\'m so sorry for not being there for you when you needed me. ----- But I\'m sure you\'ve heard me say it already... ----- I loved you like my best friend. ----- And I pray that I get to see you again someday. ----- ----- Love ~ ----- Your Lovely',3,3,mixed
+'yo is conrad at home??',2,1,positive
+'Considering you\'ve lost about 100, I guess I wont be seeing much of you anymore.',2,2,mixed
+'All of you are OLD!!!!!!!!!',1,3,negative
+'you one flovarful bboy man..love seein you get down and rep it..you look like you always have fun..haha..it was dope to watch FS kill it..stay up bro..see you soon..next time villn and i will be in it..PEACE ----- ----- MPACT',3,1,positive
+'Ha, sorry I haven\'t checked my myspace in forever and I just got you r last comments. I left that gift in appreciation for your generosity in letting me borrow your truck; I new you would hold it dear to your heart. I was going to replace the cubs bat on teh keychain, but I couldn\'t find a bat like the one that you have. And no we did not get the chance to go out to Springfield.Nice background *cough*',3,2,positive
+'Hey hoe bag! Go take your blood pressure again! lol.',2,3,negative
+'GET AT THA DEFAULT',1,1,neutral
+'hey girl, where have you been...I missed you after you stopped coming to classes at image. I looked for you at graduation but you weren\'t there. How are things going with you? Get any gigs?',2,2,mixed
+'WOW! A thunderstorm! I love thunderstorms.They can be exciting! TTYL! Auntie Tiffy',3,1,positive
+'hey hows you? ----- ya have a good night the other week?? ----- xxx',3,1,positive
+'We are well... Hey I\'m having a birthday picnic on March 15th.. Think you could come?',2,1,positive
+'zdr. macka kak si skupa? ----- mnogo si sexy..are da mi doidesh na gosti?... ----- ----- ????Roses are ----- red ----- violets are korny, ----- when I think of you ----- Ohh baby I get horny, ----- Eat me, ----- Beat me, ----- Bite me, ----- Blow me, ----- Suck me, ----- Fuck me, ----- Very Slowly, ----- if you kiss me, ----- don\'t be sassy, ----- Use your tongue and make it nasty!!! ----- Pass this on to atleast 8 people... If you get it back atleast 5 times, you know your a SEXY beast ----- PASS IT ON TO ANYONE YOU THINK IS FUCKING SEXY????',2,1,positive
+'haha prolly was =] but i guess theres a time for everything lol ----- i\'ll prolly meet u next conference or sumthing :p',2,1,positive
+'St elizabeth ann seton hospital-Long term care patients. They moved to layfette from kokomo. look it up online and apply they are always hiring. ttyl..dana',1,1,neutral
+'Did you and Gordie take those pics at the same time???? weirdos..lol',2,2,mixed
+'haha the first half of high school, the other we were opposites! and it doesnt matter your in college now lol',2,1,positive
+'HAPPY BIRTHDAY BEAUTIFIL...HOPE YOU SEE MANY MORE..BETTER YET I KNOW YOU WILL...GOD BLESS YOU..STAY UP',3,1,positive
+'Hey dude',1,1,neutral
+'bout time tOo! lol naw buh thx chu fa \"un-lamin\" my page lol it look real good now =]...SIKE! naw j/p doe =] anywayz i was jus comin thru 2 bless yo page an also tell u gOod luck wit those exams an dun 4get yo helmet, i mean thinkin cap =] be easy Mr **huGgz&&mwaHz** ----- ----- *=x EmMy x=*',2,1,positive
+'I miss you to you cutie!! Tell your mom I miss her bunches tooo!!!',3,1,positive
+'WHO-DEY AND THANKS FOR THE ADD! K-KIDD',2,1,positive
+'spam spam spam, quit fucking spamming bulletins... your not really a 21 year old woman.. your a fat 40 year old man sitting in his mums basement wanking all day spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam',1,4,negative
+BUTTERCUP!,2,1,positive
+thanks!,2,1,positive
+'HAPPPPEST BIRTHDAY STARRRR!!!!!! ----- WE GONE GET IT ON N POPPIN\' DIS WEEKEND SO GET READY..........SEE U LATA MUAH',3,1,positive
+'wazz up fool how u dooin man u get that shit fixed on ur car or what...',2,2,mixed
+'JUST COME\'N THRU TA SEE HOW UR DOIN LEAVE ME LUV TTYL',2,1,positive
+'JUST WANTED TO SAY HELLO! IM GOING TO CALL U ABOUT GSI...I THINK I FUCKED THAT UP :( BUT ITS A GOOD PLACE TO WORK FOR. ILL TELL U MORE ABOUT IT...',2,3,negative
+'6 Years of Withstand - Wicked Shivers -----',1,1,neutral
+'HHHHHIIIIIIIIIIII HOW U DOIN THERE PAL......LMAO',2,1,positive
+'hey, i have to go to a party with jason\'s friends :( you guys should come over tommarow. let me know....',2,2,mixed
+'Right on another Taurus on the cusp, congrats, and happy birthday, I knew there was a reason I liked your smile',3,1,positive
+'hi mom!!',2,1,positive
+'hehe very good choice n very sexy lol :) god i think of the greatest names hehe silly bugger me n sophie r gonna ave words wit the dude in charge lol :P gooody n glad ur okay u n louis all good? love you xxx',4,1,positive
+'This was absolutely wicked, I can\'t wait to come again oh yeah!',4,1,positive
+'Hey! So haven\'t heard from you in a long time...what\'s up with that! Well, I wouldn\'t mind hearing from ya...when you\'re not too busy. ----- ----- ~Liz~',2,2,mixed
+'a yo telemundo i will drink a few for u at the reception',2,1,positive
+'feels so sorry for all the women that missed out on such a great guy that i have found!! love ya!!',3,2,positive
+'how am i a hater you fucker so do you have a girl yet or are you still tring to get back with April yall was such a cute couple what ever happened but let me tell you this she looked so much happier with you then that fag mike well talk to you later!!! ----- ----- ----- megan',2,3,negative
+'yo yo yo brotha!! wats goin on wit you? hows high school for ya? just sendin my luv from mississippi!! well be good and dont get in trouble! always remember i love you and hopefully i will be out of \"A\" school and be homw for the holidays. maybe around thanksgiving. i get 2 weeks leave!!',3,1,positive
+'Sup man hows it going in san antonio.',2,1,positive
+'yea but but hit me up 936-572-2393',1,1,neutral
+'who are you ?',1,1,neutral
+'About time lol......BRO keep up the good work and i wish u Good Luck This year',3,1,positive
+'Happy, happy Birthday....it\'s a great day and you are a great friend!',3,1,positive
+'Sexy Baz, Disco Baz, HOT!! ----- xx',3,1,positive
+'I like it how I saw you at Kandyland 2! ----- And I like it how I have a picture of Seth grabbing your boobie. ----- MWAHAHA. ----- I love you. ----- And I was really happy that I saw you. ----- You should go to Gettin\' Lucky. ----- K BYE! ::waves frantically:: ----- ----- <333: Monique',4,1,positive
+'Tell your gay boyfriend to get a myspace page!! hows it going? cant wait till the rounds...',2,2,mixed
+'hey mike just stoppin by yo page to show some love aiight don\'t act like u don\'t know how to return it.',2,1,positive
+'ey ur not 19...',1,2,negative
+'Ill bet. Its alright, hide your true feelings.But I still miss you guys!',2,2,mixed
+'hey hottstuff! just wanted to say that I LOVE YOU!!! hope you like this!...?',4,1,positive
+'I MISS you mi amigo. How are you? ?',3,2,positive
+'do you recognize my song?',1,1,neutral
+'I miss you too!!! Come see me soon!',3,2,positive
+'Well some girls av gotta be reminded once in a while.Seriously you are x',2,1,positive
+'FOLEY WE SHOULD GO PARTY FOR CINCO DE MAYO...UR MEXICAN RIGHT! LOL!',2,2,mixed
+'hey thnxs 4 the pic comment hows u? no spoken 2 ya 4 ages xxx',2,1,positive
+'hahaha!! shady asss!!',2,2,mixed
+'i looked at the picture, she is adorable.',3,1,positive
+'psssst, psssssssssssssst, hey you. wassup',2,1,positive
+'what up buddy. havent seen ya for awhile hope all is well and u makin it to classes. No u heard about steve gettin the boot at our internship what a dumbass but i got a good laugh out of it',2,2,mixed
+'Yes, I Do own shirts, and believe it or not, most of the time, I wear them too lolol',2,1,positive
+'oh ZERMEY! haha welp your wife just wrote to me so i decided to write to you too, dont you feel specail! Im so stoked to see you and the fam (holly and the puppy)! all i have left to worry about is this last week then im golden! Big gulps huh welp see ya later! ----- ----- Kels',3,2,positive
+'what part of dundun do u live at',1,1,neutral
+'he he cool',2,1,positive
+'Matey you getting the 300 back tomorrow afternoon yeah? ----- You wanna take your ski stuff out of my locker before hand so i dont forget? lol ----- Cheers for the present again, you\'re actually the biggest legend. ----- Geog buddies for life (Y) haha ----- xxx',3,1,positive
+'CONGRATULATIONS! Well, that is if he shows up...LOL!',3,2,positive
+'hey wuz up sexy im jux drppin some love for you',3,1,positive
+'lily thanx for my new camera love ya girlie!',3,1,positive
+'Hey you!! I\'m coming down to LA and I\'m going to be staying with Christina & Randy for a night or two July 19th.....I have a conference near LAX.....maybe we can catch each other?',2,1,positive
+'hey fucknuts when are you coming back',2,3,negative
+'YA!!! i am the new member of HD and we will kick some baily AASSS',3,2,positive
+'mudd butt',1,2,negative
+'merci for your comment! how are you? and your music? you\'ll come to Hungary this summer?? it would be awesome. ----- puszi, Zsuzsi',3,1,positive
+'dave just waned to say thanks for the cruising guide. it saved my life to many time to count!',3,1,positive
+'I\'m gonna go ahead and wish you happy birthday now \'cause with how often I\'ve been on myspace/facebook lately, I will have missed it by several months if I wait a moment longer. HAVE A LOT OF FUN! And don\'t walk down any dark hallways. Terrible people might try to scare you. ----- ----- But...I\'m over that. (Did you know the trauma therapists in Seattle are some of the greatest in the nation?) ----- ----- I had fun dancing with you a few weeks back - did you guys ever go on that double date you were mentioning? Well, I hope life is going well and that you\'re enjoying basement life. I miss it. Take care and I\'ll see you hopefully sooner rather than later!',4,2,positive
+'Hey bro. ----- I stole your idea. I\'m sorry. ----- But I love it!!!',3,2,positive
+'It was a late night in the club; she was winding and spinning around the pole as if she was an angle on ice. Her audience was amazed as she was able to bend in many ways. Ruby twirled around once more as her hair moved with her body. The music filled the place and there was more drunk bastards filling the place then usual, she watched from the corner of her eye as they tried to get a feel when she bent forward. She placed both hands on the pole as she pulled herself up she bent backwards spreading her legs apart slowly moving down the pole. She spun to the bottom as she finished her routine. Claps and whistles from the men filled the room. She smiled as she walked down the stairs and over towards the bar where she got herself a Martine.',2,1,positive
+Yo....,1,1,neutral
+'HAPPY BIRTHDAY,daddy ----- (:',3,1,positive
+'Hey leah how ae u? hows it going in good old kett? is the work gd? and how is simon doing? its awesome here have bin out loads and am very tired but it is all good. had my 1st lectures today aswell. ----- catxxxxxx',3,2,positive
+'my site the bomb hahahaha',2,1,positive
+'ur space is tres nul...',1,2,negative
+'Yeah, what Tony said. Are you coming to Vegas with us in March?',2,1,positive
+'HAPPY BIRTHDAY GOOSE!!',2,1,positive
+'your family will be in my prayers! ----- -Love tay',3,1,positive
+'hey chris whats up hope everything is going alright for u and marry early X-mas',2,1,positive
+'bish ----- I popped your ----- \"comment cherry\" ----- now what u gonna do ----- mwahahahaha ----- you r gonna get ----- myspace pregnant ----- =] ----- but boyah im out ----- so much love n lata ----- &hearts &hearts &hearts xoXox &hearts &hearts &hearts',3,1,positive
+'Ashlee laughed as she closed the door to the joining rooms and laughed \"Sorry nope, It\'s ashlee, jennifer isn\'t here yet, and she wouldn\'t be coming in from that door\" Ashlee said with a laugh as she pointed to the door that she just came through. Krys seemed a little different then Ashlee thought but she\'d learn to deal and like this girl. Ashlee went over and sat down on one of the two beds that were in the room looking out the window. ----- ----- There was a bird that landed on the railing of the balcony that was for the two joining rooms, and Ashlee smiled. Then she looked back at Krys putting all of her things in the dresser and hanging shit up. Why bother hanging things up if you dont need to? \"So you stayin for the whole summer to?\" Ashlee asked her. It was June 20th. The first day that everyone was going to be there, but some of the people had to leave early, ashlee just wanted to make sure the Krys wasn\'t one of them',2,1,positive
+'Waz ^ homey hows it hangin????',2,1,positive
+'good stuff. xxx',2,1,positive
+'o hello christina (tanishas mom) :D ----- ?',2,1,positive
+'~**WEll hello there my lil harry potter!..lol..how are you doing? Better be good! well, tell your mama, i said, Hello!...talk to ya laterz...MUAH!**~',3,1,positive
+'u big wet fart',1,2,negative
+Sup?,1,1,neutral
+'i like how i totally take over all your myspace pix hahaha ----- it was really good seein you this weeknd, unfortunate that we all had to see eachother under those circumstances.hope your doin better, get ahold of us some time come see our shitty apartment we miss you =)',3,2,positive
+'U Suk!',1,3,negative
+'Everybody\'s gotta have their fast toys!',2,1,positive
+'you don\'t even WANNA know what it\'s gone take fa me to let you in the studio...lol',2,2,mixed
+'hey cutie ----- merry christmas!!',3,1,positive
+'----- heyy, whats up?',2,1,positive
+'JUST WANTED TO SAY THANK YOU FOR MAKING ME A DADDY AGAIN AND THAT I LOVE YOU',4,1,positive
+'heyy bud... it was good seein u the other day at the movies...we should do it again sometime',2,1,positive
+'haha kool kool ...wel i took a tad older dan i used 2 now :D lol! nufink reli jus being a bum as usall :D munchin away da norm lol xxxxx',3,2,positive
+'Wassssup Cashflow!',2,1,positive
+'Dont even think about the possibility of there being three. Thats way too much for anyone to have to cope with. ----- ----- Bring a tranquilizer gun just incase!',1,3,negative
+'Can\'t wait for Saturday!!! I am so excited!!',4,1,positive
+'til october....... ----- gahhh, ----- thats a long time from now ----- oh well...... ----- so whats going on down in cleveland??????',2,2,mixed
+'I really shouldn\'t be asking you for this but I want it so bad don\'t get me wrong it\'s just that I haven\'t had it for a long time I could already feel it going in so hard and coming out so soft and wet. No one has to know about this, I\'m desperate, but your help can be very grateful you must think I have a lot of nerve asking you for this but i can feel my tongue around it sucking all the juice out until there no more left, this has been on my mind all day long and I hope I\'m not being forward but can I have a piece of gum? -----',1,1,neutral
+'ehhhhhhhhh wat is up',2,1,positive
+'On some real ass shit stop leavin fucking message on my page bitch or ur gonna see how many bullet it will take to drop ur lil ass and don\'t act like my brother won\'t fuck up u aint know fuckin blood clown ass nigga',1,5,negative
+'IDK u look like u just listen to a lot of rock',1,1,neutral
+hi,1,1,neutral
+TIM!!!!!!!!!!!!!!!!!!!!!!,3,1,positive
+'ur page seemed to b lackin sum flava and SEXCINESS and most importantly sum WIT so who better to give u sum then tha SEXY ASS SENIOR WHO WAS VOTED WITTIEST OF 2007???????????? ----- ----- i\'s here NOW. ----- holla',2,2,mixed
+'You know when you and Dan ok for <Megazone',1,1,neutral
+'yep! what have you been up to?',2,1,positive
+'Hey Michelle, how are things going for you guys. My wife and I are living in Pa. now with our first child on the way in Dec.',2,1,positive
+'yea i know!! everytime i work out a plan to it falls through! ive had to workthe past several mondays and now were going outta state..but ima come when i get back which\'ll be in 2 mondays i think...anywho...ttyl gubYE!',2,2,mixed
+'JOHN U DID IT ONCE AGAIN. U WENT ALL OUT AND OVER ACHIEVED. WHAT A WEB PAGE COOL GAMES 4 ALL OF US 2 PLAY. BEST PGE ON MYSPACE. I DONT NO HOW U DO IT.TERRORSTORM VIDEO IS SO COOL I SHOWED MY HISTORY TEACHER .HE SAID THAT THE VIDEO WAS ON THE MONEY WHEN IT CAME 2 THE TRUTH ABOUT WHAT REALLY HAPPEND ON SEPT 11TH . THANKS 4 WAKING ME UP . NOW I COULD SLEEP MUCH BETTER AT NIGHT.',4,1,positive
+'Hey Girl!! its been soo long...i really miss ya. Anyway, nice page...jus thought i\'d make it a lil better:-) the numbers still the same. holla at me sometime love ya',3,2,positive
+'WOW!!! Are you excited?? I am very excited for ya!! Good luck, buddy!!!!',4,1,positive
+'Happy Belated Birthday!! Did you party it up?',2,1,positive
+'chuck chuck chuckle vision chuckle vision chuckle vision !!! - JIMMY HAS A PERRRRTY FACE!',2,1,positive
+'Sup Delta . ----- Carry on! ----- Lt',2,1,positive
+'i have just realized u post way to much shit...hell it seems like i am getting a play by play of your life ...lol',1,3,negative
+'joooolllz ----- thanxxx',2,1,positive
+'just wanted to know why i\'m not your top friend??? i\'m glad you got your kiln!!! what time are you leaving on friday? hopefully i can come look at it this weekend!',2,1,positive
+'Aww I love you too honey',3,1,positive
+'HYE GIRL, YOUR SO WELCOME, I GRADUATED MAY 2ND....IM GOING BACK IN AUGUST FOR MY RN. HOW HAVE THINGS BEEN WITH YOU?? HOW IS YOUR LIFE GOING? GOOD I HOPE.IM DOING GOOD JUST TRYING TO FIND SHIT TO DO ALL SUMMER!!! TALK TO U SOON!!!',3,1,positive
+'IT\'s ok. Busy. I saw Chance at a football game. Does he like it down here?',1,1,neutral
+'hey miss! how r u? sorry it\'s been a while since i wrote but alot\'s been going on i moved, hubby went overseas, I beame a mama to a puppy, taking care of dad all while trying to maintain good hair lol. How r u? Good i hope. w/b',2,2,mixed
+'bytch.... im ur hero!!! da dada daaaaa',2,2,mixed
+'what happened to you duuude?!?!? ----- we never saw you! ----- xx',2,2,mixed
+'HAPPY BIRTHDAY!!!11!!!!!1',2,1,positive
+'austin, change that gay ass background!!! lol, it sucks out loud!',1,3,negative
+'Haven\'t came thru here in a while so i\'m jus stoppin by to tell u ur beautiful. holla @ me',3,1,positive
+'ha ha yeah so hi i\'m kelley... just saw pirates and thought of you... ?',2,1,positive
+'Yo Matt, ----- ----- Great time in LA!!! We\'ll have to go back to Cali surfing together again.....maybe this time the Pacific will cooperate with me more! My age is already catching up to my board ability!! I\'ll get back to you about getting those Cards tickets......maybe I\'ll work you in a cameo in my new film...who knows! Haha! Good luck in Arizona! ----- ----- -Owen',3,1,positive
+'wat up nigga',1,2,negative
+HI?,1,1,neutral
+'YO CHECK OUT MY NEW PICS LEAVE ME SOME PICTURE COMMETS',2,1,positive
+'Wow... Everyone\'s on this myspace thingy. Anyways, great idea putting this on there! Power to the people.',3,1,positive
+'hey hey chichi whats up i miss you.i want to go back there it that i cant...... but you now i will always be right there beside you & i will all ways love you',4,2,positive
+'sup boi',1,1,neutral
+'Hey Rob x ----- Wuu2 Im realii bored write ----- back c ily',2,2,mixed
+'YOUR GETTING MARRIED.. CONGRATS!!! IM HAPPY FOR YOU ?',3,1,positive
+'Happy Birthday, Craig!!',2,1,positive
+'Hii ----- How Are u ----- Do I Know U? ----- <33',2,1,positive
+'Casey! Your myspace is a Niiiice space! ----- <3 Janling',2,1,positive
+'thanks you 4 the add!!',2,1,positive
+'thank 4 tha add',2,1,positive
+'Okay so what\'s next????? I think I want one on my rib cage like Klink got. It\'s cute as hell. Or maybe on my finger...Hmmmm... It\'s soooo hard to decide!',2,1,positive
+'HEY JON! Good to see you doing well :)',2,1,positive
+'hey \"General\" just stop by to add my beauty to spot... mission accomplished i\'m out!',2,1,positive
+'Happy Birthday sexy.',2,1,positive
+'Cheers for the underberg buddy u can smell how strong it is without even opening it lol sure if that where to be consumed tommorow it would be very entertaining. see u 2mz jonny',2,1,positive
+'how ya been stranger',1,1,neutral
+'whats up punk....how have you been.. so where do you go now to kick it? let me so we can have a drink...hope your day is going well talk to you soon.',2,1,positive
+'Hi Maggie - ----- ----- Glad you are feeling so happy! Love the new photo you posted...and the new layout!! Keep it up, Girl! ----- ----- Becky',3,1,positive
+'wuts up marco ----- nutting much here just chillin in lA wit my cuzins late',2,1,positive
+'Hey Silly! ----- I am waiting for other apps to get in and The President will get back in touch with you! ----- Smooches! ----- Ready for Revival?',2,2,mixed
+'if u have a better name tell me but it means JIGGA KREW UNDERGROUND FIGHTING LEAGUE',1,1,neutral
+'wud up limbernuts! just checking on ur goofyass.gimme a shout',1,2,negative
+'jacenia, wutss up??? nttn here well ya ummmm ya lets hang out sometime just call me if ur with paige or kaitlyn or something well ya im gonna go peace',2,1,positive
+'hey when do you want to go see nightmare before Christmas 3D, or do you want to see 30 days of night?',1,1,neutral
+'hey bro. this is the first day i dindnt come to see you. i thought about you all day and i get phone calls fron james every time there are visiting hours. i really miss you and i cant wait to see you back up and around. you have no idea how hard it is for me to see you in that bed. i love you, you are family to me and i just cant stand you not being around. well i will wright soon again. love ya your bro forever.BELL bitches!!!',3,3,mixed
+'hey baby',2,1,positive
+'Thanks for the Birthday wish last week. It\'s been such a hectic time, what with the Civil War taking place, and my alter ego being public knowledge, that I just plain forgot to celebrate. ----- ----- Cheers buddy!',2,2,mixed
+'Hey Lauren! ----- ----- I\'m good ta...how are you doing? Yeah I graduated yesterday...it was a very long day but a good one. Our ceremony wasn\'t until 4.30pm and the previous ceremony over run..and the ceremony managed to go on for 2.5hours!!Mad. But never mind i\'m a graduate now!lol ----- ----- How\'s your course going? ----- ----- Amy xx',2,2,mixed
+'Wat is ^ my lil nig wats crackin homie????',2,1,positive
+'----- ----- ----- ----- This ----- is ----- SO ----- funny! ----- ----- ----- -----',2,1,positive
+'woah i havent heard onyx in like 10 years. so im throwing emily watson a party next month. if your interrested space me.',2,1,positive
+'im ok thanks mate, how are you? x x',2,1,positive
+'Hope your having a good day!',2,1,positive
+'Actually on July 4th I play on going to Disney World',2,1,positive
+'yeah something fishy is going on here on myspace... apparently somebody has access to several peoples accounts and is posting these \"spam\" comments and such under their names... TOM NEEDS TO DO HIS JOB AND GET RID OF THESE MADMEN!',1,3,negative
+'I really miss u guys!!',2,2,mixed
+'HAPPY BIRTHDAY!!',2,1,positive
+'hey look ----- ITS TANYA AND SHELBY! ----- **points** ----- lol',2,1,positive
+'hahahahahaha sorri had to laugh at u u got shut down mah nig lol jus playin',2,3,negative
+'Hi I love your pix, I love you too...I\'ll talk to you soon!',3,1,positive
+'I love your kitties!!',3,1,positive
+'oh no i thought it was on the 5th i am so sorry happy b-day luv ya',2,2,mixed
+'yo nigga happy bday',2,1,positive
+'what up duuuuude! call me, we need to catch up brotha!',2,1,positive
+'Thnks 4 the invite hope to hear from you soon.',2,1,positive
+'hey girl!!! Yall coming out tomorrow night??? We missed you guys last week!!!',3,2,positive
+'hey sweetie sorry i havent been around a lot lately this whole thing with closing on the house is killing me. dont worry it will be over soon ill talk to ya later loves ya',2,2,mixed
+'hey tia i wanted to say thank you for the wonderful job you got me !!! your def. the boom.com ----- ----- ily',3,1,positive
+'oooohhhhhhh LLLLOOOOOOOGGGGGAAAAAANNNN damn i miss ur drunk ass',3,2,positive
+'Hey boo, just cumin through and showin my baby sum luv and respect and u need 2 call me 2, i miss u, luv ya, xoxoxo, bye',3,1,positive
+'Thank you for the add and for your support. Have a good rest of the week. Happy spring time to you.',2,1,positive
+'hey! why don\'t u just get married already!! u nver want to hang out with me anymore or even answer your phone! :( u love your bf more than me!! lol j.k it\'s ok, i do that too, but u need to let me know about monterrey so we can stay in the same hotel or watever, and i already got my days off of work! yay! well let me know, call me! ----- *jess',2,3,negative
+'Thanks for taking the time to look at my profile, and for the friend request!!!!! ----- ----- Hope you had a lovely Xmas and have a really great New Years! ----- ----- Drop by anytime, ----- ----- Fran x',3,1,positive
+'i luv u baba! cant wait for home sweet home!',3,1,positive
+'HEY BRAUNDA ;-)',2,1,positive
+'when are you gonna cook me some dinner!',1,1,neutral
+'who needs correct grammer???',1,1,neutral
+'You need a picture!!!! lol love ya',3,1,positive
+'Hey! I MISS YOU!!!!!!!!!',3,2,positive
+'man how come no one comments on stickyland oh well comment me back man',1,2,negative
+'Oh my... that has to be one of the funniest and scarriest things I have seen in a while... Thanks for making me laugh and throwup at the same time... :-)',3,2,positive
+'being bored u',1,2,negative
+'Happy Saturday!',2,1,positive
+'i\'m back!!!!',2,1,positive
+'whas up ladie? how u been? i havent talked to u in a while',2,1,positive
+'good good, and yourself?? where are you guys now?? anything new? oh did you get a gift for your bro? ill talk to ya soon k have a good day',2,1,positive
+'thnx fo da add...',2,1,positive
+'ANNNNNNNEEEEEE!! ----- ----- GOT A MYYSPACEEEE! ----- ----- HELLO QUUADDD! hahah i love the quad. FOOSHO.[ghettopatsy] anyyywayyss, im very excited you have a myspace now because i can talk to you 24/8 now! HAHAH jk, but seriously, because i don\'t have a cellular :[ buttttttt i lovee you annne. you are my hero supremelyyyyyyyyyyy. ----- -----',4,1,positive
+'gohh you are hott jacob',3,1,positive
+'yea ----- i kind of make everything funner',2,1,positive
+'so wutsup :D',2,1,positive
+'hey cuz. so how\'s GA? ----- Cali is hot as a mutha....',2,2,mixed
+'MATT! I am in town... we should hang. soon.',2,1,positive
+'whats up wit da beach trip yo?',1,1,neutral
+'Ur Madden Game is Trash Can Juice Clown!!! remember ur record against me is 1-1',1,2,negative
+'damn that sounds boring but good in a way... me ive been up to nothing just posted you know .... where do you work at..',2,2,mixed
+'Yeah long time no talk, how was your vacation or what it was you did.Just up and left lydia told me huh, I fell ya, Im bout to do that shit myself in a minute.Take care',2,2,mixed
+'I luv all your pics. You look like u have a bunch of fun and crazy times w/ your friends! Where did u see Ricky Martin at- and y wasn\'t I invited! :-) Have a good weekend!',3,1,positive
+'no i just hate fuckin turkey',1,3,negative
+'yeah. whatd u do on such a monday. lol',2,1,positive
+'Ah good sport mate! sorry thought itd be funny. Will looks particuly like a ska kid in the pic with his hat?',2,2,mixed
+'I\'m usally in Venice Park but i reside in EHT, you?',1,1,neutral
+'Hi Alyssa!!',2,1,positive
+'haha... its an inside joke',2,1,positive
+'Yo Dew, my man...I realize I said I was game for LBGP, but unaware, at the time, that Trey\'s 40th was on the same day...at least I think so...must check...I\'ll get back to you tomorrow...6-ish...that\'s post meridiem...you\'re hearing from me either way...in a minute, bruh...',2,1,positive
+'whats up cutie ----- thanks for the add comment back ----- ----- <3 michelle',2,1,positive
+'mate id do her too. ill try n get her number for u. jokes!! gotta talk to tom talk bout gettin out to c u. i cudnt remember wen u sed ur sister was goin out there so i tried 2 find out from her so we didnt overlap but got no response, plus im just settlin into my new job so dnt wanna take holiday straight away. defo gotta come out there tho!! gotta see that water sprinkler in action, lol......wow',3,2,positive
+'jus droppin through to show some love.',2,1,positive
+'So when can i be a stromtrooper? or do i have to be a damn cloner to do that!?',1,1,neutral
+'Andy\'s EX gurl',1,2,negative
+'sorry to hear that mate! just wondering if you fancied goin pinks tonight?',2,2,mixed
+'yeah for the most part but im not getin in trouble any more',2,1,positive
+'helo stace thought i would say hello as a old school buddy x jess',2,1,positive
+'Hey chic how ya been!!! what ya been up to????',2,1,positive
+'hey girly u need to get some color and stuff on here lol..luv ya. ----- ~Rach~',2,1,positive
+'Congratulations! I know that ya\'ll are excited! when are you due?',3,1,positive
+'Hey jazzy.What is good ?',2,1,positive
+'Diggidy diggidy JOHN, what up B. don\'t even act like you wanna hug from me. don\'t acks me. jkjkjkjkj k ----- not much going on here yet, we are going to visit the little kids at the orphanage tommorow morning. how are things in the good ole USA? I miss that mug',2,2,mixed
+'thanks for being my friend',3,1,positive
+'i was thinking, we could actually just make a marathon of our own. maybe like a jog from your house to the wies at school. don\'t know if it would be funner than a real one but i\'m to impatient to wait that long.',2,1,positive
+'hey vball kicked my ass today how about you??haha..we better not get cut or else i will be really mad..haha c-ya tomorrow bright and early outside at 6:45..for conditioning..haha ----- <3Yssa',2,2,mixed
+'thanx 4 da add',2,1,positive
+'same here',1,1,neutral
+'doritos were my affair..im completely faithful to pringles now tho :) ----- jp sed du wnt some cherries?? ----- xxxxxxx',2,1,positive
+'i\'m really good, getting married in two months. yeah it has been a long time haha i was just cycling through my myspace and saw yours. still working at joe\'s?',3,1,positive
+'hey Wayno! thank you. nice to see you.',2,1,positive
+'well anyhow up to 100 votes wins!! so go and vote!!!! and also this is an auto messaging thing i got... Please don\'t ask me for the program.. ----- ----- comment my pictures and vote for Best Action shot!! ----- 7 times!! Also comment my myspace.... And tell me how you like my site and what you would like to be changed... Also i would like it if no one posted junk on my myspace... Thanks.. Like random stuff....',2,1,positive

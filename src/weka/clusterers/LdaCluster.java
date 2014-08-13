@@ -36,13 +36,28 @@ public class LdaCluster extends AbstractClusterer {
 	 */
 	private static final long serialVersionUID = 864281599421580096L;
 
-	private ParallelTopicModel model; // the model
-	private InstanceList instances; // the training data and the pipes
-	protected int numberOfTopics=10; // Number of topics
+	/** the model */
+	private ParallelTopicModel model; 
+	
+	/** the training data and the pipes */
+	private InstanceList instances; 
+	
+	/** default number of topics */ 
+	protected int numberOfTopics=10; 
+	
+	/** alpha sum parameter */
 	protected double alphaSum=1.0; 
+	
+	/** beta parameter */
 	protected double beta=0.01;
+	
+	/** number of threads */
 	protected int numThreads=1;
+	
+	/** number of iterations */
 	protected int numIterations=1500;
+	
+	/** number of words to display */
 	protected int numDispWords=5; // Number of words to display per topic
 
 
@@ -57,7 +72,8 @@ public class LdaCluster extends AbstractClusterer {
 	 *         explorer/experimenter gui
 	 */
 	public String globalInfo() {
-		return "LDA MALLET.";
+		return " A wrapper class for the Latent Dirichlet Allocation algorithm for topic modelling implemented in the Mallet library."
+				+ " http://mallet.cs.umass.edu/lassification.";
 	}
 
 
