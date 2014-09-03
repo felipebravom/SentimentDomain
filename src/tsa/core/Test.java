@@ -107,12 +107,29 @@ public class Test {
 		Tagger tagger = new Tagger();
 		tagger.loadModel("models/model.20120919");
 		
+		
+		List<TaggedToken> la=tagger.tokenizeAndTag(content);
+		for(TaggedToken s:la){
+			System.out.println(s.tag+" "+s.token);
+		}
+		
+		System.out.println("LALAL");
+		
+		
+		
 		List<String> words=MyUtils.cleanTokenize(content);
 		List<String> postags=MyUtils.getPOStags(words, tagger);
 
+		List<String> pref=MyUtils.addPOSprefix(words, tagger);
+		
 		for(int i=0;i<words.size();i++){
 			System.out.println(words.get(i)+" "+postags.get(i));
 		}
+		
+		for(String w:pref){
+			System.out.println(w);
+		}
+		
 		
 
 		//	       Pattern pattern = Pattern.compile("([a-z])\\1{3}");

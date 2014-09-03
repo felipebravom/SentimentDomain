@@ -24,6 +24,8 @@ public class MyUtils {
 
 		List<String> tokens = new ArrayList<String>();
 
+
+
 		for (String word : Twokenize.tokenizeRawTweetText(content)) {
 			String cleanWord = word;
 
@@ -61,6 +63,41 @@ public class MyUtils {
 	// Returns POS tags from a List of tokens using TwitterNLP
 	static public List<String> getPOStags(List<String> tokens, Tagger tagger) {
 
+		ArrayList<String> tags = new ArrayList<String>();
+
+		try{
+			Sentence sentence = new Sentence();
+			sentence.tokens = tokens;
+			ModelSentence ms = new ModelSentence(sentence.T());
+			tagger.featureExtractor.computeFeatures(sentence, ms);
+			tagger.model.greedyDecode(ms, false);
+
+
+
+			for (int t = 0; t < sentence.T(); t++) {
+				String tag = tagger.model.labelVocab.name(ms.labels[t]);
+				tags.add(tag);
+			}
+
+
+		}
+		catch(Exception e){
+			System.err.println("Tagging Problem");
+			for(int i=0;i<tokens.size();i++){
+				tags.add("?");
+				System.err.print(tokens.get(i));
+			}
+			
+			e.printStackTrace(System.err);
+		}
+
+		return tags;
+	}
+
+
+	// Returns POS tags from a List of tokens using TwitterNLP
+	static public List<String> addPOSprefix(List<String> tokens, Tagger tagger) {
+
 		Sentence sentence = new Sentence();
 		sentence.tokens = tokens;
 		ModelSentence ms = new ModelSentence(sentence.T());
@@ -71,13 +108,13 @@ public class MyUtils {
 
 		for (int t = 0; t < sentence.T(); t++) {
 			String tag = tagger.model.labelVocab.name(ms.labels[t]);
-			tags.add(tag);
+			tags.add(tag+"-"+tokens.get(t));
 		}
 
 		return tags;
-
 	}
 
-	
+
+
 
 }

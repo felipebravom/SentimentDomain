@@ -1,6 +1,7 @@
 package weka.filters.unsupervised.attribute;
 
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
@@ -10,9 +11,16 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.Vector;
 
+import cmu.arktweetnlp.Tagger;
+import cmu.arktweetnlp.Tagger.TaggedToken;
+import cmu.arktweetnlp.Twokenize;
+import cmu.arktweetnlp.impl.ModelSentence;
+import cmu.arktweetnlp.impl.Sentence;
+import tsa.core.LexiconEvaluator;
 import tsa.core.MyUtils;
 import weka.core.Attribute;
 import weka.core.Capabilities;
+import weka.core.DenseInstance;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Option;
@@ -39,12 +47,34 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 	protected List<Map<String, Integer>> wordVecs; 
 
 	/** the index of the string attribute to be processed */
-	protected int textIndex=0; 
-
-
+	protected int textIndex=1; 
 
 	/** the index of the string attribute to be processed */
-	protected String prefix="WORD-";
+	protected String prefix="";
+
+	/** True if all tokens should be downcased. */
+	protected boolean toLowerCase=true;
+
+	/** True if instances should be sparse */
+	protected boolean sparseInstances=true;
+
+
+	/** True if a part-of-speech prefix should be included to each word */
+	protected boolean posPrefix=false;
+
+
+	/** True if a Sentiment prefix calculatef from a Lexicon should be included to each word */
+	protected boolean sentPrefix=false;
+
+
+	/** TwitterNLP Tagger model */
+	protected Tagger tagger;
+	
+	
+	/** LexiconEvaluator for sentiment prefixes */
+	protected LexiconEvaluator lex;
+
+
 
 	@Override
 	public String globalInfo() {
@@ -56,25 +86,27 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 
 	@Override
 	public Capabilities getCapabilities() {
-		
+
 		Capabilities result = new Capabilities(this);
 		result.disableAll();
-		
-		
-		
-		 // attributes
-	    result.enableAllAttributes();
-	    result.enable(Capability.MISSING_VALUES);
 
-	    // class
-	    result.enableAllClasses();
-	    result.enable(Capability.MISSING_CLASS_VALUES);
-	    result.enable(Capability.NO_CLASS);
-		
+
+
+		// attributes
+		result.enableAllAttributes();
+		result.enable(Capability.MISSING_VALUES);
+
+		// class
+		result.enableAllClasses();
+		result.enable(Capability.MISSING_CLASS_VALUES);
+		result.enable(Capability.NO_CLASS);
+
+		result.setMinimumNumberInstances(0);
+
 		return result;
 	}
 
-	
+
 
 
 	@Override
@@ -86,6 +118,19 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 
 		result.addElement(new Option("\t Prefix of attributes.\n"
 				+ "\t(default: " + this.prefix + ")", "P", 1, "-P"));
+
+		result.addElement(new Option("\t Lowercase content.\n"
+				+ "\t(default: " + this.toLowerCase + ")", "L", 0, "-L"));
+
+		result.addElement(new Option("\t Sparse instances.\n"
+				+ "\t(default: " + this.sparseInstances + ")", "S", 0, "-S"));
+
+		result.addElement(new Option("\t POS prefix.\n"
+				+ "\t(default: " + this.posPrefix + ")", "K", 0, "-K"));
+
+
+		result.addElement(new Option("\t Sent prefix.\n"
+				+ "\t(default: " + this.sentPrefix + ")", "H", 0, "-H"));
 
 
 		result.addAll(Collections.list(super.listOptions()));
@@ -109,6 +154,18 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 
 		result.add("-P");
 		result.add("" + this.getPrefix());
+
+		if(this.toLowerCase)
+			result.add("-L");
+
+		if(this.sparseInstances)
+			result.add("-S");
+
+		if(this.posPrefix)
+			result.add("-K");
+
+		if(this.sentPrefix)
+			result.add("-H");
 
 
 		Collections.addAll(result, super.getOptions());
@@ -155,6 +212,13 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 
 		}
 
+		this.toLowerCase=Utils.getFlag('L', options);
+
+		this.sparseInstances=Utils.getFlag('S', options);
+
+		this.posPrefix=Utils.getFlag('K', options);
+		
+		this.sentPrefix=Utils.getFlag('H', options);
 
 		super.setOptions(options);
 
@@ -179,23 +243,99 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 	 */	 
 	public void computeWordVecsAndVoc(Instances inputFormat) {
 
+		
+		
+		
+		
 		// The vocabulary is created only in the first execution
-		if (!this.isFirstBatchDone())
+		if (!this.isFirstBatchDone()){
 			this.vocDocFreq = new TreeMap<String, Integer>();
+			
+			// process the Tagger
+			if(this.posPrefix){
+				try {
+					this.tagger= new Tagger();
+					this.tagger.loadModel("models/model.20120919");
+				} catch (IOException e) {
+					this.posPrefix=false;
+					System.err.println("Warning: TwitterNLP model couldn't be read.");
+				}	
+
+			}
+			
+			// process the LexiconEvaluator
+			if(this.sentPrefix){	
+				try {
+					this.lex= new LexiconEvaluator("lexicons/AFINN-111.txt");
+					this.lex.processDict();
+				} catch (IOException e) {
+					this.sentPrefix=false;
+					System.err.println("Warning: Lexicon couldn't be read.");
+				}
+			}
+
+		}
 
 		this.wordVecs = new ArrayList<Map<String, Integer>>();
 
-		// reference to the content of the tweet
-		Attribute attrCont = inputFormat.attribute(this.textIndex);
+		// reference to the content of the message, users index start from zero
+		Attribute attrCont = inputFormat.attribute(this.textIndex-1);
 
 		for (ListIterator<Instance> it = inputFormat.listIterator(); it
 				.hasNext();) {
 			Instance inst = it.next();
 			String content = inst.stringValue(attrCont);
+			if(this.toLowerCase)
+				content=content.toLowerCase();
+
+			// tokenises the content 
+			List<String> tokens=Twokenize.tokenizeRawTweetText(content);; 
+			List<String> posTokens = null;
+			List<String> sentTokens = null;
+			
+			
+			if(this.posPrefix){
+				try{
+				posTokens=MyUtils.getPOStags(tokens, tagger);
+				}
+				catch(Exception E){
+					
+				}
+			}
+
+			
+			if(this.sentPrefix){
+				sentTokens=new ArrayList<String>();
+				for(String token:tokens){
+					String sentToken="";
+					if(this.lex.getDict().containsKey(token)){
+						Double value=Double.parseDouble(this.lex.getDict().get(token));
+						sentToken +=  (value>0)?"POSITIVE-":"NEGATIVE";
+						sentToken += "("+this.lex.getDict().get(token)+")-";						
+					}
+						
+					sentTokens.add(sentToken);
+				}
+				
+				
+			}
+			
+			if(this.posPrefix){
+				for(int i=0; i<tokens.size();i++){
+					tokens.set(i, posTokens.get(i)+"-"+tokens.get(i));
+				}
+			}
+			
+			if(this.sentPrefix){
+				for(int i=0; i<tokens.size();i++){
+					tokens.set(i, sentTokens.get(i)+tokens.get(i));
+				}
+			}
 
 
-			// tokenises the content
-			List<String> tokens = MyUtils.cleanTokenize(content);
+
+
+
 			Map<String, Integer> wordFreqs = MyUtils.calculateTermFreq(tokens);
 
 			// Add the frequencies of the different words
@@ -286,7 +426,13 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 
 			}
 
-			Instance inst = new SparseInstance(1, values);
+
+			Instance inst;
+			if(this.sparseInstances)
+				inst=new SparseInstance(1, values);
+			else
+				inst=new DenseInstance(1, values);
+
 
 			inst.setDataset(result);
 			// copy possible strings, relational values...
@@ -298,6 +444,26 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 		}
 
 		return result;
+	}
+
+
+	/** Adds the corresponding pos tags prefix to each token **/
+	protected List<String> addPOSprefix(List<String> tokens) {
+
+		Sentence sentence = new Sentence();
+		sentence.tokens = tokens;
+		ModelSentence ms = new ModelSentence(sentence.T());
+		this.tagger.featureExtractor.computeFeatures(sentence, ms);
+		this.tagger.model.greedyDecode(ms, false);
+
+		ArrayList<String> tags = new ArrayList<String>();
+
+		for (int t = 0; t < sentence.T(); t++) {
+			String tag = this.tagger.model.labelVocab.name(ms.labels[t]);
+			tags.add(tag+"-"+tokens.get(t));
+		}
+
+		return tags;
 	}
 
 
@@ -319,6 +485,51 @@ public class TwitterNlpWordToVector extends SimpleBatchFilter {
 	public void setPrefix(String prefix) {
 		this.prefix = prefix;
 	}
+
+
+	public boolean isToLowerCase() {
+		return toLowerCase;
+	}
+
+	public void setToLowerCase(boolean toLowerCase) {
+		this.toLowerCase = toLowerCase;
+	}
+
+
+
+	public boolean isSparseInstances() {
+		return sparseInstances;
+	}
+
+
+	public void setSparseInstances(boolean sparseInstances) {
+		this.sparseInstances = sparseInstances;
+	}
+
+
+
+	public boolean isPosPrefix() {
+		return posPrefix;
+	}
+
+
+
+	public void setPosPrefix(boolean posPrefix) {
+		this.posPrefix = posPrefix;
+	}
+
+	public boolean isSentPrefix() {
+		return sentPrefix;
+	}
+
+
+
+	public void setSentPrefix(boolean sentPrefix) {
+		this.sentPrefix = sentPrefix;
+	}
+
+
+
 
 	public static void main(String[] args) {
 		runFilter(new TwitterNlpWordToVector(), args);
