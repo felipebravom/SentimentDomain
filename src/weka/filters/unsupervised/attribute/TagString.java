@@ -243,7 +243,7 @@ public class TagString extends SimpleBatchFilter {
 		// process the LexiconEvaluator
 		if(this.sentPrefix){	
 			try {
-				this.lex= new LexiconEvaluator("lexicons/AFINN-111.txt");
+				this.lex= new LexiconEvaluator("lexicons/cleanLex.csv");
 				this.lex.processDict();
 			} catch (IOException e) {
 				this.sentPrefix=false;

@@ -25,7 +25,7 @@ public class TwitterNLPTokenizer extends Tokenizer {
 
 	@Override
 	public String globalInfo() {
-		return "A tokenizer based on TwitterNLP tokenizer. ";				
+		return "A tokenizer based on the TwitterNLP library.";				
 	}
 
 

@@ -108,169 +108,17 @@ public class Test {
 		tagger.loadModel("models/model.20120919");
 		
 		
-		List<TaggedToken> la=tagger.tokenizeAndTag(content);
-		for(TaggedToken s:la){
-			System.out.println(s.tag+" "+s.token);
+		List<String> tagWords=new ArrayList<String>();
+
+		List<TaggedToken> tagTokens=tagger.tokenizeAndTag(content.toLowerCase());
+		for(TaggedToken tt:tagTokens){
+			tagWords.add(tt.tag+"-"+tt.token);
+		}
+	
+		for(String pal:tagWords){
+			System.out.println(pal);
 		}
 		
-		System.out.println("LALAL");
-		
-		
-		
-		List<String> words=MyUtils.cleanTokenize(content);
-		List<String> postags=MyUtils.getPOStags(words, tagger);
-
-		List<String> pref=MyUtils.addPOSprefix(words, tagger);
-		
-		for(int i=0;i<words.size();i++){
-			System.out.println(words.get(i)+" "+postags.get(i));
-		}
-		
-		for(String w:pref){
-			System.out.println(w);
-		}
-		
-		
-
-		//	       Pattern pattern = Pattern.compile("([a-z])\\1{3}");
-		//	        Matcher matcher = pattern.matcher("asdffffffasdf");
-		//	        System.out.println(matcher.find());
-		//		
-		//		//String content="Looooks I wwola ww.g.co loooooove youuuuu arrrrrghhh like Andy the Android may have had a little @user too much https://lal !!!!! www.google.cl fun yesterday. http://t.co/7ZDEfzEC";
-		//		
-		//	        String content="Ron Paul Snr Advisor Doug Wead Interview with Frost &#8211; Mar 31 2012 http://t.co/tdzhFWYN";
-		//		
-		//		List<String> cleanTokens=cleanTokenize(content);
-		//		for(String word:cleanTokens){
-		//			System.out.println(word);
-		//		}
-		//		
-		//		
-		//		/*
-		//		Tagger tagger=new Tagger();
-		//		tagger.loadModel("models/model.20120919");
-		//		Model m=tagger.model;
-		//		FeatureExtractor f=tagger.featureExtractor;
-		//		
-		//		
-		//		String tweet="ikr smh he asked fir yo last name so he can add u on fb lololol by accident obam";
-		//		List<String> words= Twokenize.tokenizeRawTweetText(tweet);
-		//		
-		//		List<TaggedToken> tokens=tokenizeAndTag(tagger,words);
-		//		for(TaggedToken token:tokens){
-		//			System.out.println(token.token+" "+token.tag);
-		//		}
-		//		
-		//		List<String> tags=getPOStags(tagger,words);
-		//
-		//		
-		//		for(int i=0;i<words.size();i++){
-		//			System.out.println(words.get(i)+" "+tags.get(i));
-		//		}
-		//		
-		//		*/
-		//	
-		//		
-		//		ArrayList<Attribute> att=new ArrayList<Attribute>(); 
-		//	
-		//		att.add(new Attribute("att1"));
-		//		att.add(new Attribute("att1"));
-		//		
-		//	
-		//		ArrayList<String> att3Values=new ArrayList<String>();
-		//		for(int i=0;i<5;i++)
-		//			att3Values.add("val" + (i+1));
-		//		att.add(new Attribute("att3",att3Values));
-		//		
-		//		
-		//
-		//		att.add(new Attribute("content", (ArrayList<String>) null));
-		//		
-		//		
-		//		ArrayList<String> label=new ArrayList<String>();
-		//		label.add("positive");
-		//		label.add("neutral");
-		//		label.add("negative");
-		//		
-		//		att.add(new Attribute("class",label));	
-		//		
-		//		Instances dataset=new Instances("Twitter Sentiment Analysis Dataset", att,0); // The last attribute 
-		//		
-		//		
-		//		
-		//		
-		//	     
-		//		System.out.println(dataset.toSummaryString());
-		//		
-		//		
-		//		// Add data
-		//		double[] values = new double[dataset.numAttributes()];
-		//		values[0] = 2.3;
-		//		values[1] = Math.PI;
-		//		
-		//		values[2] = dataset.attribute("att3").indexOfValue("val3");
-		//		
-		//		// to retrieve the position of a certain attribute
-		//		System.out.println("index" + dataset.attribute("att3").index());
-		//
-		//		
-		//		values[3] = dataset.attribute(3).addStringValue("This is a string");
-		//
-		//		values[4] = dataset.attribute(4).indexOfValue("neutral");
-		//		
-		//		System.out.println(dataset.attribute("lalal")==null);
-		//		
-		//		// values[2] = dataset.attribute(2).indexOfValue("val3"); It is also possible to use the numeric index
-		//	
-		//		
-		//		Instance inst = new DenseInstance(1, values);
-		//		dataset.add(inst);
-		//
-		//
-		//		
-		//		
-		//		double values2[] = new double[dataset.numAttributes()];
-		//		values2[0] = 98;
-		//		values2[1] = 122;
-		//		
-		//		values2[2] = dataset.attribute("att3").indexOfValue("val1");
-		//				
-		//		values2[3] = dataset.attribute(3).addStringValue("second string");
-		//
-		//		values2[4] = dataset.attribute(4).indexOfValue("positive");
-		//		
-		//		Instance inst2 = new DenseInstance(1, values2);
-		//		dataset.add(inst2);
-		//
-		//		
-		//		
-		//		System.out.println(dataset.toString());
-		//		
-		//		
-		//		
-		//		
-		//		//Adds a new numeric attribute to the dataset in the second last position, to keep the label in the last one
-		//		dataset.insertAttributeAt(new Attribute("1NewNumeric"), dataset.numAttributes()-1);
-		//		
-		//		
-		//		System.out.println(dataset.toString());
-		//		
-		//		ReplaceMissingValues rp=new ReplaceMissingValues();
-		//	
-		//		
-		//		try {
-		//			rp.setInputFormat(dataset);
-		//			dataset=Filter.useFilter(dataset, rp);
-		//		
-		//			
-		//		} catch (Exception e) {
-		//			// TODO Auto-generated catch block
-		//			e.printStackTrace();
-		//		}
-		//		
-		//		System.out.println(dataset.toString());
-		//		
-
 
 	}
 
